@@ -89,7 +89,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/base/website",
+            "https://github.com/deepakshrma/deno-by-example/edit/base",
         },
         blog: {
           showReadingTime: true,
