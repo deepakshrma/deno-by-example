@@ -2,7 +2,7 @@ module.exports = {
   title: "Deno By Example",
   tagline: "Deno By Example",
   url: "https://github.com/deepakshrma",
-  baseUrl: "/",
+  baseUrl: "/deno-by-example/",
   favicon: "img/favicon.ico",
   organizationName: "deepakshrma", // Usually your GitHub org/user name.
   projectName: "denobyexample", // Usually your repo name.
@@ -78,21 +78,24 @@ module.exports = {
     //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     // },
   },
+  themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
+          path: 'website',
+          // routeBasePath: 'website',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/master/",
+            "https://github.com/deepakshrma/deno-by-example/edit/base/website",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/master/blog/",
+            "https://github.com/deepakshrma/deno-by-example/edit/base/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
