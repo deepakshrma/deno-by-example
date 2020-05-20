@@ -3,6 +3,7 @@ module.exports = {
     Basic: [
       "01_hello_world",
       "02_greet_from_cli",
+      "03_numbers",
       //  "doc2",
       // "doc3"
     ],
