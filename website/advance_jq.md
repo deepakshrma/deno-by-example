@@ -4,11 +4,11 @@ title: Implementing JQ equivalent in Deno
 sidebar_label: Implementing JQ
 ---
 
-jq is like sed for JSON data - you can use it to slice and filter and map and transform structured data
+jq is like `sed` for JSON data, you can use it to slice and filter and map and transform structured data
 
-    -- https://stedolan.github.io/jq/
+`-- https://stedolan.github.io/jq/`
 
-I am not going to create entire library here. Instead i will just give a small demo how you cane read STDIN data using Deno and parse it.
+I am not going to create the entire library here. Instead, I will just give a small demo how you can read STDIN data using Deno and parse it.
 
 STDIN [Standard input Stream](<https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)>), Standard input is a stream from which a program reads its input data.
 
@@ -23,7 +23,7 @@ deno run program.ts < file_name.txt
 deno run programe.ts < echo "data here"
 ```
 
-You can also pass output of any program to other program using pipe`(|)`.
+You can also pass the output of any program to the other program using pipe`(|)`.
 **Example:**
 
 ```bash
@@ -33,7 +33,7 @@ echo "data here" | deno run programe.ts
 
 ## How to read stdin in Deno.
 
-Reading stdin is very much similar to reding andy stream in Deno. Deno provide core API like `Deno.read` and `Deno.readAll`
+Reading stdin is very similar to reding and stream in Deno. Deno provides core API like `Deno.read` and `Deno.readAll`
 
 ```typescript
 // examples/advance_jq.ts
@@ -48,7 +48,7 @@ console.log(stdinContent);
 deno run examples/advance_jq.ts < examples/advance_jq.ts
 ```
 
-When you run this program, This will print some numbers(`Uint8Array`). Like other languages, stream data is buffer data encoded in buffer. To convert we neeed `TextDecoder`.
+When you run this program, This will print some numbers (`Uint8Array`). Like other languages, stream data is buffer data encoded in buffer. To convert we need `TextDecoder`.
 
 ```typescript
 // examples/advance_jq.ts
@@ -68,7 +68,7 @@ You can see you file data as output
 
 ## Parsing JSON
 
-Parsing JSON and extracting value is very tedious task. I have a written a basic Extract value from an object base on key provided. Code look as below:
+Parsing JSON and extracting value is a very tedious task. I have written a basic Extract value from an object based on key provided. Code look as below:
 
 ```typescript
 const evalReg = /(\.)|(\[(\d)\])/;
@@ -99,7 +99,7 @@ const safeEval = (key: string, obj: any) => {
 };
 ```
 
-Here i am using `RegExp.exec`[more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) method to parse the key and extract tokens. This is very rough sample what JQ can do. So `safeEvel` code is also small 😁.
+Here i am using `RegExp.exec`[more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) method to parse the key and extract tokens. This is a very rough sample of what JQ can do. So `safeEvel` code is also small 😁.
 
 **How this method works:**
 
@@ -133,9 +133,9 @@ gary
 Oblivion
 ```
 
-As you can see, this is very much what we need. Let's complete actual demo.
+As you can see, this is very much what we need. Let's complete the actual demo.
 
-**[Note:]** Thanks to Deno import, now i can use this file from github directly. I don't need to create another file to import. You can do that i will use network.
+**[Note:]** Thanks to Deno `import`, now i can use this file from github directly. I don't need to create another file to import. You can do that. However, I will use network to `import`.
 
 ```typescript
 import safeEval from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/safe_eval.ts";
@@ -155,7 +155,7 @@ But wait, from where we will get missing key ??
 
 (c) Photo by Paolo Nicolello on Unsplash
 
-Deno provide direct access to arguments passed to program using CLI. We can use `Deno.args` to get all the arguments passed to program as Array. Let's use it.
+Deno provides direct access to arguments passed to programs using CLI. We can use `Deno.args` to get all the arguments passed to programs as an Array. Let's use it.
 
 ```typescript
 import safeEval from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/safe_eval.ts";
@@ -201,7 +201,7 @@ $ deno run examples/advance_jq.ts "actor.name" < examples/tom.json
 ## Tom Cruise
 ```
 
-Perfect, Let's try from curl
+Perfect: Let's try with curl
 
 ```bash
 curl -s -k https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/tom.json | deno run  examples/advance_jq.ts "actor.movies[1]"
@@ -209,7 +209,7 @@ curl -s -k https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/
 
 Output: Mission: Impossible
 
-Nice! :-D
+Nice! Mission: I am possible
 
 For more example, visit:
 <https://deepakshrma.github.io/deno-by-example/>

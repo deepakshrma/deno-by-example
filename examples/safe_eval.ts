@@ -24,7 +24,7 @@ const safeEval = (key: string, obj: any) => {
   }
   return obj;
 };
-
+/*
 // Examples:
 const obj = {
   id: 1,
@@ -44,5 +44,5 @@ console.log(safeEval("id", obj));
 console.log(safeEval("contributors", obj));
 console.log(safeEval("contributors[1]", obj));
 console.log(safeEval("actor.movies[2]", obj));
-
+*/
 export default safeEval;
