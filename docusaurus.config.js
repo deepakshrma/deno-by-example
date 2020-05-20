@@ -5,9 +5,24 @@ module.exports = {
   baseUrl: "/deno-by-example/",
   favicon: "img/favicon.ico",
   organizationName: "deepakshrma", // Usually your GitHub org/user name.
-  projectName: "denobyexample", // Usually your repo name.
+  projectName: "deno-by-example", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
+    prism: {
+      // theme: require("prism-react-renderer/themes/github"),
+      // darkTheme: require("prism-react-renderer/themes/dracula"),
+      defaultLanguage: "ts",
+    },
+    // announcementBar: {
+    //   id: 'support_us', // Any value that will identify this message.
+    //   content:
+    //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+    //   backgroundColor: '#fafbfc', // Defaults to `#fff`.
+    //   textColor: '#091E42', // Defaults to `#000`.
+    // },
     navbar: {
+      hideOnScroll: true,
+      
       title: "Deno By Example",
       logo: {
         alt: "Deno By Exampl",
@@ -15,7 +30,7 @@ module.exports = {
       },
       links: [
         {
-          to: "docs/01_hello_world",
+          to: "01_hello_world",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
@@ -78,18 +93,19 @@ module.exports = {
     //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     // },
   },
-  themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
+  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-live-codeblock"],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
-          path: 'website',
+          routeBasePath: '/', // Set this value to '/'.
+          // homePageId: '01_hello_world', // Set to existing document id.
+          path: "website",
           // routeBasePath: 'website',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/master",
+          editUrl: "https://github.com/deepakshrma/deno-by-example/edit/master",
         },
         blog: {
           showReadingTime: true,
