@@ -8,6 +8,6 @@ module.exports = {
       //  "doc2",
       // "doc3"
     ],
-    Advanced: ["01_hello_world"],
+    Advanced: ["advance_jq"],
   },
 };
