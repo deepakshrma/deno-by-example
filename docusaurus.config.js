@@ -89,13 +89,13 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/base",
+            "https://github.com/deepakshrma/deno-by-example/edit/master",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/base/blog",
+            "https://github.com/deepakshrma/deno-by-example/edit/master/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

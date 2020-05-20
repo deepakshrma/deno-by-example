@@ -53,3 +53,9 @@ Things to be noted as in JS, deno also has same number for int and float number.
 More:
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+How to run example:
+
+```bash
+deno run examples/03_numbers.ts
+```
