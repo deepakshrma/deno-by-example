@@ -1,4 +1,8 @@
-# Numbers
+---
+id: 03_numbers
+title: Numbers
+sidebar_label: Numbers
+---
 
 Since deno is supporting Typescript which is super-set of the JavaScript. It support all the syntax from the JavaScript. However, Deno is a more then that. It also support APIs for file reading and network and etc.
 

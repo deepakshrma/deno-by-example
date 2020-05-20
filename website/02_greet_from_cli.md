@@ -1,7 +1,7 @@
 ---
-id: 03_numbers
-title: Numbers
-sidebar_label: Numbers
+id: 02_greet_from_cli
+title: Greet From CLI
+sidebar_label: Greet From CLI
 ---
 
 Taking user input can be difficult task. You can take user input as command line argument or you can read `input stream(STDIN)`
