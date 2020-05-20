@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "build": "rm -rf docs && docusaurus build && mv build docs",
+    "build": "rm -rf build .docusaurus docs && docusaurus build && mv build docs",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "GIT_USER=deepakshrma CURRENT_BRANCH=master USE_SSH=true yarn run docusaurus deploy"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.54",
