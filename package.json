@@ -6,6 +6,7 @@
     "start": "docusaurus start",
     "build": "rm -rf build .docusaurus docs && docusaurus build && mv build docs",
     "swizzle": "docusaurus swizzle",
+    "doc": "deno run --allow-read --allow-write scripts/run.ts g",
     "deploy": "GIT_USER=deepakshrma CURRENT_BRANCH=master USE_SSH=true yarn run docusaurus deploy"
   },
   "dependencies": {
