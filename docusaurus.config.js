@@ -6,6 +6,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "deepakshrma", // Usually your GitHub org/user name.
   projectName: "deno-by-example", // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics', '@docusaurus/plugin-sitemap'],
   themeConfig: {
     sidebarCollapsible: false,
     prism: {
@@ -20,9 +21,12 @@ module.exports = {
     //   backgroundColor: '#fafbfc', // Defaults to `#fff`.
     //   textColor: '#091E42', // Defaults to `#000`.
     // },
+    googleAnalytics: {
+      trackingID: "UA-69472059-2",
+    },
     navbar: {
       hideOnScroll: true,
-      
+
       title: "Deno By Example",
       logo: {
         alt: "Deno By Exampl",
@@ -99,7 +103,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          routeBasePath: '/', // Set this value to '/'.
+          routeBasePath: "/", // Set this value to '/'.
           // homePageId: '01_hello_world', // Set to existing document id.
           path: "website",
           // routeBasePath: 'website',
@@ -115,6 +119,11 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        sitemap: {
+          cacheTime: 600 * 1000, // 600 sec - cache purge period
+          changefreq: "weekly",
+          priority: 0.5,
         },
       },
     ],
