@@ -6,7 +6,7 @@ sidebar_label: Read Line by Line
 
 `Deno` provides multiple APIs to read files. You can read the entire file using `Deno.readAll` and `Deno.readTextFile`. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).
 
-<img src="https://deepakshrma.github.io/deno-by-example/img/data_flow.png" width="800" />
+<img src="https://deepakshrma.github.io/deno-by-example/img/data_flow.png" width="800" height="400" />
 
 Before going to actual code, Let's understand the standard library first with examples.
 
