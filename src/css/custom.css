@@ -11,13 +11,13 @@
  * Note: this is not a complete list of --ifm- variables.
  */
 :root {
-  --ifm-color-primary: #1d68e1;
-  --ifm-color-primary-dark: #1a5ecb;
-  --ifm-color-primary-darker: #1958bf;
-  --ifm-color-primary-darkest: #14499d;
-  --ifm-color-primary-light: #3377e5;
-  --ifm-color-primary-lighter: #3e7ee6;
-  --ifm-color-primary-lightest: #6095ea;
+  --ifm-color-primary: #009688;
+  --ifm-color-primary-dark: #00877a;
+  --ifm-color-primary-darker: #008074;
+  --ifm-color-primary-darkest: #00695f;
+  --ifm-color-primary-light: #00a596;
+  --ifm-color-primary-lighter: #00ad9c;
+  --ifm-color-primary-lightest: #00c3b1;
 }
 
 .docusaurus-highlight-code-line {
@@ -25,4 +25,10 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.prism-code {
+  font-family: 'Fira Code', monospace !important;
 }
