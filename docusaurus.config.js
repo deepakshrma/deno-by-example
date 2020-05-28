@@ -50,10 +50,6 @@ module.exports = {
           showReadingTime: true,
           editUrl:
             "https://github.com/deepakshrma/deno-by-example/edit/master/blog",
-          feedOptions: {
-            type: "all",
-            copyright: `Copyright © ${new Date().getFullYear()} Deepak Vishwakarma, Inc. Built with Docusaurus.`,
-          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
