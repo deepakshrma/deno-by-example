@@ -87,18 +87,6 @@ module.exports =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(162);
-} else {}
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -107,7 +95,7 @@ if (true) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return createElement; });
 /* unused harmony export useMDXComponents */
 /* unused harmony export withMDXComponents */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
@@ -310,6 +298,18 @@ function createElement (type, props) {
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(162);
+} else {}
+
+
+/***/ }),
 /* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -419,7 +419,7 @@ module.exports = require("path");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58);
 /**
@@ -451,7 +451,7 @@ __webpack_require__.d(__webpack_exports__, "h", function() { return /* binding *
 var inheritsLoose = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/prop-types/index.js
@@ -648,7 +648,7 @@ var path_to_regexp = __webpack_require__(89);
 var path_to_regexp_default = /*#__PURE__*/__webpack_require__.n(path_to_regexp);
 
 // EXTERNAL MODULE: ./node_modules/react-is/index.js
-var react_is = __webpack_require__(119);
+var react_is = __webpack_require__(118);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 var objectWithoutPropertiesLoose = __webpack_require__(27);
@@ -1778,7 +1778,7 @@ function retry () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26);
 /* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
@@ -4341,7 +4341,7 @@ module.exports = override(compactable, vendorPrefixedCompactable);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["g"]; });
 
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
@@ -8089,7 +8089,7 @@ Prism.languages.yml = Prism.languages.yaml;
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
@@ -8885,7 +8885,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = __webpack_require__(0);
+var React = __webpack_require__(1);
 var PropTypes = __webpack_require__(3);
 
 var ALL_INITIALIZERS = [];
@@ -10266,7 +10266,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
@@ -10326,7 +10326,7 @@ var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 /* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_side_effect__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(145);
 /* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_fast_compare__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(54);
 /* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(object_assign__WEBPACK_IMPORTED_MODULE_4__);
@@ -11235,7 +11235,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(56);
 /**
@@ -11250,7 +11250,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
@@ -11281,7 +11281,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return renderRoutes; });
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -11349,7 +11349,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11363,7 +11363,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(61);
 /**
@@ -11395,7 +11395,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -12962,7 +12962,7 @@ webpackContext.id = 87;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33);
 /**
@@ -14834,9 +14834,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'advance_jq',title:'Implementing JQ equivalent in Deno',sidebar_label:'Implementing JQ'};const metadata={"id":"advance_jq","title":"Implementing JQ equivalent in Deno","description":"jq is like sed for JSON data, you can use it to slice and filter and map and transform structured data","source":"@site/website/advance_jq.md","permalink":"/deno-by-example/advance_jq","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/advance_jq.md","sidebar_label":"Implementing JQ","sidebar":"someSidebar","previous":{"title":"Variables and Constants","permalink":"/deno-by-example/05_variables_constants"},"next":{"title":"Read Line by Line as Data Stream","permalink":"/deno-by-example/advance_readline"}};/* @jsx mdx */const rightToc=[{value:'How to create a stdin',id:'how-to-create-a-stdin',children:[]},{value:'How to read stdin in Deno.',id:'how-to-read-stdin-in-deno',children:[]},{value:'Parsing JSON',id:'parsing-json',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`jq is like `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`sed`),` for JSON data, you can use it to slice and filter and map and transform structured data`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`-- https://stedolan.github.io/jq/`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`I am not going to create the entire library here. Instead, I will just give a small demo how you can read STDIN data using Deno and parse it.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`STDIN `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)"}),`Standard input Stream`),`, Standard input is a stream from which a program reads its input data.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"how-to-create-a-stdin"},`How to create a stdin`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Passing data as stdin is very easy. You can use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<`),` to pipe data to any program.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Example:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`deno run program.ts < file_name.txt
 deno run programe.ts < echo "data here"
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can also pass the output of any program to the other program using pipe`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`(|)`),`.
@@ -14940,27 +14940,10 @@ try {
 $ deno run examples/advance_jq.ts "actor.name" < examples/tom.json
 ## Tom Cruise
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Perfect: Let's try with curl`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`curl -s -k https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/tom.json | deno run  examples/advance_jq.ts "actor.movies[1]"
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Output: Mission: Impossible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nice! Mission: I am possible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For more example, visit:
-`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deepakshrma.github.io/deno-by-example/"}),`https://deepakshrma.github.io/deno-by-example/`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Read More: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.readAll"}),`Deno.readAll`)));};MDXContent.isMDXComponent=true;
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Output: Mission: Impossible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nice! Mission: I am possible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"em"},{"href":"https://medium.com/@deepak_v"}),`https://medium.com/@deepak_v`),`.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Read More: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.readAll"}),`Deno.readAll`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 118 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'doc2',title:'Document Number 2'};const metadata={"id":"doc2","title":"Document Number 2","description":"This is a link to another document. This is a link to an external page.","source":"@site/website/doc2.md","permalink":"/deno-by-example/doc2","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/doc2.md"};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This is a link to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/deno-by-example/doc3"}),`another document.`),` This is a link to an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"http://www.example.com"}),`external page.`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14972,7 +14955,7 @@ if (true) {
 
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(297);
@@ -14986,7 +14969,7 @@ module.exports = __webpack_require__(53) ? function (object, key, value) {
 
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -14996,7 +14979,7 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports) {
 
 var id = 0;
@@ -15007,7 +14990,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var core = __webpack_require__(52);
@@ -15025,19 +15008,19 @@ var store = global[SHARED] || (global[SHARED] = {});
 
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(125);
-var defined = __webpack_require__(126);
+var IObject = __webpack_require__(124);
+var defined = __webpack_require__(125);
 module.exports = function (it) {
   return IObject(defined(it));
 };
 
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -15049,7 +15032,7 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports) {
 
 // 7.2.1 RequireObjectCoercible(argument)
@@ -15060,7 +15043,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -15072,7 +15055,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15082,9 +15065,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'05_variables_constants',title:'Variables and Constants',sidebar_label:'Variables and Constants'};const metadata={"id":"05_variables_constants","title":"Variables and Constants","description":"Constant can be created using const and variable can be created using let.","source":"@site/website/05_variables_constants.md","permalink":"/deno-by-example/05_variables_constants","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/05_variables_constants.md","sidebar_label":"Variables and Constants","sidebar":"someSidebar","previous":{"title":"Numbers","permalink":"/deno-by-example/03_numbers"},"next":{"title":"Implementing JQ equivalent in Deno","permalink":"/deno-by-example/advance_jq"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Constant can be created using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`const`),` and variable can be created using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`let`),`.  `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Sample:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`function main() {
   const constant = 10;
   // constant = 12 // Error, Cannot assign to 'constant' because it is a constant.
@@ -15117,7 +15100,7 @@ main();
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15127,9 +15110,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'02_greet_from_cli',title:'Greet From CLI',sidebar_label:'Greet From CLI'};const metadata={"id":"02_greet_from_cli","title":"Greet From CLI","description":"Taking user input can be difficult task. You can take user input as command line argument or you can read input stream(STDIN)","source":"@site/website/02_greet_from_cli.md","permalink":"/deno-by-example/02_greet_from_cli","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/02_greet_from_cli.md","sidebar_label":"Greet From CLI","sidebar":"someSidebar","previous":{"title":"Hello World","permalink":"/deno-by-example/01_hello_world"},"next":{"title":"Numbers","permalink":"/deno-by-example/03_numbers"}};/* @jsx mdx */const rightToc=[{value:'Take user input as command line arguments',id:'take-user-input-as-command-line-arguments',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Taking user input can be difficult task. You can take user input as command line argument or you can read `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`input stream(STDIN)`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"take-user-input-as-command-line-arguments"},`Take user input as command line arguments`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Create file examples/02_greet_from_cli.ts`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const { args } = Deno;
 
 interface UserInput {
@@ -15149,6 +15132,27 @@ $ deno run examples/02_greet_from_cli.ts
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 129 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'01_hello_world',title:'Hello World',sidebar_label:'Hello World'};const metadata={"id":"01_hello_world","title":"Hello World","description":"Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.","source":"@site/website/01_hello_world.md","permalink":"/deno-by-example/01_hello_world","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/01_hello_world.md","sidebar_label":"Hello World","sidebar":"someSidebar","next":{"title":"Greet From CLI","permalink":"/deno-by-example/02_greet_from_cli"}};/* @jsx mdx */const rightToc=[{value:'Code',id:'code',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`--Deno Team`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"code"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`function main() {
+  console.log(\`Hello "world"\`);
+}
+main();
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`How to run example:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`deno run examples/01_hello_world.ts
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
 /* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -15159,21 +15163,250 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'01_hello_world',title:'Hello World',sidebar_label:'Hello World'};const metadata={"id":"01_hello_world","title":"Hello World","description":"Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.","source":"@site/website/01_hello_world.md","permalink":"/deno-by-example/01_hello_world","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/01_hello_world.md","sidebar_label":"Hello World","sidebar":"someSidebar","next":{"title":"Greet From CLI","permalink":"/deno-by-example/02_greet_from_cli"}};/* @jsx mdx */const rightToc=[{value:'Code',id:'code',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`--Deno Team`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"code"},`Code`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`function main() {
-  console.log(\`Hello "world"\`);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'advance_logger',title:'Building A Super Cool Colorful Logger with Deno fmt module',sidebar_label:'Implementing Logger'};const metadata={"id":"advance_logger","title":"Building A Super Cool Colorful Logger with Deno fmt module","description":"Logging trace is one of the basic needs of a any programming language. It does not matter how good your code is, unless it is not traceable and debugable. For debugging, Logging one of the best tool. It is fast and easy to follow. If you are working on local system This could be your best mate while debugging.","source":"@site/website/advance_logger.md","permalink":"/deno-by-example/advance_logger","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/advance_logger.md","sidebar_label":"Implementing Logger","sidebar":"someSidebar","previous":{"title":"Read Line by Line as Data Stream","permalink":"/deno-by-example/advance_readline"}};/* @jsx mdx */const rightToc=[{value:'Prerequisites',id:'prerequisites',children:[{value:'Formatted Log in JS',id:'formatted-log-in-js',children:[]},{value:'Issues with <code>vargs</code>',id:'issues-with-vargs',children:[]},{value:'Introduction to PrintF',id:'introduction-to-printf',children:[]},{value:'Colors in Log',id:'colors-in-log',children:[]},{value:'Create a Basic Logger Class',id:'create-a-basic-logger-class',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Logging trace is one of the basic needs of a any `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`programming language`),`. It does not matter how good your code is, unless it is not `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`traceable`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`debugable`),`. For debugging, Logging one of the best tool. It is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`fast`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`easy`),` to follow. If you are working on `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`local system`),` This could be your best mate while `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`debugging`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`NICE QUOTE:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`LOG WELL, LIVE WELL`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"src":"https://cdn-media-1.freecodecamp.org/images/EMv0ZRmR82v5oUZ4ZNllx29LNYgqZoUwjua-","alt":"image "}))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Here in this tutorial, I will explain. How you can build a super cool logger with just minimal code(few line of the code). That is also without using any third party tool.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"prerequisites"},`Prerequisites`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ol",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},`Deno: Install Deno if you don't have it `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"li"},{"href":"https://deno.land/#installation"}),`installation`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},`Basic Typescript: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"li"},{"href":"https://www.typescriptlang.org/docs/handbook/basic-types.html"}),`basic-types`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Just like Nodejs/JavaScript. Logging can be done using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`console.log("Hello World");
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nice! However formatting log message is big pain is javascript. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),` partially implement function like `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`printf`),` from `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`c++`),` or `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`java`),`. But doesn't not support all the features. So how we should log formatted message.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"formatted-log-in-js"},`Formatted Log in JS`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Using String template.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`const name = "Deepak";
+const salary = 2000;
+console.log(\`My name is \${name} and my salary is \${salary}$\`);
+
+// My name is Deepak and my salary is 2000$
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Cool! But we can see for each parameter in template, we have to you a constant/variable. It will be hard to create variables just to log something.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Using Vargs in `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),`.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`const name = "Deepak";
+const salary = 2000;
+console.log(\`My name and salary are \`, name, salary);
+
+// My name and salary are  Deepak 2000
+
+const person = { name: "deepak", salary: 2000 };
+console.log(\`Info: \`, person);
+// Info:  { name: 'deepak', salary: 2000 }
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The above statement also valid in javascript. We can pass any number of vargs to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),` However, we can't arrange the message with variables. This is very useful to print anything just by separating value from comma. But this can not be use for logging something useful.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"issues-with-vargs"},`Issues with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`vargs`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ol",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},`Unpredicted implementation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ol"},`Error-prone`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Let's see in example:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`const person = { name: "deepak", salary: 2000 };
+const address = { street: "221B baker street london", zip: 20000 };
+console.log("Person info: " + person + " Address: " + address);
+// Person info: [object Object] Address: [object Object]
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`If you try to append the object with string it convert to string which is `,`[object Object]`,` for object and appended.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"strong"},`Solution`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`const person = { name: "deepak", salary: 2000 };
+const address = { street: "221B baker street london", zip: 20000 };
+console.log(
+  "Person info: " +
+    JSON.stringify(person) +
+    " Address: " +
+    JSON.stringify(address)
+);
+// Person info: {"name":"deepak","salary":2000} Address: {"street":"221B baker street london","zip":20000}
+
+// Or
+
+console.log("Person info: ", person, " Address: ", address);
+// Person info:  { name: 'deepak', salary: 2000 }  Address:  { street: '221B baker street london', zip: 20000 }
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Using Partial printf like feature in `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),`.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-js"}),`const person = { name: "deepak", salary: 2000 };
+const address = { street: "221B baker street london", zip: 20000 };
+console.log(
+  "Person info: name: %s salary: %d and Address: street: %s ",
+  person.name,
+  person.salary,
+  address.street
+);
+// Person info: name: deepak salary: 2000 and Address: street: 221B baker street london
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Here you can see, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),` does support few `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`printf`),` like function. However that is limited till `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`%s`),` `,`[string]`,`, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`%d`),` `,`[number]`,`. Mozilla does support Precision formatting something like `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`%.2f`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"introduction-to-printf"},`Introduction to PrintF`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno is highly inspired by Go. Just like Go, Deno also has `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`fmt`),` module in standard library. This module/package is combination of multiple sub-modules like `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`printf`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Note:`),` fmt module is still in work-in-progress status according to developers.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Importing printf:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { printf } from "https://deno.land/std/fmt/printf.ts";
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Definition of printf:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`export function printf(format: string, ...args: unknown[]): void {
+  const s = sprintf(format, ...args);
+  Deno.stdout.writeSync(new TextEncoder().encode(s));
 }
-main();
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`How to run example:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`deno run examples/01_hello_world.ts
-`)));};MDXContent.isMDXComponent=true;
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`printf`),` takes string and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`vars`),` of unknown. Format is to define how the format of the string will look like. args could be anything according to to format you wanted.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Sample of printf:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const person = { name: "deepak", salary: 2000 };
+printf(\`Person Name: "%s" and Salary: %d\\n\`, person.name, person.salary);
+
+// Person Name: "deepak" and Salary: 2000
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`According to Deno docs:
+`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"strong"},`The other formats(Verbs) are:`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The following verbs are supported:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("table",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("thead",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"thead"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Verb`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("th",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`Meaning`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tbody",{parentName:"table"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`%`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`print a literal percent`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`t`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`evaluate arg as boolean, print `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`true`),` or `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`false`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`b`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`eval as number, print binary`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`c`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`eval as number, print character corresponding to the codePoint`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`o`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`eval as number, print octal`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`x X`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`print as hex (ff FF), treat string as list of bytes`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`e E`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`print number in scientific/exponent format 1.123123e+01`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`f F`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`print number as float with decimal point and no exponent`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`g G`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`use %e %E or %f %F depending on size of argument`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`s`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`interpolate string`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`T`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`type of arg, as returned by `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`typeof`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`v`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`value of argument in 'default' format (see below)`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("tr",{parentName:"tbody"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`j`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("td",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"tr"},{"align":null}),`argument as formatted by `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"td"},`JSON.stringify`))))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"strong"},`Verbs with Width and Precision`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{}),`%9f    width 9, default precision
+%.9f   default width, precision 9
+%8.9f  width 8, precision 9
+%8.f   width 9, precision 0
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Sample of Width and Precision:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const person = { name: "deepak", salary: 2000.2 };
+printf(\`Person Name: "%s" and Salary: %9.2f\\n\`, person.name, person.salary);
+
+// Person Name: "deepak" and Salary:   2000.20
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can write more complex example like padding and get the value the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`vargs`),` passed to printf function.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Sample of Padding:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const person = { name: "deepak", salary: 2000.2 };
+
+// Padding Zero
+
+printf(\`Salary: %09.2f\\n\`, person.salary);
+
+// Salary: 002000.20
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The conversion of rgb to hex color is so simple.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const r = 5,
+  g = 255,
+  b = 100;
+printf("RGB TO HEX: #%02x%02x%02x\\n", r, g, b);
+
+// RGB TO HEX: #05ff64
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`More Complex- Use index of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"strong"},`vargs`),` values:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const person = { name: "deepak", salary: 2000.2 };
+
+printf(
+  "Person has salary %d, which(%[1]d) is less than average salary %d\\n",
+  person.salary,
+  4000
+);
+
+// Person has salary 2000.2, which(2000.2) is less than average salary 4000
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Read More: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deno.land/std/fmt"}),`https://deno.land/std/fmt`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"colors-in-log"},`Colors in Log`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`THE DOOR IS RED HERE THE WRITER USES THE COLOR TO EXPRESS HIS ANGER`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"src":"https://pics.me.me/the-door-is-red-here-the-writer-uses-the-color-38911952.png","alt":"colors"}))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The another issue with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`console.log`),`, It does not support colors out of box. We end-up adding library like `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://www.npmjs.com/package/colors"}),`colors`),` in NodeJs. Browser has some additional support for `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`css`),` console.log. But that will not work in NodeJs`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`More: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://developer.mozilla.org/en-US/docs/Web/API/console"}),`https://developer.mozilla.org/en-US/docs/Web/API/console`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Thanks to Deno's Colors module. Now we can easily color our life.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Importing colors:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { red, yellow, gray, cyan } from "https://deno.land/std/fmt/colors.ts";
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: Color module also support rgb colors`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { rgb8, bgRgb8, rgb24 } from "https://deno.land/std/fmt/colors.ts";
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`From Deno source:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`/** Set background color using paletted 8bit colors.
+ * https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit */
+export function bgRgb8(str: string, color: number): string {
+  return run(str, code([48, 5, clampAndTruncate(color)], 49));
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"blockquote"},{"id":"now-we-have-all-basic-tool-lets-finish-the-logger-implementation"}),`Now, We have all basic tool. Let's finish the Logger implementation.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"src":"https://www.memesmonkey.com/images/memesmonkey/19/19d6564114a19af49a8e40e3338adb46.jpeg","alt":"Finish IT"}))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"create-a-basic-logger-class"},`Create a Basic Logger Class`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Define interfaces:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { sprintf } from "https://deno.land/std/fmt/printf.ts";
+import { red, yellow, gray, cyan } from "https://deno.land/std/fmt/colors.ts";
+
+type LogLevel = 0 | 1 | 2 | 3;
+interface LoggerOptions {
+  level: LogLevel;
+  format?: string;
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Define default values for log level and formatter:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const initialOptions = { level: 0, format: "%s\\n" };
+class Logger {
+  private _level: LogLevel;
+  private _format: string;
+  constructor(options: LoggerOptions = initialOptions as LoggerOptions) {
+    const { level, format } = { ...initialOptions, ...options };
+    this._level = level;
+    this._format = format;
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Define getter setter for level and format:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const initialOptions = { level: 0, format: "%s\\n" };
+class Logger {
+  private _level: LogLevel;
+  private _format: string;
+  /// rest of the code
+  get level(): LogLevel {
+    return this._level;
+  }
+  set level(_l: LogLevel) {
+    this._level = _l;
+  }
+  get format(): string {
+    return this._format;
+  }
+  set format(_f: string) {
+    this._format = _f;
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: This is to hide the definition. You can remove setter if you don't want user to modify the values.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Add basic methods:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const initialOptions = { level: 0, format: "%s\\n" };
+class Logger {
+  private _level: LogLevel;
+  private _format: string;
+  /// rest of the code
+  log(...messages: unknown[]) {
+    console.log(gray(sprintf(this.format, ...messages)));
+  }
+  info(...messages: unknown[]) {
+    console.log(cyan(sprintf(this.format, ...messages)));
+  }
+  warn(...messages: unknown[]) {
+    console.log(yellow(sprintf(this.format, ...messages)));
+  }
+  error(...messages: unknown[]) {
+    console.log(red(sprintf(this.format, ...messages)));
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Sample Run:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { Logger } from "./logger.ts";
+
+const logger = new Logger({ level: 0, format: "Logger: %s" });
+logger.log("This is log message");
+logger.info("This is info");
+logger.warn("This is warn");
+logger.error("This is error");
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Output:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_01.png",width:"800",height:"400"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`If you notice, i am using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`sprintf`),` instead of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`printf`),`. Since i want the full control on the printing message like adding colors and use dynamic formatter. I have to use sprintf instead of printf.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Let's allow user to modify format on runtime:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const initialOptions = { level: 0, format: "%s\\n" };
+class Logger {
+  private _level: LogLevel;
+  private _format: string;
+  /// rest of the code
+  log(format: string, ...messages: unknown[]) {
+    if (messages.length === 0) {
+      messages = [format];
+      format = this.format;
+    }
+    console.log(gray(sprintf(format, ...messages)));
+  }
+  info(format: string, ...messages: unknown[]) {
+    if (messages.length === 0) {
+      messages = [format];
+      format = this.format;
+    }
+    console.log(cyan(sprintf(format, ...messages)));
+  }
+  warn(format: string, ...messages: unknown[]) {
+    if (messages.length === 0) {
+      messages = [format];
+      format = this.format;
+    }
+    console.log(yellow(sprintf(format, ...messages)));
+  }
+  error(format: string, ...messages: unknown[]) {
+    if (messages.length === 0) {
+      messages = [format];
+      format = this.format;
+    }
+    console.log(red(sprintf(format, ...messages)));
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Sample Run2:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { Logger } from "./logger.ts";
+
+const logger = new Logger({ level: 0, format: "Logger: %s" });
+logger.log("This is log message");
+logger.warn("This is warn");
+
+logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
+logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Output:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_02.png",width:"800",height:"400"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"final-touch-use-of-log-levels"},`Final Touch: Use of log levels`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const initialOptions = { level: 0, format: "%s\\n" };
+class Logger {
+  private _level: LogLevel;
+  private _format: string;
+  /// rest of the code
+  log(format: string, ...messages: unknown[]) {
+    if (this.level > 0) return;
+    if (messages.length === 0) {
+      messages = [format];
+      format = this.format;
+    }
+    console.log(gray(sprintf(format, ...messages)));
+  }
+  /// rest of the code
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Final Run:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { Logger } from "./logger.ts";
+
+const logger = new Logger({ level: 0, format: "Logger: %s" });
+logger.log("This is log message");
+logger.warn("This is warn");
+
+logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
+logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+
+// Change level
+
+logger.level = 2;
+
+// This will not print
+logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
+
+// This will print
+logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+
+// Change default format
+logger.level = 1;
+
+logger.format = "This is something new version: v%s";
+
+logger.info("1.0.1");
+logger.info("1.0.2");
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Output:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_03.png",width:"800",height:"400"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`<Nice! Good Job. We have done it!!>`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"src":"https://sayingimages.com/wp-content/uploads/you-did-good-job-meme.jpg","alt":"good job"}))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"the-entire-implementation-of-logger-class-can-be-found-in"},`The entire implementation of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h4"},`Logger class`),` can be found in`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/blob/master/examples/logger.ts"}),`examples/logger.ts`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"how-to-use-sample-can-be-found-in"},`How to use sample can be found in`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/blob/master/examples/advance_logger.ts"}),`examples/advance_logger.ts`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`For more example, visit:
+`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deepakshrma.github.io/deno-by-example/"}),`https://deepakshrma.github.io/deno-by-example/`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"em"},{"href":"https://medium.com/@deepak_v"}),`https://medium.com/@deepak_v`),`.`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 131 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"docsSidebars\":{\"someSidebar\":[{\"type\":\"category\",\"label\":\"Basic\",\"items\":[{\"type\":\"link\",\"label\":\"Hello World\",\"href\":\"/deno-by-example/01_hello_world\"},{\"type\":\"link\",\"label\":\"Greet From CLI\",\"href\":\"/deno-by-example/02_greet_from_cli\"},{\"type\":\"link\",\"label\":\"Numbers\",\"href\":\"/deno-by-example/03_numbers\"},{\"type\":\"link\",\"label\":\"Variables and Constants\",\"href\":\"/deno-by-example/05_variables_constants\"}]},{\"type\":\"category\",\"label\":\"Advanced\",\"items\":[{\"type\":\"link\",\"label\":\"Implementing JQ\",\"href\":\"/deno-by-example/advance_jq\"},{\"type\":\"link\",\"label\":\"Read Line by Line\",\"href\":\"/deno-by-example/advance_readline\"}]}]},\"permalinkToSidebar\":{\"/deno-by-example/01_hello_world\":\"someSidebar\",\"/deno-by-example/02_greet_from_cli\":\"someSidebar\",\"/deno-by-example/03_numbers\":\"someSidebar\",\"/deno-by-example/05_variables_constants\":\"someSidebar\",\"/deno-by-example/advance_jq\":\"someSidebar\",\"/deno-by-example/advance_readline\":\"someSidebar\"}}");
+module.exports = JSON.parse("{\"docsSidebars\":{\"someSidebar\":[{\"type\":\"category\",\"label\":\"Basic\",\"items\":[{\"type\":\"link\",\"label\":\"Hello World\",\"href\":\"/deno-by-example/01_hello_world\"},{\"type\":\"link\",\"label\":\"Greet From CLI\",\"href\":\"/deno-by-example/02_greet_from_cli\"},{\"type\":\"link\",\"label\":\"Numbers\",\"href\":\"/deno-by-example/03_numbers\"},{\"type\":\"link\",\"label\":\"Variables and Constants\",\"href\":\"/deno-by-example/05_variables_constants\"}]},{\"type\":\"category\",\"label\":\"Advanced\",\"items\":[{\"type\":\"link\",\"label\":\"Implementing JQ\",\"href\":\"/deno-by-example/advance_jq\"},{\"type\":\"link\",\"label\":\"Read Line by Line\",\"href\":\"/deno-by-example/advance_readline\"},{\"type\":\"link\",\"label\":\"Implementing Logger\",\"href\":\"/deno-by-example/advance_logger\"}]}]},\"permalinkToSidebar\":{\"/deno-by-example/01_hello_world\":\"someSidebar\",\"/deno-by-example/02_greet_from_cli\":\"someSidebar\",\"/deno-by-example/03_numbers\":\"someSidebar\",\"/deno-by-example/05_variables_constants\":\"someSidebar\",\"/deno-by-example/advance_jq\":\"someSidebar\",\"/deno-by-example/advance_logger\":\"someSidebar\",\"/deno-by-example/advance_readline\":\"someSidebar\"}}");
 
 /***/ }),
 /* 132 */
@@ -15186,9 +15419,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'doc3',title:'This is Document Number 3'};const metadata={"id":"doc3","title":"This is Document Number 3","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.","source":"@site/website/doc3.md","permalink":"/deno-by-example/doc3","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/doc3.md"};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
@@ -15202,9 +15435,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'introduction',title:'Deno By Example'};const metadata={"id":"introduction","title":"Deno By Example","description":"This website to show examples on the Deno language. Examples are written in md files in website directories","source":"@site/website/introduction.md","permalink":"/deno-by-example/introduction","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/introduction.md"};/* @jsx mdx */const rightToc=[{value:'This website to show examples on the Deno language. Examples are written in md files in website directories',id:'this-website-to-show-examples-on-the-deno-language-examples-are-written-in-md-files-in-website-directories',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"this-website-to-show-examples-on-the-deno-language-examples-are-written-in-md-files-in-website-directories"},`This website to show examples on the Deno language. Examples are written in md files in `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h3"},{"href":"/website/"}),`website`),` directories`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`-- Github `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://github.com/deepakshrma/deno-by-example/tree/master/examples",target:"_blank"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/tree/master/examples"}),`https://github.com/deepakshrma/deno-by-example/tree/master/examples`)),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Please support me creating more examples.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Thanks! Cheers! 🥂🍻🍻 Keep coding!!`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
@@ -15213,7 +15446,7 @@ const frontMatter={id:'introduction',title:'Deno By Example'};const metadata={"i
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
@@ -15236,10 +15469,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-const frontMatter={id:'advance_readline',title:'Read Line by Line as Data Stream',sidebar_label:'Read Line by Line'};const metadata={"id":"advance_readline","title":"Read Line by Line as Data Stream","description":"Deno provides multiple APIs to read files. You can read the entire file using Deno.readAll and Deno.readTextFile. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).","source":"@site/website/advance_readline.md","permalink":"/deno-by-example/advance_readline","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/advance_readline.md","sidebar_label":"Read Line by Line","sidebar":"someSidebar","previous":{"title":"Implementing JQ equivalent in Deno","permalink":"/deno-by-example/advance_jq"}};/* @jsx mdx */const rightToc=[{value:'Read Idrid',id:'read-idrid',children:[{value:'Sample: open file',id:'sample-open-file',children:[]},{value:'Example: 1',id:'example-1',children:[]},{value:'Example: 2',id:'example-2',children:[]},{value:'Example: 3',id:'example-3',children:[]},{value:'Basic sample for Async Iterator',id:'basic-sample-for-async-iterator',children:[]},{value:'Example: Final code',id:'example-final-code',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno`),` provides multiple APIs to read files. You can read the entire file using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.readAll`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.readTextFile`),`. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://deepakshrma.github.io/deno-by-example/img/data_flow.png",width:"800",height:"400"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Before going to actual code, Let's understand the standard library first with examples.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"read-idrid"},`Read Id`,`[rid]`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno provides `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.open`),` API to open a file. This is the async API. Meaning, you need to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`await`),`. In return you will get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`File`),` which contains `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`rid`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"sample-open-file"},`Sample: open file`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`// examples/06_readfile_chunk.ts
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'advance_readline',title:'Read Line by Line as Data Stream',sidebar_label:'Read Line by Line'};const metadata={"id":"advance_readline","title":"Read Line by Line as Data Stream","description":"Deno provides multiple APIs to read files. You can read the entire file using Deno.readAll and Deno.readTextFile. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).","source":"@site/website/advance_readline.md","permalink":"/deno-by-example/advance_readline","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/advance_readline.md","sidebar_label":"Read Line by Line","sidebar":"someSidebar","previous":{"title":"Implementing JQ equivalent in Deno","permalink":"/deno-by-example/advance_jq"},"next":{"title":"Building A Super Cool Colorful Logger with Deno fmt module","permalink":"/deno-by-example/advance_logger"}};/* @jsx mdx */const rightToc=[{value:'Read Idrid',id:'read-idrid',children:[{value:'Sample: open file',id:'sample-open-file',children:[]},{value:'Example: 1',id:'example-1',children:[]},{value:'Example: 2',id:'example-2',children:[]},{value:'Example: 3',id:'example-3',children:[]},{value:'Basic sample for Async Iterator',id:'basic-sample-for-async-iterator',children:[]},{value:'Example: Final code',id:'example-final-code',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno`),` provides multiple APIs to read files. You can read the entire file using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.readAll`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.readTextFile`),`. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/data_flow.png",width:"800",height:"400"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Before going to actual code, Let's understand the standard library first with examples.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"read-idrid"},`Read Id`,`[rid]`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno provides `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Deno.open`),` API to open a file. This is the async API. Meaning, you need to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`await`),`. In return you will get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`File`),` which contains `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`rid`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"sample-open-file"},`Sample: open file`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`// examples/06_readfile_chunk.ts
 async function main(name?: string) {
   if (name) {
     const file = await Deno.open(name);
@@ -15448,7 +15681,7 @@ main(fileName);
     "photo": "https://jsonformatter.org/img/tom-cruise.jpg"
   }
 }
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`TaDa! 👏👏 Now you can read the entire file line by line.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://medium.com/@deepak_v/"}),`medium`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`All working examples can be found in my Github: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/tree/master/examples"}),`https://github.com/deepakshrma/deno-by-example/tree/master/examples`)));};MDXContent.isMDXComponent=true;
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`TaDa! 👏👏 Now you can read the entire file line by line.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"em"},{"href":"https://medium.com/@deepak_v"}),`https://medium.com/@deepak_v`),`.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`All working examples can be found in my Github: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/tree/master/examples"}),`https://github.com/deepakshrma/deno-by-example/tree/master/examples`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 136 */
@@ -15461,9 +15694,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'03_numbers',title:'Numbers',sidebar_label:'Numbers'};const metadata={"id":"03_numbers","title":"Numbers","description":"Since deno is supporting Typescript which is super-set of the JavaScript. It support all the syntax from the JavaScript. However, Deno is a more then that. It also support APIs for file reading and network and etc.","source":"@site/website/03_numbers.md","permalink":"/deno-by-example/03_numbers","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/03_numbers.md","sidebar_label":"Numbers","sidebar":"someSidebar","previous":{"title":"Greet From CLI","permalink":"/deno-by-example/02_greet_from_cli"},"next":{"title":"Variables and Constants","permalink":"/deno-by-example/05_variables_constants"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since deno is supporting Typescript which is super-set of the JavaScript. It support all the syntax from the JavaScript. However, Deno is a more then that. It also support APIs for file reading and network and etc.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Here below are some examples, that explains how numbers behave in Deno`,`[Javascript]`,`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There are some Gotcha in Number as it is in JavaScript.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Sample:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`function main() {
   const num = 10;
   const num2: number = 20; // same as above but declarative
@@ -15512,9 +15745,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Highlight", function() { return Highlight; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
 /* harmony import */ var _Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'mdx',title:'Powered by MDX'};const metadata={"id":"mdx","title":"Powered by MDX","description":"You can write JSX and use React components within your Markdown thanks to MDX.","source":"@site/website/mdx.md","permalink":"/deno-by-example/mdx","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/mdx.md"};/* @jsx mdx */const rightToc=[];const Highlight=({children,color})=>Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",{style:{backgroundColor:color,borderRadius:'2px',color:'#fff',padding:'0.2rem'}}," ",children," ");const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc,Highlight};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can write JSX and use React components within your Markdown thanks to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example1_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://mdxjs.com/"}),`MDX`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(Highlight,{color:"#25c2a0",mdxType:"Highlight"},"Docusaurus green")," and ",Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(Highlight,{color:"#1877F2",mdxType:"Highlight"},"Facebook blue")," are my favorite colors.",Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`I can write `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Markdown`),` alongside my `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`JSX`),`!`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
@@ -15573,11 +15806,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/dist/esm.js
-var esm = __webpack_require__(1);
+var esm = __webpack_require__(0);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(6);
@@ -16767,7 +17000,7 @@ module.exports = __webpack_require__(163);
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = __webpack_require__(0);
+var React = __webpack_require__(1);
 var React__default = _interopDefault(React);
 
 function _defineProperty(obj, key, value) {
@@ -18410,7 +18643,7 @@ if (Object.getOwnPropertyDescriptor(fs, 'promises')) {
 /* 149 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"/deno-by-example/\":{\"component\":\"c4f5d8e4\"},\"/deno-by-example/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"74cb6e4a\"},\"/deno-by-example/01_hello_world\":{\"component\":\"17896441\",\"content\":\"6653320c\"},\"/deno-by-example/02_greet_from_cli\":{\"component\":\"17896441\",\"content\":\"57b6988f\"},\"/deno-by-example/03_numbers\":{\"component\":\"17896441\",\"content\":\"f4b75bf5\"},\"/deno-by-example/05_variables_constants\":{\"component\":\"17896441\",\"content\":\"52693caf\"},\"/deno-by-example/advance_jq\":{\"component\":\"17896441\",\"content\":\"086dc5b5\"},\"/deno-by-example/advance_readline\":{\"component\":\"17896441\",\"content\":\"cc3d5cbc\"},\"/deno-by-example/doc2\":{\"component\":\"17896441\",\"content\":\"16d48c25\"},\"/deno-by-example/doc3\":{\"component\":\"17896441\",\"content\":\"78e543cd\"},\"/deno-by-example/introduction\":{\"component\":\"17896441\",\"content\":\"ba6fa097\"},\"/deno-by-example/mdx\":{\"component\":\"17896441\",\"content\":\"f6dde874\"}}");
+module.exports = JSON.parse("{\"/deno-by-example/\":{\"component\":\"c4f5d8e4\"},\"/deno-by-example/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"74cb6e4a\"},\"/deno-by-example/01_hello_world\":{\"component\":\"17896441\",\"content\":\"6653320c\"},\"/deno-by-example/02_greet_from_cli\":{\"component\":\"17896441\",\"content\":\"57b6988f\"},\"/deno-by-example/03_numbers\":{\"component\":\"17896441\",\"content\":\"f4b75bf5\"},\"/deno-by-example/05_variables_constants\":{\"component\":\"17896441\",\"content\":\"52693caf\"},\"/deno-by-example/advance_jq\":{\"component\":\"17896441\",\"content\":\"086dc5b5\"},\"/deno-by-example/advance_logger\":{\"component\":\"17896441\",\"content\":\"66f76baa\"},\"/deno-by-example/advance_readline\":{\"component\":\"17896441\",\"content\":\"cc3d5cbc\"},\"/deno-by-example/doc3\":{\"component\":\"17896441\",\"content\":\"78e543cd\"},\"/deno-by-example/introduction\":{\"component\":\"17896441\",\"content\":\"ba6fa097\"},\"/deno-by-example/mdx\":{\"component\":\"17896441\",\"content\":\"f6dde874\"}}");
 
 /***/ }),
 /* 150 */
@@ -18419,7 +18652,7 @@ module.exports = JSON.parse("{\"/deno-by-example/\":{\"component\":\"c4f5d8e4\"}
 "use strict";
 
 
-var reactIs = __webpack_require__(119);
+var reactIs = __webpack_require__(118);
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -18537,7 +18770,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -19839,7 +20072,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
@@ -20387,7 +20620,7 @@ var styles = {
 
 exports.__esModule = true;
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -20532,7 +20765,7 @@ if (true) {
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(54),m=__webpack_require__(0),aa=__webpack_require__(90);function r(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
+var k=__webpack_require__(54),m=__webpack_require__(1),aa=__webpack_require__(90);function r(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var u="function"===typeof Symbol&&Symbol.for,ba=u?Symbol.for("react.portal"):60106,v=u?Symbol.for("react.fragment"):60107,ca=u?Symbol.for("react.strict_mode"):60108,da=u?Symbol.for("react.profiler"):60114,w=u?Symbol.for("react.provider"):60109,ea=u?Symbol.for("react.context"):60110,fa=u?Symbol.for("react.concurrent_mode"):60111,ha=u?Symbol.for("react.forward_ref"):60112,B=u?Symbol.for("react.suspense"):60113,ia=u?Symbol.for("react.suspense_list"):60120,ja=u?Symbol.for("react.memo"):60115,ka=u?Symbol.for("react.lazy"):
 60116,la=u?Symbol.for("react.block"):60121,ma=u?Symbol.for("react.fundamental"):60117,na=u?Symbol.for("react.scope"):60119;function oa(a){if(-1===a._status){a._status=0;var b=a._ctor;b=b();a._result=b;b.then(function(c){0===a._status&&(c=c.default,a._status=1,a._result=c)},function(c){0===a._status&&(a._status=2,a._result=c)})}}
 function C(a){if(null==a)return null;if("function"===typeof a)return a.displayName||a.name||null;if("string"===typeof a)return a;switch(a){case v:return"Fragment";case ba:return"Portal";case da:return"Profiler";case ca:return"StrictMode";case B:return"Suspense";case ia:return"SuspenseList"}if("object"===typeof a)switch(a.$$typeof){case ea:return"Context.Consumer";case w:return"Context.Provider";case ha:var b=a.render;b=b.displayName||b.name||"";return a.displayName||(""!==b?"ForwardRef("+b+")":"ForwardRef");
@@ -35372,7 +35605,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -35402,7 +35635,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -35468,7 +35701,7 @@ function pointerCoord(event) {
 
 exports.__esModule = true;
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -35762,7 +35995,7 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(308) });
 
 var global = __webpack_require__(51);
 var core = __webpack_require__(52);
-var hide = __webpack_require__(120);
+var hide = __webpack_require__(119);
 var redefine = __webpack_require__(303);
 var ctx = __webpack_require__(306);
 var PROTOTYPE = 'prototype';
@@ -35897,9 +36130,9 @@ module.exports = function (bitmap, value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(51);
-var hide = __webpack_require__(120);
-var has = __webpack_require__(121);
-var SRC = __webpack_require__(122)('src');
+var hide = __webpack_require__(119);
+var has = __webpack_require__(120);
+var SRC = __webpack_require__(121)('src');
 var $toString = __webpack_require__(304);
 var TO_STRING = 'toString';
 var TPL = ('' + $toString).split(TO_STRING);
@@ -35933,7 +36166,7 @@ __webpack_require__(52).inspectSource = function (it) {
 /* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(123)('native-function-to-string', Function.toString);
+module.exports = __webpack_require__(122)('native-function-to-string', Function.toString);
 
 
 /***/ }),
@@ -35991,7 +36224,7 @@ var getKeys = __webpack_require__(309);
 var gOPS = __webpack_require__(317);
 var pIE = __webpack_require__(318);
 var toObject = __webpack_require__(319);
-var IObject = __webpack_require__(125);
+var IObject = __webpack_require__(124);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
@@ -36041,8 +36274,8 @@ module.exports = Object.keys || function keys(O) {
 /* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(121);
-var toIObject = __webpack_require__(124);
+var has = __webpack_require__(120);
+var toIObject = __webpack_require__(123);
 var arrayIndexOf = __webpack_require__(312)(false);
 var IE_PROTO = __webpack_require__(315)('IE_PROTO');
 
@@ -36077,7 +36310,7 @@ module.exports = function (it) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
-var toIObject = __webpack_require__(124);
+var toIObject = __webpack_require__(123);
 var toLength = __webpack_require__(313);
 var toAbsoluteIndex = __webpack_require__(314);
 module.exports = function (IS_INCLUDES) {
@@ -36105,7 +36338,7 @@ module.exports = function (IS_INCLUDES) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(127);
+var toInteger = __webpack_require__(126);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -36116,7 +36349,7 @@ module.exports = function (it) {
 /* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(127);
+var toInteger = __webpack_require__(126);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -36129,8 +36362,8 @@ module.exports = function (index, length) {
 /* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(123)('keys');
-var uid = __webpack_require__(122);
+var shared = __webpack_require__(122)('keys');
+var uid = __webpack_require__(121);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
 };
@@ -36165,7 +36398,7 @@ exports.f = {}.propertyIsEnumerable;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
-var defined = __webpack_require__(126);
+var defined = __webpack_require__(125);
 module.exports = function (it) {
   return Object(defined(it));
 };
@@ -37421,7 +37654,7 @@ includeFileHelper.bind(defaultConfig);
 //# sourceMappingURL=eta.es.js.map
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(0);
+var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js + 1 modules
@@ -37536,7 +37769,7 @@ function _interopRequireWildcard(obj) {
 var routesChunkNames = __webpack_require__(149);
 
 // CONCATENATED MODULE: ./.docusaurus/registry.js
-/* harmony default export */ var registry = ({'086dc5b5':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(117))),"@site/website/advance_jq.md",/*require.resolve*/(117)],'16d48c25':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(118))),"@site/website/doc2.md",/*require.resolve*/(118)],'17896441':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(55))),"@theme/DocItem",/*require.resolve*/(55)],'1be78505':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(142))),"@theme/DocPage",/*require.resolve*/(142)],'52693caf':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(128))),"@site/website/05_variables_constants.md",/*require.resolve*/(128)],'57b6988f':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(129))),"@site/website/02_greet_from_cli.md",/*require.resolve*/(129)],'6653320c':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(130))),"@site/website/01_hello_world.md",/*require.resolve*/(130)],'74cb6e4a':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(131))),"~docs/deno-by-example-route-f8c.json",/*require.resolve*/(131)],'78e543cd':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(132))),"@site/website/doc3.md",/*require.resolve*/(132)],'ba6fa097':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(133))),"@site/website/introduction.md",/*require.resolve*/(133)],'c4f5d8e4':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(134))),"@site/src/pages/index.js",/*require.resolve*/(134)],'cc3d5cbc':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(135))),"@site/website/advance_readline.md",/*require.resolve*/(135)],'f4b75bf5':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(136))),"@site/website/03_numbers.md",/*require.resolve*/(136)],'f6dde874':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(137))),"@site/website/mdx.md",/*require.resolve*/(137)]});
+/* harmony default export */ var registry = ({'086dc5b5':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(117))),"@site/website/advance_jq.md",/*require.resolve*/(117)],'17896441':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(55))),"@theme/DocItem",/*require.resolve*/(55)],'1be78505':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(142))),"@theme/DocPage",/*require.resolve*/(142)],'52693caf':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(127))),"@site/website/05_variables_constants.md",/*require.resolve*/(127)],'57b6988f':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(128))),"@site/website/02_greet_from_cli.md",/*require.resolve*/(128)],'6653320c':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(129))),"@site/website/01_hello_world.md",/*require.resolve*/(129)],'66f76baa':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(130))),"@site/website/advance_logger.md",/*require.resolve*/(130)],'74cb6e4a':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(131))),"~docs/deno-by-example-route-f8c.json",/*require.resolve*/(131)],'78e543cd':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(132))),"@site/website/doc3.md",/*require.resolve*/(132)],'ba6fa097':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(133))),"@site/website/introduction.md",/*require.resolve*/(133)],'c4f5d8e4':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(134))),"@site/src/pages/index.js",/*require.resolve*/(134)],'cc3d5cbc':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(135))),"@site/website/advance_readline.md",/*require.resolve*/(135)],'f4b75bf5':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(136))),"@site/website/03_numbers.md",/*require.resolve*/(136)],'f6dde874':[()=>Promise.resolve().then(()=>_interopRequireWildcard(__webpack_require__(137))),"@site/website/mdx.md",/*require.resolve*/(137)]});
 // CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/flat.js
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
@@ -37564,7 +37797,7 @@ if(path==='*'){return react_loadable_lib_default()({loading:Loading,loader:()=>P
   */const flatChunkNames=client_flat(chunkNames);Object.keys(flatChunkNames).forEach(key=>{const chunkRegistry=registry[flatChunkNames[key]];if(chunkRegistry){/* eslint-disable prefer-destructuring */optsLoader[key]=chunkRegistry[0];optsModules.push(chunkRegistry[1]);optsWebpack.push(chunkRegistry[2]);/* eslint-enable prefer-destructuring */}});return react_loadable_lib_default.a.Map({loading:Loading,loader:optsLoader,modules:optsModules,webpack:()=>optsWebpack,render:(loaded,props)=>{// clone the original object since we don't want to alter the original.
 const loadedModules=JSON.parse(JSON.stringify(chunkNames));Object.keys(loaded).forEach(key=>{let val=loadedModules;const keyPath=key.split('.');for(let i=0;i<keyPath.length-1;i+=1){val=val[keyPath[i]];}val[keyPath[keyPath.length-1]]=loaded[key].default;const nonDefaultKeys=Object.keys(loaded[key]).filter(k=>k!=='default');if(nonDefaultKeys&&nonDefaultKeys.length){nonDefaultKeys.forEach(nonDefaultKey=>{val[keyPath[keyPath.length-1]][nonDefaultKey]=loaded[key][nonDefaultKey];});}});const Component=loadedModules.component;delete loadedModules.component;return/*#__PURE__*/react_default.a.createElement(Component,Object(esm_extends["a" /* default */])({},loadedModules,props));}});}/* harmony default export */ var exports_ComponentCreator = (ComponentCreator);
 // CONCATENATED MODULE: ./.docusaurus/routes.js
-/* harmony default export */ var _docusaurus_routes = ([{path:'/deno-by-example/',component:exports_ComponentCreator('/deno-by-example/'),exact:true},{path:'/deno-by-example/:route',component:exports_ComponentCreator('/deno-by-example/:route'),routes:[{path:'/deno-by-example/01_hello_world',component:exports_ComponentCreator('/deno-by-example/01_hello_world'),exact:true},{path:'/deno-by-example/02_greet_from_cli',component:exports_ComponentCreator('/deno-by-example/02_greet_from_cli'),exact:true},{path:'/deno-by-example/03_numbers',component:exports_ComponentCreator('/deno-by-example/03_numbers'),exact:true},{path:'/deno-by-example/05_variables_constants',component:exports_ComponentCreator('/deno-by-example/05_variables_constants'),exact:true},{path:'/deno-by-example/advance_jq',component:exports_ComponentCreator('/deno-by-example/advance_jq'),exact:true},{path:'/deno-by-example/advance_readline',component:exports_ComponentCreator('/deno-by-example/advance_readline'),exact:true},{path:'/deno-by-example/doc2',component:exports_ComponentCreator('/deno-by-example/doc2'),exact:true},{path:'/deno-by-example/doc3',component:exports_ComponentCreator('/deno-by-example/doc3'),exact:true},{path:'/deno-by-example/introduction',component:exports_ComponentCreator('/deno-by-example/introduction'),exact:true},{path:'/deno-by-example/mdx',component:exports_ComponentCreator('/deno-by-example/mdx'),exact:true}]},{path:'*',component:exports_ComponentCreator('*')}]);
+/* harmony default export */ var _docusaurus_routes = ([{path:'/deno-by-example/',component:exports_ComponentCreator('/deno-by-example/'),exact:true},{path:'/deno-by-example/:route',component:exports_ComponentCreator('/deno-by-example/:route'),routes:[{path:'/deno-by-example/01_hello_world',component:exports_ComponentCreator('/deno-by-example/01_hello_world'),exact:true},{path:'/deno-by-example/02_greet_from_cli',component:exports_ComponentCreator('/deno-by-example/02_greet_from_cli'),exact:true},{path:'/deno-by-example/03_numbers',component:exports_ComponentCreator('/deno-by-example/03_numbers'),exact:true},{path:'/deno-by-example/05_variables_constants',component:exports_ComponentCreator('/deno-by-example/05_variables_constants'),exact:true},{path:'/deno-by-example/advance_jq',component:exports_ComponentCreator('/deno-by-example/advance_jq'),exact:true},{path:'/deno-by-example/advance_logger',component:exports_ComponentCreator('/deno-by-example/advance_logger'),exact:true},{path:'/deno-by-example/advance_readline',component:exports_ComponentCreator('/deno-by-example/advance_readline'),exact:true},{path:'/deno-by-example/doc3',component:exports_ComponentCreator('/deno-by-example/doc3'),exact:true},{path:'/deno-by-example/introduction',component:exports_ComponentCreator('/deno-by-example/introduction'),exact:true},{path:'/deno-by-example/mdx',component:exports_ComponentCreator('/deno-by-example/mdx'),exact:true}]},{path:'*',component:exports_ComponentCreator('*')}]);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/package.json
 var core_package = __webpack_require__(160);
 
