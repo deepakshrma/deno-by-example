@@ -1,5 +1,5 @@
 ---
-id: 02_greet_from_cli
+id: 02-greet-from-cli
 title: Greet From CLI
 sidebar_label: Greet From CLI
 ---

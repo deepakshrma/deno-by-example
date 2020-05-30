@@ -1,5 +1,5 @@
 ---
-id: 01_hello_world
+id: 01-hello-world
 title: Hello World
 sidebar_label: Hello World
 ---

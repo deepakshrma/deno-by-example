@@ -2,7 +2,7 @@ const configs = require("./config");
 module.exports = {
   title: "Deno By Example",
   tagline: "Deno By Example",
-  url: "https://github.com/deepakshrma",
+  url: "https://deepakshrma.github.io/",
   baseUrl: "/deno-by-example/",
   favicon: "img/favicon.ico",
   organizationName: "deepakshrma", // Usually your GitHub org/user name.
@@ -23,7 +23,7 @@ module.exports = {
       },
       links: [
         {
-          to: "01_hello_world",
+          to: "01-hello-world",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
@@ -55,6 +55,7 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
+          url: 'https://example.com',
           cacheTime: 600 * 1000, // 600 sec - cache purge period
           changefreq: "weekly",
           priority: 0.5,

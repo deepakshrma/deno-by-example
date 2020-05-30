@@ -1,5 +1,5 @@
 ---
-id: 03_numbers
+id: 03-numbers
 title: Numbers
 sidebar_label: Numbers
 ---

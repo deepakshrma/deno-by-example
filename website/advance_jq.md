@@ -1,5 +1,5 @@
 ---
-id: advance_jq
+id: advanced-jq
 title: Implementing JQ equivalent in Deno
 sidebar_label: Implementing JQ
 ---

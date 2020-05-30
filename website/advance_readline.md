@@ -1,5 +1,5 @@
 ---
-id: advance_readline
+id: advanced-readline
 title: Read Line by Line as Data Stream
 sidebar_label: Read Line by Line
 ---
