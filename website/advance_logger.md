@@ -348,7 +348,7 @@ logger.error("This is error");
 
 **Output:**
 
-<img src="https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_01.png" width="800" height="400" />
+![sample 1](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_01.png)
 
 If you notice, i am using `sprintf` instead of `printf`. Since i want the full control on the printing message like adding colors and use dynamic formatter. I have to use sprintf instead of printf.
 
@@ -406,7 +406,7 @@ logger.error("Overridden Error- Error: //%s" , new Error("This is error").messag
 
 **Output:**
 
-<img src="https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_02.png" width="800" height="400" />
+![sample 2](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_022.png)
 
 #### Final Touch: Use of log levels
 
@@ -461,9 +461,9 @@ logger.info("1.0.2");
 
 **Output:**
 
-<img src="https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_03.png" width="800" height="400" />
+![sample 3](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_03.png)
 
-> <Nice! Good Job. We have done it!!>
+> <Nice! Good Job. Well done! We have done it!!>
 
 ![good job](https://sayingimages.com/wp-content/uploads/you-did-good-job-meme.jpg)
 
