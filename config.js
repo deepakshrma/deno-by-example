@@ -50,5 +50,5 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Deepak Vishwakarma, Inc. Built with Docusaurus.`,
     },
   },
-  themes: ["@docusaurus/theme-classic", "@docusaurus/theme-live-codeblock"],
+  themes: ["@docusaurus/theme-classic"],
 };

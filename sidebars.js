@@ -1,13 +1,11 @@
 module.exports = {
   someSidebar: {
     Basic: [
-      "01_hello_world",
-      "02_greet_from_cli",
-      "03_numbers",
-      "05_variables_constants",
-      //  "doc2",
-      // "doc3"
+      "getting-started",
+      "02-greet-from-cli",
+      "03-numbers",
+      "05-variables-constants",
     ],
-    Advanced: ["advance_jq", "advance_readline"],
+    Advanced: ["advanced-jq", "advanced-readline", "advanced-logger"],
   },
 };
