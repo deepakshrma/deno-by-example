@@ -46,11 +46,11 @@
 .header {
   font-weight: 600;
 }
-h1 {
+.h1 {
   align-self: center;
 }
 @media screen and (min-width: 966px) {
-  h1 {
+  .h1 {
     padding: 30px;
   }
   .container {
