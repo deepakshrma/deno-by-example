@@ -34,3 +34,26 @@
   height: 200px;
   width: 200px;
 }
+
+.container {
+  margin: 0 40px;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.header {
+  font-weight: 600;
+}
+h1 {
+  align-self: center;
+}
+@media screen and (min-width: 966px) {
+  h1 {
+    padding: 30px;
+  }
+  .container {
+    flex-direction: row;
+  }
+}

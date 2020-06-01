@@ -651,7 +651,7 @@ var path_to_regexp_default = /*#__PURE__*/__webpack_require__.n(path_to_regexp);
 var react_is = __webpack_require__(113);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
-var objectWithoutPropertiesLoose = __webpack_require__(28);
+var objectWithoutPropertiesLoose = __webpack_require__(29);
 
 // EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
 var hoist_non_react_statics_cjs = __webpack_require__(136);
@@ -1403,7 +1403,7 @@ module.exports = {
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(22)
+var fs = __webpack_require__(23)
 var polyfills = __webpack_require__(240)
 var legacy = __webpack_require__(242)
 var clone = __webpack_require__(243)
@@ -1780,9 +1780,9 @@ function retry () {
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
-/* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
-/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+/* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
+/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -2975,6 +2975,21 @@ function createMemoryHistory(props) {
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"heroBanner": "heroBanner_2Ftp",
+	"buttons": "buttons_1Wc3",
+	"features": "features_P2SU",
+	"featureImage": "featureImage_3Xqx",
+	"container": "container_22ew",
+	"header": "header_1UBA"
+};
+
+
+/***/ }),
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2987,7 +3002,7 @@ function createMemoryHistory(props) {
  */function isInternalUrl(url){return /^(https?:|\/\/|mailto:|tel:)/.test(url)===false;}
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3006,7 +3021,7 @@ module.exports = {
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3019,18 +3034,18 @@ module.exports = {
 canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObserver:canUseDOM&&'IntersectionObserver'in window,canUseViewport:canUseDOM&&!!window.screen};/* harmony default export */ __webpack_exports__["a"] = (ExecutionEnvironment);
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("fs");
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var roundingPrecisionFrom = __webpack_require__(89).roundingPrecisionFrom;
 
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 var OptimizationLevel = {
   Zero: '0',
@@ -3252,7 +3267,7 @@ module.exports = {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -3267,13 +3282,13 @@ module.exports = {
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("url");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Contains the interpretation of CSS properties, as used by the property optimizer
@@ -3282,7 +3297,7 @@ var breakUp = __webpack_require__(169);
 var canOverride = __webpack_require__(170);
 var restore = __webpack_require__(172);
 
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 // Properties to process
 // Extend this object in order to add support for more properties in the optimizer.
@@ -4342,7 +4357,7 @@ module.exports = override(compactable, vendorPrefixedCompactable);
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4362,7 +4377,7 @@ module.exports = override(compactable, vendorPrefixedCompactable);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(29);
 /* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(16);
 
 
@@ -4631,7 +4646,7 @@ if (false) { var ariaCurrentType; }
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4652,7 +4667,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -4667,7 +4682,7 @@ module.exports = {
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -4681,7 +4696,7 @@ module.exports = {
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 function override(source1, source2) {
@@ -4721,7 +4736,7 @@ module.exports = override;
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Hack = __webpack_require__(70);
@@ -4918,7 +4933,7 @@ module.exports = {
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8098,7 +8113,7 @@ Prism.languages.yml = Prism.languages.yaml;
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8113,7 +8128,7 @@ Prism.languages.yml = Prism.languages.yaml;
  */function useThemeContext(){return Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]);}/* harmony default export */ __webpack_exports__["a"] = (useThemeContext);
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8126,7 +8141,7 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var Head = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(19);
+var isInternalUrl = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(5);
@@ -8223,7 +8238,7 @@ var Toggle_styles_module_default = /*#__PURE__*/__webpack_require__.n(Toggle_sty
  * LICENSE file in the root directory of this source tree.
  */const Moon=()=>/*#__PURE__*/react_default.a.createElement("span",{className:classnames_default()(Toggle_styles_module_default.a.toggle,Toggle_styles_module_default.a.moon)});const Sun=()=>/*#__PURE__*/react_default.a.createElement("span",{className:classnames_default()(Toggle_styles_module_default.a.toggle,Toggle_styles_module_default.a.sun)});/* harmony default export */ var Toggle = (function(props){const{isClient}=Object(useDocusaurusContext["a" /* default */])();return/*#__PURE__*/react_default.a.createElement(component_default.a,Object(esm_extends["a" /* default */])({disabled:!isClient,icons:{checked:/*#__PURE__*/react_default.a.createElement(Moon,null),unchecked:/*#__PURE__*/react_default.a.createElement(Sun,null)}},props));});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useThemeContext.js
-var useThemeContext = __webpack_require__(34);
+var useThemeContext = __webpack_require__(35);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/router.js
 var router = __webpack_require__(60);
@@ -8236,7 +8251,7 @@ var router = __webpack_require__(60);
  * LICENSE file in the root directory of this source tree.
  */function useLocationHash(initialHash){const[hash,setHash]=Object(react["useState"])(initialHash);Object(react["useEffect"])(()=>{const handleHashChange=()=>setHash(window.location.hash);window.addEventListener('hashchange',handleHashChange);return()=>window.removeEventListener('hashchange',handleHashChange);},[]);return[hash,setHash];}/* harmony default export */ var hooks_useLocationHash = (useLocationHash);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/ExecutionEnvironment.js
-var ExecutionEnvironment = __webpack_require__(21);
+var ExecutionEnvironment = __webpack_require__(22);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useScrollPosition.js
 /**
@@ -8291,19 +8306,6 @@ var styles = __webpack_require__(272);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */function Layout(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{favicon,title:siteTitle,themeConfig:{image:defaultImage},url:siteUrl}=siteConfig;const{children,title,noFooter,description,image,keywords,permalink,version}=props;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;const metaImage=image||defaultImage;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}const faviconUrl=Object(useBaseUrl["a" /* default */])(favicon);return/*#__PURE__*/react_default.a.createElement(theme_ThemeProvider,null,/*#__PURE__*/react_default.a.createElement(theme_TabGroupChoiceProvider,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("html",{lang:"en"}),metaTitle&&/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),metaTitle&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),favicon&&/*#__PURE__*/react_default.a.createElement("link",{rel:"shortcut icon",href:faviconUrl}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),version&&/*#__PURE__*/react_default.a.createElement("meta",{name:"docsearch:version",content:version}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(',')}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${metaTitle}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),permalink&&/*#__PURE__*/react_default.a.createElement("link",{rel:"canonical",href:siteUrl+permalink}),/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:card",content:"summary_large_image"})),/*#__PURE__*/react_default.a.createElement(theme_AnnouncementBar,null),/*#__PURE__*/react_default.a.createElement(theme_Navbar,null),/*#__PURE__*/react_default.a.createElement("div",{className:"main-wrapper"},children),!noFooter&&/*#__PURE__*/react_default.a.createElement(theme_Footer,null)));}/* harmony default export */ var theme_Layout = __webpack_exports__["a"] = (Layout);
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"heroBanner": "heroBanner_2Ftp",
-	"buttons": "buttons_1Wc3",
-	"features": "features_P2SU",
-	"featureImage": "featureImage_3Xqx"
-};
-
 
 /***/ }),
 /* 37 */
@@ -9257,7 +9259,7 @@ module.exports = {
 
 var systemLineBreak = __webpack_require__(87).EOL;
 
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 var Breaks = {
   AfterAtRule: 'afterAtRule',
@@ -9765,11 +9767,11 @@ var populateComponents = __webpack_require__(73);
 
 var restoreWithComponents = __webpack_require__(74);
 
-var wrapForOptimizing = __webpack_require__(32).all;
+var wrapForOptimizing = __webpack_require__(33).all;
 var removeUnused = __webpack_require__(88);
 var restoreFromOptimizing = __webpack_require__(37);
 
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
 function optimizeProperties(properties, withOverriding, withMerging, context) {
   var levelOptions = context.options.level[OptimizationLevel.Two];
@@ -9805,7 +9807,7 @@ module.exports = optimizeProperties;
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var wrapSingle = __webpack_require__(32).single;
+var wrapSingle = __webpack_require__(33).single;
 
 var Token = __webpack_require__(8);
 
@@ -10260,7 +10262,7 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var Head = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(19);
+var isInternalUrl = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(5);
@@ -10290,7 +10292,7 @@ var classnames = __webpack_require__(6);
 var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocItem/styles.module.css
-var styles_module = __webpack_require__(29);
+var styles_module = __webpack_require__(30);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocItem/index.js
@@ -11350,7 +11352,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(27);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["d"]; });
@@ -11382,9 +11384,9 @@ function renderRoutes(routes, extraProps, switchProps) {
 
 "use strict";
 /* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
-/* harmony import */ var _theme_hooks_useThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
+/* harmony import */ var _theme_hooks_useThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35);
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
-/* harmony import */ var _docusaurus_isInternalUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(19);
+/* harmony import */ var _docusaurus_isInternalUrl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -12481,7 +12483,7 @@ module.exports = {
 /* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var InvalidPropertyError = __webpack_require__(92);
 
 function populateComponents(properties, validator, warnings) {
@@ -12529,7 +12531,7 @@ module.exports = populateComponents;
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function restoreWithComponents(property) {
   var descriptor = compactable[property.name];
@@ -12642,7 +12644,7 @@ exports.SourceNode = __webpack_require__(209).SourceNode;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(4);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var isRemoteResource = __webpack_require__(39);
 var hasProtocol = __webpack_require__(49);
@@ -12902,7 +12904,7 @@ webpackContext.id = 81;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -13459,7 +13461,7 @@ module.exports = removeUnused;
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 var INTEGER_PATTERN = /^\d+$/;
 
@@ -14430,7 +14432,7 @@ module.exports = rebaseLocalMap;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(4);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 function rebaseRemoteMap(sourceMap, sourceUri) {
   var sourceDirectory = path.dirname(sourceUri);
@@ -15007,7 +15009,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'02-greet-from-cli',title:'Greet From CLI',sidebar_label:'Greet From CLI'};const metadata={"id":"02-greet-from-cli","title":"Greet From CLI","description":"Taking user input can be difficult task. You can take user input as command line argument or you can read input stream(STDIN)","source":"@site/website/02_greet_from_cli.md","permalink":"/deno-by-example/02-greet-from-cli","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/02_greet_from_cli.md","sidebar_label":"Greet From CLI","sidebar":"someSidebar","previous":{"title":"Getting Started","permalink":"/deno-by-example/getting-started"},"next":{"title":"Numbers","permalink":"/deno-by-example/03-numbers"}};/* @jsx mdx */const rightToc=[{value:'Take user input as command line arguments',id:'take-user-input-as-command-line-arguments',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Taking user input can be difficult task. You can take user input as command line argument or you can read `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`input stream(STDIN)`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"take-user-input-as-command-line-arguments"},`Take user input as command line arguments`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Create file examples/02_greet_from_cli.ts`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const { args } = Deno;
+const frontMatter={id:'02-greet-from-cli',title:'Greet From CLI',sidebar_label:'Greet From CLI'};const metadata={"id":"02-greet-from-cli","title":"Greet From CLI","description":"Taking user input can be difficult task. You can take user input as command line argument or you can read input stream(STDIN)","source":"@site/website/02_greet_from_cli.md","permalink":"/deno-by-example/02-greet-from-cli","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/02_greet_from_cli.md","sidebar_label":"Greet From CLI","sidebar":"someSidebar","previous":{"title":"Hello World","permalink":"/deno-by-example/01-hello-world"},"next":{"title":"Numbers","permalink":"/deno-by-example/03-numbers"}};/* @jsx mdx */const rightToc=[{value:'Take user input as command line arguments',id:'take-user-input-as-command-line-arguments',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Taking user input can be difficult task. You can take user input as command line argument or you can read `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`input stream(STDIN)`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"take-user-input-as-command-line-arguments"},`Take user input as command line arguments`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Create file examples/02_greet_from_cli.ts`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`const { args } = Deno;
 
 interface UserInput {
   name?: string;
@@ -15039,7 +15041,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'01-hello-world',title:'Hello World',sidebar_label:'Hello World'};const metadata={"id":"01-hello-world","title":"Hello World","description":"COMING SOON","source":"@site/website/01_hello_world.md","permalink":"/deno-by-example/01-hello-world","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/01_hello_world.md","sidebar_label":"Hello World"};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`COMING SOON`));};MDXContent.isMDXComponent=true;
+const frontMatter={id:'01-hello-world',title:'Hello World',sidebar_label:'Hello World'};const metadata={"id":"01-hello-world","title":"Hello World","description":"Introduction","source":"@site/website/01_hello_world.md","permalink":"/deno-by-example/01-hello-world","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/01_hello_world.md","sidebar_label":"Hello World","sidebar":"someSidebar","previous":{"title":"Getting Started","permalink":"/deno-by-example/getting-started"},"next":{"title":"Greet From CLI","permalink":"/deno-by-example/02-greet-from-cli"}};/* @jsx mdx */const rightToc=[{value:'Introduction',id:'introduction',children:[{value:'Import serve from http module',id:'import-serve-from-http-module',children:[]},{value:'Create a server instance to listen on port 8080',id:'create-a-server-instance-to-listen-on-port-8080',children:[]},{value:'Create request handler',id:'create-request-handler',children:[]},{value:'Respond a JSON',id:'respond-a-json',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"introduction"},`Introduction`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno is design to keeping web in mind. As Deno team mentioned. Deno is to`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Provide Secure Defaults`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Browser compatible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Be able to serve HTTP efficiently`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno provide standard package `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`std/http`),` for working with http/https server. This includes an HTTP client and an HTTP server. In this example i will show how simple it is, to create a webserver.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"import-serve-from-http-module"},`Import serve from http module`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`import { serve } from "https://deno.land/std/http/server.ts";
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"create-a-server-instance-to-listen-on-port-8080"},`Create a server instance to listen on port 8080`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript","metastring":"{3}","{3}":true}),`import { serve } from "https://deno.land/std/http/server.ts";
+
+const server = serve({ port: 8080 });
+
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"create-request-handler"},`Create request handler`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript","metastring":"title=examples/01_hello_world.ts {7-9}","title":"examples/01_hello_world.ts","{7-9}":true}),`import { serve } from "https://deno.land/std/http/server.ts";
+
+const PORT = 8080
+const server = serve({ port: PORT });
+console.log(\`Your server is running on http://localhost:\${PORT}/\`);
+
+for await (const req of server) {
+  req.respond({ body: "Hello World\\n" });
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Run App:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`denorun examples/01_hello_world.ts
+
+#OR
+
+deno run --allow-net --allow-read examples/01_hello_world.ts
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`note`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`In my first command i am using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`denorun`),`. It is alias, created for dev environment. If you have't read my get started tutorial, I will recommend you to read it `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/deno-by-example/01-hello-world"}),`getting-started`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Open browser at http://localhost:8080/. You will see `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`hello world`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Breakdown:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When you create an instance of serve. It return an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://davidwalsh.name/async-generators"}),`async generator`),` server. We can wait forever client to connect using for-await loop. And respond to client using `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`req.respond`),` method. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`respond`),` expects `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Response`),` object.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`for await (const req of server)`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can read more about async generator `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://javascript.info/async-iterators-generators"}),`here`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`allow-net`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`As mentioned earlier, Deno is build for security. By default network access is not allowed. You need to pass `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`--allow-net`),` as argument.`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"respond-a-json"},`Respond a JSON`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When you respond a request, by default no header is assign to response. You need to set header to response a JSON object. Let's see in example.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript","metastring":"title=examples/01_hello_world.ts {8}","title":"examples/01_hello_world.ts","{8}":true}),`import { serve, Response } from "https://deno.land/std/http/server.ts";
+
+const PORT = 8080;
+const server = serve({ port: PORT });
+for await (const req of server) {
+
+  const response: Response = {}; // Create a Response instance, init with {}
+  
+  response.headers = new Headers(); // Create Headers object and assign to response
+  response.headers.set("content-type", "application/json"); // set header as json
+
+  const body = { message: "hello world" }; // Create response body
+
+  response.body = JSON.stringify(body); // Serialize to string bytes.
+
+  req.respond(response); // respond response
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Run App:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`denorun examples/01_hello_world.ts
+
+#OR
+
+deno run --allow-net --allow-read examples/01_hello_world.ts
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Open browser at http://localhost:8080/. You will see `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`{"message":"hello world"}`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Breakdown:`),`
+The Response interface look like as below.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-typescript"}),`export interface Response {
+  status?: number;
+  headers?: Headers;
+  body?: Uint8Array | Reader | string;
+  trailers?: () => Promise<Headers> | Headers;
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`body`),` can only accept `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Uint8Array | Reader | string`),`. So we need to serialize the object to jSON string.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`Read More:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`You can go to `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deno.land/std/http"}),`https://deno.land/std/http`),` to read more about `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`http`),` module`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-info alert alert--info"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"})))),`Examples:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`You can find all example at `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/deepakshrma/deno-by-example/blob/master/examples/"}),`https://github.com/deepakshrma/deno-by-example/blob/master/examples/`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 117 */
@@ -15310,7 +15360,7 @@ logger.info("1.0.2");
 /* 118 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"docsSidebars\":{\"someSidebar\":[{\"type\":\"category\",\"label\":\"Basic\",\"items\":[{\"type\":\"link\",\"label\":\"Getting Started\",\"href\":\"/deno-by-example/getting-started\"},{\"type\":\"link\",\"label\":\"Greet From CLI\",\"href\":\"/deno-by-example/02-greet-from-cli\"},{\"type\":\"link\",\"label\":\"Numbers\",\"href\":\"/deno-by-example/03-numbers\"},{\"type\":\"link\",\"label\":\"Variables and Constants\",\"href\":\"/deno-by-example/05-variables-constants\"}]},{\"type\":\"category\",\"label\":\"Advanced\",\"items\":[{\"type\":\"link\",\"label\":\"Implementing JQ\",\"href\":\"/deno-by-example/advanced-jq\"},{\"type\":\"link\",\"label\":\"Read Line by Line\",\"href\":\"/deno-by-example/advanced-readline\"},{\"type\":\"link\",\"label\":\"Implementing Logger\",\"href\":\"/deno-by-example/advanced-logger\"}]}]},\"permalinkToSidebar\":{\"/deno-by-example/02-greet-from-cli\":\"someSidebar\",\"/deno-by-example/03-numbers\":\"someSidebar\",\"/deno-by-example/05-variables-constants\":\"someSidebar\",\"/deno-by-example/advanced-jq\":\"someSidebar\",\"/deno-by-example/advanced-logger\":\"someSidebar\",\"/deno-by-example/advanced-readline\":\"someSidebar\",\"/deno-by-example/getting-started\":\"someSidebar\"}}");
+module.exports = JSON.parse("{\"docsSidebars\":{\"someSidebar\":[{\"type\":\"category\",\"label\":\"Basic\",\"items\":[{\"type\":\"link\",\"label\":\"Getting Started\",\"href\":\"/deno-by-example/getting-started\"},{\"type\":\"link\",\"label\":\"Hello World\",\"href\":\"/deno-by-example/01-hello-world\"},{\"type\":\"link\",\"label\":\"Greet From CLI\",\"href\":\"/deno-by-example/02-greet-from-cli\"},{\"type\":\"link\",\"label\":\"Numbers\",\"href\":\"/deno-by-example/03-numbers\"},{\"type\":\"link\",\"label\":\"Variables and Constants\",\"href\":\"/deno-by-example/05-variables-constants\"}]},{\"type\":\"category\",\"label\":\"Advanced\",\"items\":[{\"type\":\"link\",\"label\":\"Implementing JQ\",\"href\":\"/deno-by-example/advanced-jq\"},{\"type\":\"link\",\"label\":\"Read Line by Line\",\"href\":\"/deno-by-example/advanced-readline\"},{\"type\":\"link\",\"label\":\"Implementing Logger\",\"href\":\"/deno-by-example/advanced-logger\"}]}]},\"permalinkToSidebar\":{\"/deno-by-example/01-hello-world\":\"someSidebar\",\"/deno-by-example/02-greet-from-cli\":\"someSidebar\",\"/deno-by-example/03-numbers\":\"someSidebar\",\"/deno-by-example/05-variables-constants\":\"someSidebar\",\"/deno-by-example/advanced-jq\":\"someSidebar\",\"/deno-by-example/advanced-logger\":\"someSidebar\",\"/deno-by-example/advanced-readline\":\"someSidebar\",\"/deno-by-example/getting-started\":\"someSidebar\"}}");
 
 /***/ }),
 /* 119 */
@@ -15326,7 +15376,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'getting-started',title:'Getting Started',sidebar_label:'Getting Started'};const metadata={"id":"getting-started","title":"Getting Started","description":"Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.","source":"@site/website/basic_getting_started.md","permalink":"/deno-by-example/getting-started","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/basic_getting_started.md","sidebar_label":"Getting Started","sidebar":"someSidebar","next":{"title":"Greet From CLI","permalink":"/deno-by-example/02-greet-from-cli"}};/* @jsx mdx */const rightToc=[{value:'Download and install',id:'download-and-install',children:[]},{value:'Setup your environment',id:'setup-your-environment',children:[{value:'Create Alias for <code>deno run</code>',id:'create-alias-for-deno-run',children:[]},{value:'Hello World Program',id:'hello-world-program',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`--Deno Team`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`Note`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`This document mainly copied content from official site. However, there is some enhancement to minimize the content of valuable assets.`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"download-and-install"},`Download and install`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Using Shell (macOS and Linux):`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`curl -fsSL https://deno.land/x/install/install.sh | sh
+const frontMatter={id:'getting-started',title:'Getting Started',sidebar_label:'Getting Started'};const metadata={"id":"getting-started","title":"Getting Started","description":"Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.","source":"@site/website/basic_getting_started.md","permalink":"/deno-by-example/getting-started","editUrl":"https://github.com/deepakshrma/deno-by-example/edit/master/website/basic_getting_started.md","sidebar_label":"Getting Started","sidebar":"someSidebar","next":{"title":"Hello World","permalink":"/deno-by-example/01-hello-world"}};/* @jsx mdx */const rightToc=[{value:'Download and install',id:'download-and-install',children:[]},{value:'Setup your environment',id:'setup-your-environment',children:[{value:'Create Alias for <code>deno run</code>',id:'create-alias-for-deno-run',children:[]},{value:'Hello World Program',id:'hello-world-program',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`--Deno Team`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`Note`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},`This document mainly copied content from official site. However, there is some enhancement to minimize the content of valuable assets.`))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"download-and-install"},`Download and install`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Using Shell (macOS and Linux):`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`curl -fsSL https://deno.land/x/install/install.sh | sh
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Using Homebrew (macOS):`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`brew install deno
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`More:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deno.land/manual/getting_started/installation"}),`https://deno.land/manual/getting_started/installation`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"setup-your-environment"},`Setup your environment`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`VS CODE:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The beta version of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/denoland/vscode_deno"}),`vscode_deno`),` is published on the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno"}),`Visual Studio Marketplace`),`. Please report any issues.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`Using command line interface:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`code --install-extension denoland.vscode-deno
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",{"className":"admonition admonition-note alert alert--secondary"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-heading"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h5",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("span",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"h5"},{"className":"admonition-icon"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("svg",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"span"},{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"16","viewBox":"0 0 14 16"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("path",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"svg"},{"fillRule":"evenodd","d":"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"})))),`More:`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"div"},{"className":"admonition-content"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"div"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://deno.land/manual/getting_started/setup_your_environment"}),`https://deno.land/manual/getting_started/setup_your_environment`)))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"create-alias-for-deno-run"},`Create Alias for `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`deno run`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_Users_xdeepakv_github_deno_by_example_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash","metastring":"title=\"~/.bash_profile\"","title":"\"~/.bash_profile\""}),`alias denorun="deno run -A"
@@ -15365,13 +15415,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(35);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36);
 /* harmony import */ var _docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 /* harmony import */ var _docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
 /* harmony import */ var _docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
-/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(36);
+/* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(19);
 /* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_module_css__WEBPACK_IMPORTED_MODULE_6__);
-const features=[{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Easy to Use"),imageUrl:'img/undraw_docusaurus_mountain.svg',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Focus on What Matters"),imageUrl:'img/undraw_docusaurus_tree.svg',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code",null,"docs")," directory.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Powered by React"),imageUrl:'img/undraw_docusaurus_react.svg',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.")}];function Feature({imageUrl,title,description}){const imgUrl=Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(imageUrl);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()('col col--4',_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.feature)},imgUrl&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"text--center"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.featureImage,src:imgUrl,alt:title})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3",null,title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,description));}function Home(){const context=Object(_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])();const{siteConfig={}}=context;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"],{title:`Hello from ${siteConfig.title}`,description:"Description will go into a meta tag in <head />"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()('hero hero--primary',_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.heroBanner)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",{className:"hero__title"},siteConfig.title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",{className:"hero__subtitle"},siteConfig.tagline),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttons},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()('button button--outline button--secondary button--lg',_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.getStarted),to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])('docs/getting-started')},"Get Started")))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main",null));}/* harmony default export */ __webpack_exports__["default"] = (Home);
+const features=[{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Easy to Use"),imageUrl:"img/undraw_docusaurus_mountain.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Focus on What Matters"),imageUrl:"img/undraw_docusaurus_tree.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code",null,"docs")," directory.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Powered by React"),imageUrl:"img/undraw_docusaurus_react.svg",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment,null,"Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.")}];function Feature({imageUrl,title,description}){const imgUrl=Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(imageUrl);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()("col col--4",_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.feature)},imgUrl&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"text--center"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.featureImage,src:imgUrl,alt:title})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3",null,title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,description));}function Home(){const context=Object(_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])();const{siteConfig={}}=context;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"],{title:`Hello from ${siteConfig.title}`,description:"Description will go into a meta tag in <head />"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.features},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.container},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",null,"Tutorial: Learn Web Programming in Deno by Examples"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.h1},"Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br",null),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4",null,"Why to Learn Deno?"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li",null,"Secure by default. No file, network, or environment access, unless explicitly enabled."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li",null,"Supports TypeScript out of the box."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li",null,"Ships only a single executable file."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li",null,"Has built-in utilities like a dependency inspector (deno info) and a code formatter (deno fmt)."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li",null,"Has a set of reviewed (audited) standard modules that are guaranteed to work with Deno: deno.land/std")),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.header},"Audience: "),"This Deno tutorial is designed devloper to teach from basic."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.header},"Prerequisites: ")," You should have a basic understanding of Computer Programming terminologies."))))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()("hero hero--primary",_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.heroBanner)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttons},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{className:classnames__WEBPACK_IMPORTED_MODULE_1___default()("button button--outline button--secondary button--lg",_styles_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.getStarted),to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])("docs/getting-started")},"Get Started")))));}/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 /* 122 */
@@ -15660,7 +15710,7 @@ main();
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -15684,8 +15734,8 @@ window.ga('send','pageview');}};})());
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var prism_react_renderer_prism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
-/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var prism_react_renderer_prism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /* harmony import */ var _generated_docusaurus_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(63);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -15717,7 +15767,7 @@ var useDocusaurusContext = __webpack_require__(5);
 var renderRoutes = __webpack_require__(57);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Layout/index.js + 14 modules
-var Layout = __webpack_require__(35);
+var Layout = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocItem/index.js + 2 modules
 var DocItem = __webpack_require__(53);
@@ -15739,10 +15789,10 @@ var useLogo = __webpack_require__(62);
 var Link = __webpack_require__(12);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
-var isInternalUrl = __webpack_require__(19);
+var isInternalUrl = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocSidebar/styles.module.css
-var styles_module = __webpack_require__(30);
+var styles_module = __webpack_require__(31);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/DocSidebar/index.js
@@ -15759,7 +15809,7 @@ if(item.collapsed!==prevCollapsedProp){setPreviousCollapsedProp(item.collapsed);
 function mutateSidebarCollapsingState(item,path){const{items,href,type}=item;switch(type){case'category':{const anyChildItemsActive=items.map(childItem=>mutateSidebarCollapsingState(childItem,path)).filter(val=>val).length>0;// eslint-disable-next-line no-param-reassign
 item.collapsed=!anyChildItemsActive;return anyChildItemsActive;}case'link':default:return href===path;}}function DocSidebar(props){const[showResponsiveSidebar,setShowResponsiveSidebar]=Object(react["useState"])(false);const{siteConfig:{themeConfig:{navbar:{title,hideOnScroll=false}={}}}={},isClient}=Object(useDocusaurusContext["a" /* default */])();const{logoLink,logoLinkProps,logoImageUrl,logoAlt}=Object(useLogo["a" /* default */])();const{docsSidebars,path,sidebar:currentSidebar,sidebarCollapsible}=props;Object(useLockBodyScroll["a" /* default */])(showResponsiveSidebar);if(!currentSidebar){return null;}const sidebarData=docsSidebars[currentSidebar];if(!sidebarData){throw new Error(`Cannot find the sidebar "${currentSidebar}" in the sidebar config!`);}if(sidebarCollapsible){sidebarData.forEach(sidebarItem=>mutateSidebarCollapsingState(sidebarItem,path));}return/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.sidebar},hideOnScroll&&/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({tabIndex:"-1",className:styles_module_default.a.sidebarLogo,to:logoLink},logoLinkProps),logoImageUrl!=null&&/*#__PURE__*/react_default.a.createElement("img",{key:isClient,src:logoImageUrl,alt:logoAlt}),title!=null&&/*#__PURE__*/react_default.a.createElement("strong",null,title)),/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('menu','menu--responsive',styles_module_default.a.menu,{'menu--show':showResponsiveSidebar})},/*#__PURE__*/react_default.a.createElement("button",{"aria-label":showResponsiveSidebar?'Close Menu':'Open Menu',"aria-haspopup":"true",className:"button button--secondary button--sm menu__button",type:"button",onClick:()=>{setShowResponsiveSidebar(!showResponsiveSidebar);}},showResponsiveSidebar?/*#__PURE__*/react_default.a.createElement("span",{className:classnames_default()(styles_module_default.a.sidebarMenuIcon,styles_module_default.a.sidebarMenuCloseIcon)},"\xD7"):/*#__PURE__*/react_default.a.createElement("svg",{"aria-label":"Menu",className:styles_module_default.a.sidebarMenuIcon,xmlns:"http://www.w3.org/2000/svg",height:MOBILE_TOGGLE_SIZE,width:MOBILE_TOGGLE_SIZE,viewBox:"0 0 32 32",role:"img",focusable:"false"},/*#__PURE__*/react_default.a.createElement("title",null,"Menu"),/*#__PURE__*/react_default.a.createElement("path",{stroke:"currentColor",strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2",d:"M4 7h22M4 15h22M4 23h22"}))),/*#__PURE__*/react_default.a.createElement("ul",{className:"menu__list"},sidebarData.map(item=>/*#__PURE__*/react_default.a.createElement(DocSidebarItem,{key:item.label,item:item,onItemClick:e=>{e.target.blur();setShowResponsiveSidebar(false);},collapsible:sidebarCollapsible,activePath:path})))));}/* harmony default export */ var theme_DocSidebar = (DocSidebar);
 // EXTERNAL MODULE: ./node_modules/prism-react-renderer/prism/index.js
-var prism_react_renderer_prism = __webpack_require__(33);
+var prism_react_renderer_prism = __webpack_require__(34);
 
 // CONCATENATED MODULE: ./node_modules/prism-react-renderer/themes/duotoneDark/index.js
 // Duotone Dark
@@ -16254,7 +16304,7 @@ var palenight_theme = {
 /* harmony default export */ var palenight = (palenight_theme);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useThemeContext.js
-var useThemeContext = __webpack_require__(34);
+var useThemeContext = __webpack_require__(35);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/usePrismTheme.js
 /**
@@ -16264,7 +16314,7 @@ var useThemeContext = __webpack_require__(34);
  * LICENSE file in the root directory of this source tree.
  */const usePrismTheme=()=>{const{siteConfig:{themeConfig:{prism={}}}}=Object(useDocusaurusContext["a" /* default */])();const{isDarkTheme}=Object(useThemeContext["a" /* default */])();const lightModeTheme=prism.theme||palenight;const darkModeTheme=prism.darkTheme||lightModeTheme;const prismTheme=isDarkTheme?darkModeTheme:lightModeTheme;return prismTheme;};/* harmony default export */ var hooks_usePrismTheme = (usePrismTheme);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/styles.module.css
-var CodeBlock_styles_module = __webpack_require__(24);
+var CodeBlock_styles_module = __webpack_require__(25);
 var CodeBlock_styles_module_default = /*#__PURE__*/__webpack_require__.n(CodeBlock_styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/index.js
@@ -17982,13 +18032,13 @@ module.exports = Object.assign(
   __webpack_require__(262),
   __webpack_require__(264),
   __webpack_require__(266),
-  __webpack_require__(20),
+  __webpack_require__(21),
   __webpack_require__(51)
 )
 
 // Export fs.promises as a getter property so that we don't trigger
 // ExperimentalWarning before fs.promises is actually accessed.
-const fs = __webpack_require__(22)
+const fs = __webpack_require__(23)
 if (Object.getOwnPropertyDescriptor(fs, 'promises')) {
   Object.defineProperty(module.exports, 'promises', {
     get () { return fs.promises }
@@ -19630,11 +19680,11 @@ module.exports = ReactPropTypesSecret;
 exports.__esModule = true;
 exports["default"] = exports.defaultOptions = void 0;
 
-var _fs = _interopRequireDefault(__webpack_require__(22));
+var _fs = _interopRequireDefault(__webpack_require__(23));
 
 var _path = _interopRequireDefault(__webpack_require__(4));
 
-var _url = _interopRequireDefault(__webpack_require__(25));
+var _url = _interopRequireDefault(__webpack_require__(26));
 
 var _utils = __webpack_require__(86);
 
@@ -20093,8 +20143,8 @@ var formatFrom = __webpack_require__(43).formatFrom;
 var inlineFrom = __webpack_require__(198);
 var inlineRequestFrom = __webpack_require__(199);
 var inlineTimeoutFrom = __webpack_require__(200);
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
-var optimizationLevelFrom = __webpack_require__(23).optimizationLevelFrom;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
+var optimizationLevelFrom = __webpack_require__(24).optimizationLevelFrom;
 var rebaseFrom = __webpack_require__(201);
 var rebaseToFrom = __webpack_require__(202);
 
@@ -20276,9 +20326,9 @@ var tidyAtRule = __webpack_require__(165);
 var Hack = __webpack_require__(70);
 var removeUnused = __webpack_require__(88);
 var restoreFromOptimizing = __webpack_require__(37);
-var wrapForOptimizing = __webpack_require__(32).all;
+var wrapForOptimizing = __webpack_require__(33).all;
 
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
 var Token = __webpack_require__(8);
 var Marker = __webpack_require__(13);
@@ -21334,7 +21384,7 @@ var restructure = __webpack_require__(188);
 
 var optimizeProperties = __webpack_require__(46);
 
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
 var Token = __webpack_require__(8);
 
@@ -21468,7 +21518,7 @@ var optimizeProperties = __webpack_require__(46);
 var sortSelectors = __webpack_require__(68);
 var tidyRules = __webpack_require__(69);
 
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
 var serializeBody = __webpack_require__(9).body;
 var serializeRules = __webpack_require__(9).rules;
@@ -21521,12 +21571,12 @@ var everyValuesPair = __webpack_require__(90);
 var hasInherit = __webpack_require__(91);
 var populateComponents = __webpack_require__(73);
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var deepClone = __webpack_require__(47).deep;
 var restoreWithComponents = __webpack_require__(74);
 
 var restoreFromOptimizing = __webpack_require__(37);
-var wrapSingle = __webpack_require__(32).single;
+var wrapSingle = __webpack_require__(33).single;
 
 var serializeBody = __webpack_require__(9).body;
 var Token = __webpack_require__(8);
@@ -21970,7 +22020,7 @@ module.exports = mergeIntoShorthands;
 
 var InvalidPropertyError = __webpack_require__(92);
 
-var wrapSingle = __webpack_require__(32).single;
+var wrapSingle = __webpack_require__(33).single;
 
 var Token = __webpack_require__(8);
 var Marker = __webpack_require__(13);
@@ -23245,7 +23295,7 @@ var isMergeableShorthand = __webpack_require__(176);
 var overridesNonComponentShorthand = __webpack_require__(177);
 var sameVendorPrefixesIn = __webpack_require__(93).same;
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var deepClone = __webpack_require__(47).deep;
 var restoreWithComponents = __webpack_require__(74);
 var shallowClone = __webpack_require__(47).shallow;
@@ -23727,7 +23777,7 @@ module.exports = overrideProperties;
 /* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function findComponentIn(shorthand, longhand) {
   var comparator = nameComparator(longhand);
@@ -23773,7 +23823,7 @@ module.exports = findComponentIn;
 /* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function isComponentOf(property1, property2, shallow) {
   return isDirectComponentOf(property1, property2) ||
@@ -23818,7 +23868,7 @@ module.exports = isMergeableShorthand;
 /* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function overridesNonComponentShorthand(property1, property2) {
   return property1.name in compactable &&
@@ -23839,7 +23889,7 @@ var extractProperties = __webpack_require__(75);
 var rulesOverlap = __webpack_require__(94);
 
 var serializeRules = __webpack_require__(9).rules;
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 var Token = __webpack_require__(8);
 
 function mergeMediaQueries(tokens, context) {
@@ -24070,7 +24120,7 @@ var isMergeable = __webpack_require__(45);
 var sortSelectors = __webpack_require__(68);
 var tidyRules = __webpack_require__(69);
 
-var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(24).OptimizationLevel;
 
 var serializeBody = __webpack_require__(9).body;
 var serializeRules = __webpack_require__(9).rules;
@@ -24544,7 +24594,7 @@ module.exports = removeDuplicates;
 
 var populateComponents = __webpack_require__(73);
 
-var wrapForOptimizing = __webpack_require__(32).single;
+var wrapForOptimizing = __webpack_require__(33).single;
 var restoreFromOptimizing = __webpack_require__(37);
 
 var Token = __webpack_require__(8);
@@ -25958,11 +26008,11 @@ module.exports = fetchFrom;
 
 var http = __webpack_require__(194);
 var https = __webpack_require__(195);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var isHttpResource = __webpack_require__(196);
 var isHttpsResource = __webpack_require__(197);
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 var HTTP_PROTOCOL = 'http:';
 
@@ -26095,9 +26145,9 @@ module.exports = inlineOptionsFrom;
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
-var override = __webpack_require__(31);
+var override = __webpack_require__(32);
 
 function inlineRequestFrom(option) {
   return override(
@@ -28189,7 +28239,7 @@ exports.SourceNode = SourceNode;
 /* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(22);
+var fs = __webpack_require__(23);
 var path = __webpack_require__(4);
 
 var applySourceMaps = __webpack_require__(211);
@@ -28536,7 +28586,7 @@ module.exports = readSources;
 /* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(22);
+var fs = __webpack_require__(23);
 var path = __webpack_require__(4);
 
 var isAllowedResource = __webpack_require__(77);
@@ -28813,7 +28863,7 @@ module.exports = isDataUriResource;
 /* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(22);
+var fs = __webpack_require__(23);
 var path = __webpack_require__(4);
 
 var isAllowedResource = __webpack_require__(77);
@@ -29067,7 +29117,7 @@ module.exports = rebase;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(4);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var DOUBLE_QUOTE = '"';
 var SINGLE_QUOTE = '\'';
@@ -31553,7 +31603,7 @@ module.exports = parseQuery;
 "use strict";
 
 
-var _parseUrl = __webpack_require__(25).parse;
+var _parseUrl = __webpack_require__(26).parse;
 
 
 
@@ -32907,7 +32957,7 @@ module.exports = function (size) {
 const fs = __webpack_require__(10)
 const path = __webpack_require__(4)
 const mkdirp = __webpack_require__(17).mkdirs
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 const utimes = __webpack_require__(110).utimesMillis
 const stat = __webpack_require__(50)
 
@@ -33533,7 +33583,7 @@ const u = __webpack_require__(14).fromCallback
 const path = __webpack_require__(4)
 const fs = __webpack_require__(10)
 const mkdir = __webpack_require__(17)
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 
 function createFile (file, callback) {
   function makeFile () {
@@ -33589,7 +33639,7 @@ const u = __webpack_require__(14).fromCallback
 const path = __webpack_require__(4)
 const fs = __webpack_require__(10)
 const mkdir = __webpack_require__(17)
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 
 function createLink (srcpath, dstpath, callback) {
   function makeLink (srcpath, dstpath) {
@@ -33668,7 +33718,7 @@ const _symlinkType = __webpack_require__(257)
 const symlinkType = _symlinkType.symlinkType
 const symlinkTypeSync = _symlinkType.symlinkTypeSync
 
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 
 function createSymlink (srcpath, dstpath, type, callback) {
   callback = (typeof type === 'function') ? type : callback
@@ -33725,7 +33775,7 @@ module.exports = {
 
 const path = __webpack_require__(4)
 const fs = __webpack_require__(10)
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 
 /**
  * Function that returns two types of paths, one relative to symlink, and one
@@ -33891,7 +33941,7 @@ var _fs
 try {
   _fs = __webpack_require__(10)
 } catch (_) {
-  _fs = __webpack_require__(22)
+  _fs = __webpack_require__(23)
 }
 
 function readFile (file, options, callback) {
@@ -34032,7 +34082,7 @@ module.exports = jsonfile
 
 const path = __webpack_require__(4)
 const mkdir = __webpack_require__(17)
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 const jsonFile = __webpack_require__(80)
 
 function outputJson (file, data, options, callback) {
@@ -34173,7 +34223,7 @@ const path = __webpack_require__(4)
 const copy = __webpack_require__(111).copy
 const remove = __webpack_require__(51).remove
 const mkdirp = __webpack_require__(17).mkdirp
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 const stat = __webpack_require__(50)
 
 function move (src, dest, opts, cb) {
@@ -34244,7 +34294,7 @@ const u = __webpack_require__(14).fromCallback
 const fs = __webpack_require__(10)
 const path = __webpack_require__(4)
 const mkdir = __webpack_require__(17)
-const pathExists = __webpack_require__(20).pathExists
+const pathExists = __webpack_require__(21).pathExists
 
 function outputFile (file, data, encoding, callback) {
   if (typeof encoding === 'function') {
@@ -35395,7 +35445,7 @@ function compile(str, env) {
     }
 }
 
-var fs = __webpack_require__(22);
+var fs = __webpack_require__(23);
 var eta_es_path = __webpack_require__(4);
 var _BOM = /^\uFEFF/;
 /* END TYPES */
