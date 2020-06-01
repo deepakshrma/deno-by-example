@@ -31,7 +31,7 @@ const server = serve({ port: 8080 });
 
 ### Create request handler
 
-```typescript title=examples/01_hello_world.ts {7-9}
+```typescript title="examples/01_hello_world.ts" {7-9}
 import { serve } from "https://deno.land/std/http/server.ts";
 
 const PORT = 8080
@@ -54,10 +54,10 @@ deno run --allow-net --allow-read examples/01_hello_world.ts
 ```
 
 :::note
-In my first command i am using `denorun`. It is alias, created for dev environment. If you have't read my get started tutorial, I will recommend you to read it [getting-started](/deno-by-example/01-hello-world)
+In my first command i am using `denorun`. It is alias, created for dev environment. If you have't read my get started tutorial, I will recommend you to read it [getting-started](/deno-by-example/getting-started)
 :::
 
-Open browser at http://localhost:8080/. You will see `hello world`.
+Open browser at [http://localhost:8080/](http://localhost:8080/). You will see `hello world`.
 
 **Breakdown:**
 
@@ -75,7 +75,7 @@ As mentioned earlier, Deno is build for security. By default network access is n
 
 When you respond a request, by default no header is assign to response. You need to set header to response a JSON object. Let's see in example.
 
-```typescript title=examples/01_hello_world.ts {8}
+```typescript title="examples/01_hello_world.ts" {7,9-10,12,14,16}
 import { serve, Response } from "https://deno.land/std/http/server.ts";
 
 const PORT = 8080;
@@ -105,7 +105,7 @@ denorun examples/01_hello_world.ts
 deno run --allow-net --allow-read examples/01_hello_world.ts
 ```
 
-Open browser at http://localhost:8080/. You will see `{"message":"hello world"}`.
+Open browser at [http://localhost:8080/](http://localhost:8080/). You will see `{"message":"hello world"}`.
 
 **Breakdown:**
 The Response interface look like as below.
