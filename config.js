@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
-    "@docusaurus/plugin-google-analytics",
-    "@docusaurus/plugin-sitemap",
+    require.resolve("@docusaurus/plugin-google-analytics"),
+    require.resolve("@docusaurus/plugin-sitemap"),
   ],
   stylesheets: [
     {
@@ -50,5 +50,5 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Deepak Vishwakarma, Inc. Built with Docusaurus.`,
     },
   },
-  themes: ["@docusaurus/theme-classic"],
+  themes: [require.resolve("@docusaurus/theme-classic")],
 };
