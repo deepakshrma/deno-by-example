@@ -4,7 +4,7 @@ title: Variables and Constants
 sidebar_label: Variables and Constants
 ---
 
-Constant can be created using `const` and variable can be created using `let`.  
+Constant can be created using `const` and variable can be created using `let`.
 
 Sample:
 
@@ -36,7 +36,6 @@ function main() {
   arrVar = [];
 }
 main();
-
 ```
 
 More:

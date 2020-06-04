@@ -25,7 +25,7 @@ Just like Nodejs/JavaScript. Logging can be done using `console.log`
 console.log("Hello World");
 ```
 
-Nice! However formatting log message is big pain is javascript. `console.log` partially implements functions like `printf` from `c++` or `java`. But it doesn't support all the features. 
+Nice! However formatting log message is big pain is javascript. `console.log` partially implements functions like `printf` from `c++` or `java`. But it doesn't support all the features.
 
 **So how we should log formatted messages?**
 
@@ -148,21 +148,21 @@ printf(`Person Name: "%s" and Salary: %d\n`, person.name, person.salary);
 
 **The following verbs are supported:**
 
-| Verb  | Meaning                                                 |
-| ----- | --------------------------------------------------------|
-| `%`   | print a literal percent                                 |
-| `t`   | evaluate arg as boolean, print `true` or `false`        |
-| `b`   | eval as number, print binary                            |
-| `c`   | eval as number, print character corr. to the codePoint  |
-| `o`   | eval as number, print octal                             |
-| `x X` | print as hex (ff FF), treat string as list of bytes     |
-| `e E` | print number in scientific/exponent format 1.123123e+01 |
-| `f F` | print number as float with decimal point and no exponent|
-| `g G` | use %e %E or %f %F depending on size of argument        |
-| `s`   | interpolate string                                      |
-| `T`   | type of arg, as returned by `typeof`                    |
-| `v`   | value of argument in 'default' format (see below)       |
-| `j`   | argument as formatted by `JSON.stringify`               |
+| Verb  | Meaning                                                  |
+| ----- | -------------------------------------------------------- |
+| `%`   | print a literal percent                                  |
+| `t`   | evaluate arg as boolean, print `true` or `false`         |
+| `b`   | eval as number, print binary                             |
+| `c`   | eval as number, print character corr. to the codePoint   |
+| `o`   | eval as number, print octal                              |
+| `x X` | print as hex (ff FF), treat string as list of bytes      |
+| `e E` | print number in scientific/exponent format 1.123123e+01  |
+| `f F` | print number as float with decimal point and no exponent |
+| `g G` | use %e %E or %f %F depending on size of argument         |
+| `s`   | interpolate string                                       |
+| `T`   | type of arg, as returned by `typeof`                     |
+| `v`   | value of argument in 'default' format (see below)        |
+| `j`   | argument as formatted by `JSON.stringify`                |
 
 **_Verbs with Width and Precision_**
 
@@ -265,7 +265,7 @@ export function bgRgb8(str: string, color: number): string {
 
 ![Finish IT](https://www.memesmonkey.com/images/memesmonkey/19/19d6564114a19af49a8e40e3338adb46.jpeg)
 
-### Create a Basic *Logger* Class
+### Create a Basic _Logger_ Class
 
 **Define interfaces:**
 
@@ -297,7 +297,6 @@ interface LoggerOptions {
 const initialOptions = { level: 0, format: "%s\n" };
 
 class Logger {
-
   private _level: LogLevel;
   private _format: string;
 
@@ -307,7 +306,6 @@ class Logger {
     this._format = format;
   }
 }
-
 ```
 
 **Define getter setter for level and format:**
@@ -426,8 +424,16 @@ const logger = new Logger({ level: 0, format: "Logger: %s" });
 logger.log("This is log message");
 logger.warn("This is warn");
 
-logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
-logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+logger.log(
+  "Overridden Info- Method: //%s %s [response time]: %05f ms",
+  "POST",
+  "https://www.google.com",
+  100
+);
+logger.error(
+  "Overridden Error- Error: //%s",
+  new Error("This is error").message
+);
 ```
 
 **Output:**
@@ -464,18 +470,34 @@ const logger = new Logger({ level: 0, format: "Logger: %s" });
 logger.log("This is log message");
 logger.warn("This is warn");
 
-logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
-logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+logger.log(
+  "Overridden Info- Method: //%s %s [response time]: %05f ms",
+  "POST",
+  "https://www.google.com",
+  100
+);
+logger.error(
+  "Overridden Error- Error: //%s",
+  new Error("This is error").message
+);
 
 // Change level
 
 logger.level = 2;
 
 // This will not print
-logger.log("Overridden Info- Method: //%s %s [response time]: %05f ms" , "POST", "https://www.google.com", 100);
+logger.log(
+  "Overridden Info- Method: //%s %s [response time]: %05f ms",
+  "POST",
+  "https://www.google.com",
+  100
+);
 
 // This will print
-logger.error("Overridden Error- Error: //%s" , new Error("This is error").message);
+logger.error(
+  "Overridden Error- Error: //%s",
+  new Error("This is error").message
+);
 
 // Change default format
 logger.level = 1;
@@ -500,11 +522,11 @@ Nice! Well done! We have done it!!
 [examples/logger.ts](https://github.com/deepakshrma/deno-by-example/blob/master/examples/logger.ts)
 :::
 
-:::note **How to use sample can be found in** 
+:::note **How to use sample can be found in**
 [examples/advance_logger.ts](https://github.com/deepakshrma/deno-by-example/blob/master/examples/advance_logger.ts)
 :::
 
 > For more examples like this, visit:
-<https://deepakshrma.github.io/deno-by-example/>
+> <https://deepakshrma.github.io/deno-by-example/>
 
-*I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v).*
+_I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)._

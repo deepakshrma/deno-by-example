@@ -5,7 +5,7 @@ sidebar_label: Getting Started
 ---
 
 Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.
->
+
 > --Deno Team
 
 :::note Note
@@ -50,7 +50,8 @@ https://deno.land/manual/getting_started/setup_your_environment
 
 ```bash title="~/.bash_profile"
 alias denorun="deno run -A"
-```
+
+````
 
 **This will help and ease the running application in local.**
 
@@ -65,7 +66,7 @@ function main() {
   console.log(`Hello "world"`);
 }
 main();
-```
+````
 
 **How to run example:**
 

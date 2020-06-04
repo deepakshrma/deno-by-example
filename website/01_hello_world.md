@@ -8,9 +8,9 @@ sidebar_label: Hello World
 
 Deno is design to keeping web in mind. As Deno team mentioned. Deno is to
 
-* Provide Secure Defaults
-* Browser compatible
-* Be able to serve HTTP efficiently
+- Provide Secure Defaults
+- Browser compatible
+- Be able to serve HTTP efficiently
 
 Deno provide standard package `std/http` for working with http/https server. This includes an HTTP client and an HTTP server. In this example i will show how simple it is, to create a webserver.
 
@@ -26,7 +26,6 @@ import { serve } from "https://deno.land/std/http/server.ts";
 import { serve } from "https://deno.land/std/http/server.ts";
 
 const server = serve({ port: 8080 });
-
 ```
 
 ### Create request handler
@@ -34,7 +33,7 @@ const server = serve({ port: 8080 });
 ```typescript title="examples/01_hello_world.ts" {7-9}
 import { serve } from "https://deno.land/std/http/server.ts";
 
-const PORT = 8080
+const PORT = 8080;
 const server = serve({ port: PORT });
 console.log(`Your server is running on http://localhost:${PORT}/`);
 
@@ -75,15 +74,14 @@ As mentioned earlier, Deno is build for security. By default network access is n
 
 When you respond a request, by default no header is assign to response. You need to set header to response a JSON object. Let's see in example.
 
-```typescript title="examples/01_hello_world.ts" {7,9-10,12,14,16}
+```typescript title="examples/01_hello_world.ts" {6,8-9,11,13,15}
 import { serve, Response } from "https://deno.land/std/http/server.ts";
 
 const PORT = 8080;
 const server = serve({ port: PORT });
 for await (const req of server) {
-
   const response: Response = {}; // Create a Response instance, init with {}
-  
+
   response.headers = new Headers(); // Create Headers object and assign to response
   response.headers.set("content-type", "application/json"); // set header as json
 

@@ -7,7 +7,8 @@
     "build": "rm -rf .docusaurus docs && docusaurus build --out-dir docs",
     "swizzle": "docusaurus swizzle",
     "doc": "deno run --allow-read --allow-write scripts/run.ts g",
-    "deploy": "GIT_USER=deepakshrma CURRENT_BRANCH=master USE_SSH=true yarn run docusaurus deploy"
+    "deploy": "GIT_USER=deepakshrma CURRENT_BRANCH=master USE_SSH=true yarn run docusaurus deploy",
+    "prettify": "prettier src/**/*.js --write && prettier website/*.md --write"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.56",
@@ -27,5 +28,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run build && git add docs"
+    }
+  },
+  "lint-staged": {
+    "*.(js|html|css|jsx|md|mdx)": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {},
+  "devDependencie": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
   }
 }

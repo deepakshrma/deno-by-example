@@ -172,8 +172,6 @@ try {
 
 You can create a json(tom.json) and tryout.
 
-
-
 ```json
 /* tom.json */
 {
@@ -211,6 +209,6 @@ Output: Mission: Impossible
 
 Nice! Mission: I am possible
 
-*I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v).*
+_I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)._
 
 Read More: [Deno.readAll](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.readAll)

@@ -221,7 +221,6 @@ let range = {
 
 Just like `Symbol.iterator`, we can use `Symbol.asyncIterator` to create an async Iterator. Since typescript supports async iterator out of the box. We can use this API. To understand more, you can read [async-iterators-generators](https://javascript.info/async-iterators-generators).
 
-
 To read line by line, I have created two utility methods `_readTillDone` and `readLine`.
 
 ```typescript
@@ -273,8 +272,8 @@ const readLine = async (fileName: string) => {
 
 Whenever i call `_readTillDone` with `file?.rid, text`. It tries to split text with `newLine`. I could not be able to find newLine. It tries to read more lines till the end. `_readTillDone` returns three parameters `[t, rest, d]`. Here `t`, text read by line,`rest` is as buffer text and `d` return as done.
 
-***Let's complete the tutorial.
-Once we have these utils, the implementation is very simple.***
+**_Let's complete the tutorial.
+Once we have these utils, the implementation is very simple._**
 
 ### Example: Final code
 
@@ -325,6 +324,6 @@ $ deno  run --allow-read  examples/06_readfile_chunk.ts examples/tom.json
 
 TaDa! 👏👏 Now you can read the entire file line by line.
 
-*I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v).*
+_I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)._
 
 All working examples can be found in my Github: [https://github.com/deepakshrma/deno-by-example/tree/master/examples](https://github.com/deepakshrma/deno-by-example/tree/master/examples)

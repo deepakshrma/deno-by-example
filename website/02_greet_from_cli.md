@@ -6,7 +6,6 @@ sidebar_label: Greet From CLI
 
 Taking user input can be difficult task. You can take user input as command line argument or you can read `input stream(STDIN)`
 
-
 ## Take user input as command line arguments
 
 Create file examples/02_greet_from_cli.ts
@@ -22,7 +21,6 @@ function main({ name }: UserInput) {
   console.log(`Hello ${name ? name : "world"}`);
 }
 main({ name: args[0] });
-
 ```
 
 Run Using deno run by passing name

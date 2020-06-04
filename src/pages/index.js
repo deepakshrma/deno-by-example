@@ -61,11 +61,12 @@ function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      
       <main>
         <section className={styles.features}>
           <div className={styles.container}>
-            <h1 className={styles.h1}>Tutorial: Learn Web Programming in Deno by Examples</h1>
+            <h1 className={styles.h1}>
+              Tutorial: Learn Web Programming in Deno by Examples
+            </h1>
             <div>
               <h2>
                 Deno is a simple, modern and secure runtime for JavaScript and
