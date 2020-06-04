@@ -39,8 +39,7 @@
       "prettier --write"
     ]
   },
-  "devDependencies": {},
-  "devDependencie": {
+  "devDependencies": {
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "prettier": "^2.0.5"
