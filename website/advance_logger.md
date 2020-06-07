@@ -270,7 +270,7 @@ export function bgRgb8(str: string, color: number): string {
 **Define interfaces:**
 
 ```typescript {4,6-9}
-import { sprintf } from "https://deno.land/std/fmt/printf.ts";
+import { sprintf, printf } from "https://deno.land/std/fmt/printf.ts";
 import { red, yellow, gray, cyan } from "https://deno.land/std/fmt/colors.ts";
 
 type LogLevel = 0 | 1 | 2 | 3;
@@ -284,7 +284,7 @@ interface LoggerOptions {
 **Create a constructor and define default values for log level and format:**
 
 ```typescript {11,15-16,18-22}
-import { sprintf } from "https://deno.land/std/fmt/printf.ts";
+import { sprintf, printf } from "https://deno.land/std/fmt/printf.ts";
 import { red, yellow, gray, cyan } from "https://deno.land/std/fmt/colors.ts";
 
 type LogLevel = 0 | 1 | 2 | 3;
@@ -344,16 +344,16 @@ class Logger {
   private _format: string;
   /// rest of the code
   log(...messages: unknown[]) {
-    console.log(gray(sprintf(this.format, ...messages)));
+    printf(gray(sprintf(this.format, ...messages)));
   }
   info(...messages: unknown[]) {
-    console.log(cyan(sprintf(this.format, ...messages)));
+    printf(cyan(sprintf(this.format, ...messages)));
   }
   warn(...messages: unknown[]) {
-    console.log(yellow(sprintf(this.format, ...messages)));
+    printf(yellow(sprintf(this.format, ...messages)));
   }
   error(...messages: unknown[]) {
-    console.log(red(sprintf(this.format, ...messages)));
+    printf(red(sprintf(this.format, ...messages)));
   }
 }
 ```
@@ -374,7 +374,7 @@ logger.error("This is error");
 
 ![sample 1](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/logger_sample_01.png)
 
-If you notice, I am using `sprintf` instead of `printf`. Since I want the full control on the printing message like adding colors and using the dynamic format. I have to use `sprintf` instead of `printf`.
+If you notice, I am using `sprintf` before using `printf`. Since I want the full control on the printing message like adding colors and using the dynamic format. I have to use `sprintf` instead of `printf`.
 
 **Let's allow the user to modify format at runtime:**
 
@@ -389,28 +389,28 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(gray(sprintf(format, ...messages)));
+    printf(gray(sprintf(format, ...messages)));
   }
   info(format: string, ...messages: unknown[]) {
     if (messages.length === 0) {
       messages = [format];
       format = this.format;
     }
-    console.log(cyan(sprintf(format, ...messages)));
+    printf(cyan(sprintf(format, ...messages)));
   }
   warn(format: string, ...messages: unknown[]) {
     if (messages.length === 0) {
       messages = [format];
       format = this.format;
     }
-    console.log(yellow(sprintf(format, ...messages)));
+    printf(yellow(sprintf(format, ...messages)));
   }
   error(format: string, ...messages: unknown[]) {
     if (messages.length === 0) {
       messages = [format];
       format = this.format;
     }
-    console.log(red(sprintf(format, ...messages)));
+    printf(red(sprintf(format, ...messages)));
   }
 }
 ```
@@ -455,7 +455,7 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(gray(sprintf(format, ...messages)));
+    printf(gray(sprintf(format, ...messages)));
   }
   /// rest of the code
 }

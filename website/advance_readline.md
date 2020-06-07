@@ -327,3 +327,21 @@ TaDa! 👏👏 Now you can read the entire file line by line.
 _I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)._
 
 All working examples can be found in my Github: [https://github.com/deepakshrma/deno-by-example/tree/master/examples](https://github.com/deepakshrma/deno-by-example/tree/master/examples)
+
+:::info Update:
+Recently, i got to know. That Deno does has `readlines` method to read reader line by line. It just documentation was missing. So i added document in Deno project. You can read it now here. [https://deno.land/std/io](https://deno.land/std/io)
+:::
+
+**Sample:**
+
+````ts
+import { readLines } from "https://deno.land/std/io/mod.ts";
+import * as path from "https://deno.land/std/path/mod.ts";
+
+const filename = path.join(Deno.cwd(), "std/io/README.md");
+let fileReader = await Deno.open(filename);
+
+for await (let line of readLines(fileReader)) {
+  console.log(line);
+}```
+````

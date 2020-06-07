@@ -1,4 +1,4 @@
-import { sprintf } from "https://deno.land/std/fmt/printf.ts";
+import { sprintf, printf } from "https://deno.land/std/fmt/printf.ts";
 import { red, yellow, gray, cyan } from "https://deno.land/std/fmt/colors.ts";
 
 // Copyright 2018-2020 https://github.com/deepakshrma. All rights reserved. MIT license.
@@ -116,7 +116,7 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(gray(sprintf(format, ...messages)));
+    printf(gray(sprintf(format, ...messages)));
   }
   /**
    * info: Prints log when log level is 0 with cyan color
@@ -130,7 +130,7 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(cyan(sprintf(format, ...messages)));
+    printf(cyan(sprintf(format, ...messages)));
   }
   /**
    * warn: Prints log when log level is 0 with yellow color
@@ -144,7 +144,7 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(yellow(sprintf(format, ...messages)));
+    printf(yellow(sprintf(format, ...messages)));
   }
   /**
    * error: Prints log when log level is 0 with red color
@@ -157,7 +157,7 @@ class Logger {
       messages = [format];
       format = this.format;
     }
-    console.log(red(sprintf(format, ...messages)));
+    printf(red(sprintf(format, ...messages)));
   }
 }
 
