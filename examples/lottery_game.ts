@@ -1,5 +1,5 @@
 import { readLines } from "https://deno.land/std/io/mod.ts";
-import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/logger.ts";
+import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno_util/master/logger.ts";
 
 const delay = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 

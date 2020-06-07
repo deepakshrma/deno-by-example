@@ -64,9 +64,12 @@ function Home() {
       <main>
         <section className={styles.features}>
           <div className={styles.container}>
-            <h1 className={styles.h1}>
-              Tutorial: Learn Web Programming in Deno by Examples
-            </h1>
+            <div>
+              <h1 className={styles.h1}>
+                Tutorial: Learn Web Programming in Deno by Examples
+              </h1>
+              <img src="img/home_page_dino.jpg"></img>
+            </div>
             <div>
               <h2>
                 Deno is a simple, modern and secure runtime for JavaScript and

@@ -63,7 +63,7 @@ Let's use logger to print in color.
 
 ```ts title="lottery_game.ts"
 import { readLines } from "https://deno.land/std/io/mod.ts";
-import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/logger.ts";
+import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno_util/master/logger.ts";
 
 async function main() {
   const logger = new Logger();
@@ -125,7 +125,7 @@ Let's make it more interactive. We will add some virtual delay to show we are ge
 
 ```ts title="lottery_game.ts" {4,9,14-18,19-25,29-30,36-44}
 import { readLines } from "https://deno.land/std/io/mod.ts";
-import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/logger.ts";
+import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno_util/master/logger.ts";
 
 const delay = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 

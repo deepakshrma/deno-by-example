@@ -1,4 +1,4 @@
-import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/logger.ts";
+import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno_util/master/logger.ts";
 
 import { printf } from "https://deno.land/std/fmt/printf.ts";
 // import { Logger } from "./logger.ts";

@@ -49,15 +49,22 @@
 .h1 {
   align-self: center;
   padding: 10px;
- }
+}
 @media screen and (min-width: 966px) {
   .h1 {
     margin-right: 30px;
     background: var(--ifm-color-primary);
     border-radius: 8px;
-    box-shadow: -1px 1px var(--ifm-color-primary-dark), -1px 1px var(--ifm-color-primary-dark), -1px 1px var(--ifm-color-primary-dark), -2px 2px var(--ifm-color-primary-dark), -2px 2px var(--ifm-color-primary-dark)
+    box-shadow: -1px 1px var(--ifm-color-primary-dark),
+      -1px 1px var(--ifm-color-primary-dark),
+      -1px 1px var(--ifm-color-primary-dark),
+      -2px 2px var(--ifm-color-primary-dark),
+      -2px 2px var(--ifm-color-primary-dark);
   }
   .container {
     flex-direction: row;
+  }
+  .container img {
+    height: 300px;
   }
 }

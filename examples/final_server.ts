@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std/http/server.ts";
 import router from "./router.ts";
-import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/examples/logger.ts";
+import { Logger } from "https://raw.githubusercontent.com/deepakshrma/deno_util/master/logger.ts";
 
 const logger = new Logger();
 
