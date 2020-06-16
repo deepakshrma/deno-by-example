@@ -1,10 +1,20 @@
 # Deno By Example
 
-> This repo to show examples on the Deno language. Examples are written in md files in [website](/website/) directories
+Playground and examples for [deno](https://github.com/denoland/deno)
 
--- The better looking website can be found [https://deepakshrma.github.io/deno-by-example/](https://deepakshrma.github.io/deno-by-example/)</a>.
+> This repo shows examples from Deno language. Examples are written in md files in [website](/website/) directories
 
-Please support me creating more examples.
+Published website can be found [https://deepakshrma.github.io/deno-by-example/](https://deepakshrma.github.io/deno-by-example/)
+
+![home](https://deepakshrma.github.io/deno-by-example/img/home_page_dino.jpg)
+
+## Requirements
+
+- Deno
+
+**[Note]:** It's only tested on a Mac.
+
+**_Please support me creating more examples._**
 
 **How to support:**
 
