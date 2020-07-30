@@ -1,6 +1,6 @@
 module.exports = {
   title: "Deno By Example",
-  tagline: "Deno By Example",
+  tagline: "Tutorial: Learn Web Programming in Deno by Examples",
   url: "https://decipher.dev",
   baseUrl: "/deno-by-example/",
   onBrokenLinks: "throw",
@@ -21,7 +21,6 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: "Deno By Example",
       logo: {
         alt: "Deno By Example",
         src: "https://deno.land/logo.svg",
@@ -29,6 +28,11 @@ module.exports = {
         target: "_self",
       },
       items: [
+        {
+          to: "/",
+          label: "Deno By Example",
+          position: "left",
+        },
         {
           to: "getting-started",
           activeBasePath: "docs",

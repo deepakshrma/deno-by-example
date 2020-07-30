@@ -12,15 +12,13 @@ function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description={siteConfig.tagline}
     >
       <main>
         <section className={styles.features}>
           <div className={styles.container}>
             <div>
-              <h1 className={styles.h1}>
-                Tutorial: Learn Web Programming in Deno by Examples
-              </h1>
+              <h1 className={styles.h1}>{siteConfig.tagline}</h1>
               <img src="img/home_page_dino.jpg"></img>
             </div>
             <div>
