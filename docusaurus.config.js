@@ -2,7 +2,7 @@ const configs = require("./config");
 module.exports = {
   title: "Deno By Example",
   tagline: "Deno By Example",
-  url: "https://deepakshrma.github.io/",
+  url: "https://decipher.dev",
   baseUrl: "/deno-by-example/",
   favicon: "img/favicon.ico",
   organizationName: "deepakshrma", // Usually your GitHub org/user name.
@@ -12,13 +12,13 @@ module.exports = {
     ...configs.themeConfig,
     sidebarCollapsible: false,
     googleAnalytics: {
-      trackingID: "UA-69472059-2",
+      trackingID: "UA-172955705-1",
     },
     navbar: {
       hideOnScroll: true,
       title: "Deno By Example",
       logo: {
-        alt: "Deno By Exampl",
+        alt: "Deno By Example",
         src: "https://deno.land/logo.svg",
       },
       links: [
@@ -55,7 +55,7 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
-          url: 'https://example.com',
+          url: "https://example.com",
           cacheTime: 600 * 1000, // 600 sec - cache purge period
           changefreq: "weekly",
           priority: 0.5,
