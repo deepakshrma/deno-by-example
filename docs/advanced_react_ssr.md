@@ -1,6 +1,6 @@
 ---
 id: advanced-react-ssr
-title: Deno Server Side Render- Isomorphic App
+title: Build an Isomorphic Application using Deno and React without WebPack
 description: Create a SSR/Isomorphic app using Deno without webpack
 sidebar_label: Isomorphic App
 author: Deepak Vishwakarma
@@ -10,19 +10,23 @@ tags: [deno, ssr, isomorphic, server-side-render, bundle]
 image: https://source.unsplash.com/c_Hi3DzlC0g/1600x900
 ---
 
-Setting up an SSR app is a pain in nodejs. There are many scaffolds available for nodejs. But it comes with its own tech-depth and learning curves. This also includes hidden configurations of webpack.
+Currently setting up a _Server Side Render (SSR)_ application is a pain in _nodejs_. There are many scaffolds available for _nodejs_. But it comes with its own _tech-depth_ and _learning curves_. This also includes hidden configurations of _Webpack_.
+
+All in all, when you give Webpack a chance, your encounter will rarely be a pleasant one.
 
 ![webpack](https://memegenerator.net/img/instances/81660209.jpg)
 
+**Read More**: [https://www.north-47.com/knowledge-base/webpack-the-good-the-bad-and-the-ugly/](https://www.north-47.com/knowledge-base/webpack-the-good-the-bad-and-the-ugly/)
+
 ## Overview
 
-```text
-According to the wiki, An isomorphic JavaScript(also known as Universal JavaScript) is described as JavaScript applications that run both on the client and the server.
-```
+_According to the_ [_wiki_](https://en.wikipedia.org/wiki/Isomorphic_JavaScript)_, An isomorphic JavaScript(also known as_ **_Universal JavaScript_**_) is described as JavaScript applications that run both on the client and the server._
 
 ![tenet](https://assets.hardwarezone.com/img/2020/07/tenet.jpg)
 
-If I say, you can build an entire `SSR` without setting up installing any `external node js` dependency. **Would you believe it?** I guess `NO`. However, In this tutorial, I will explain how to set up a `simple SSR` app without installing a `single nodejs library` or `bundler`. That also including a hydrate react app(isomorphic app).
+If I say, you can build an entire **SSR** without setting up installing any **external nodejs** dependency. **Would you believe it?** I guess `NO`.
+
+However, In this tutorial, I will explain how to set up a _simple SSR_ app without installing a _single nodejs library_ or _bundler_. That also including a hydrate react app(**isomorphic app**).
 
 Let's begin.
 
@@ -32,19 +36,21 @@ Let's begin.
 
 ### Start with npm init
 
-Don't be afraid, We will not install any nodejs library. However, I still like `npm` as task runner. So let's use it. Create a folder `ssr` and init npm package.json
+Don’t be afraid, To do things differently, we will not install any _nodejs_ libraries. However, I still like _npm_ as a task runner. So let’s use it. Create a folder _SSR_ and init npm **package.json**
 
 ```bash
 md -p examples/ssr
 
 cd examples/ssr
-## init
+
+## init npm package
+
 npm init --y
 ```
 
 ## Backend
 
-_Add Basic deno server:_ Create `server.tsx` file and add below code
+_Add Basic deno server:_ Create `server.tsx` a file and add below code
 
 ```typescript title="server.tsx"
 import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
@@ -80,7 +86,7 @@ function handlePage(ctx: any) {
 ```
 
 :::note
-We will use `oak` module here to create `Deno` server. You can create your own server. For that read my article [Creating Routing/Controller in Deno Server(From Scratch)](https://decipher.dev/deno-by-example/advanced-routing)
+We will use **_oak_** module here to create _Deno_ server. You can create your own server. For that read my article [Creating Routing/Controller in Deno Server(From Scratch)](https://decipher.dev/deno-by-example/advanced-routing)
 :::
 
 Add below command in `package.json`.
@@ -93,7 +99,7 @@ Add below command in `package.json`.
 ```
 
 **Run:**
-Now you can run the app and verify on `http://localhost:8000/`.
+Now we can run the application and verify on `http://localhost:8000/`.
 
 ```bash
 npm run start
@@ -101,19 +107,19 @@ npm run start
 
 ### Add React Server Render
 
-Now you can run the Now let's add our first server-side rendering code. For that we need reactjs. Since Deno is mean to use TypeScript. We will not use node_modules for that. We will you cdn hosted version of `react` and `react-dom`. For that, we will use [https://jspm.org/](https://jspm.org/).
+Now we can run the application. Let us add our first rendering code. For that, we need to ReactJS. Since Deno uses [ES Module import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import), We will use the CDN hosted version of **react** and **react-dom**. For that, there is a good CDN provider [https://jspm.org/](https://jspm.org/).
 
-```text
-jspm provides a module CDN allowing any package from npm to be directly loaded in the the browser and other JS environments as a fully optimized native JavaScript module.
-```
+:::info jspm
+**_jspm_** _provides a module CDN allowing any package from_ npm _to be directly loaded in the the browser and other JS environments as a fully_ optimized _native JavaScript module._
+:::
 
-Since we are going to write some TSX syntax(TypeScript JSX). We have to change the file extension of `server.ts` to `tsx`. Let's do that and update `package.json`.
+Now since we are going to write some **TSX syntax(typescript JSX)**. We have to change the file extension of `server.ts` to `server.tsx`. Let’s do that and update `package.json`.
 
 ```bash
 mv server.ts server.tsx
 ```
 
-```json {2}
+```json title="package.json" {2}
 "scripts": {
     "start": "deno run --allow-net server.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -162,14 +168,16 @@ function handlePage(ctx: any) {
 }
 ```
 
-Run the app again. You will see `error` on `console`.
+Run the app again. You will see **errors** on the **console**.
 
-```text
-TS7026 [ERROR]: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.
-  return <h1>Hello SSR</h1>;
-```
+:::danger TS7026 [ERROR]
+TS7026 \[ERROR\]: JSX element implicitly has type 'any' because no **interface 'JSX.IntrinsicElements' exists.**  
+ return <h1>Hello SSR</h1>
+:::
 
-This error due to missing `typings` for `react`. Since we do not included `types` for react. We have to let know `typescript compliler`. How it should treat JSX(TSX) syntax. To `bypass` these errors, Add below lines.
+This error is due to missing **typings** to **react**. Since we do not include **types** to react. We have to let know the **typescript compiler**. How it should treat JSX(TSX) syntax.
+
+To **suppress** these errors, Add below lines.
 
 ```typescript title="server.tsx" {3-5}
 declare global {
@@ -184,11 +192,11 @@ function App() {
 }
 ```
 
-Now run the server again. Your first `React SSR` will be visible on browser. Nice!
+Now run the server again. You can see your first `React SSR` running on the browser. Nice!
 
 ### Adding Server Controller- Create Backend APIs
 
-Let's move and start adding some core features. Let's add some `server-side` data to our app to consume in `client-side`. For that we will include few routes on `Oak Server`. [Oak](https://github.com/oakserver/oak)
+Let’s move further and start adding a few core features for Server. Let’s add some **server-side** data for our app. For that, we will include a few routes on **Oak Server**. [Oak](https://github.com/oakserver/oak)
 
 ```typescript title="server.tsx"
 const router = new Router();
@@ -244,7 +252,7 @@ Here in the above code, We have created three routes.
 
 ### Add List Todos to React App
 
-Since now we have api to create todos and consume todos. Let's list down all this on our react app. For that add below mentioned code.
+Since now we have API to create todos and consume todos. Let’s list down all this on our react app. For that add the below-mentioned code.
 
 ```typescript title="server.tsx"
 function App() {
@@ -300,7 +308,7 @@ function handlePage(ctx: any) {
   </html>`;
 ```
 
-Do all the changes and `run app`. You will see `list of Todo's` containing two rows of initial data. You can use post data to route `POST/todos/` to create new records. Once you add post `refresh` the page, You will see added new post data.
+Update all the changes and _run the app_. You will see a _list of Todos_ containing two rows of initial data. You can use curl post data to route `POST/todos/` to create new records. Once you add a post, _refresh_ the page, You will see added new post data.
 
 ```bash title="post data using curl"
 curl --header "Content-Type: application/json" \
@@ -310,16 +318,14 @@ curl --header "Content-Type: application/json" \
 ```
 
 :::info bootstrap
-If you noticed, I have added basic bootstrap to make UI nicer. You can use some other css library.
+_If you noticed, I have added basic_ [_bootstrap_](https://getbootstrap.com/) _to make UI nicer. You can use some other CSS library._
 :::
 
 ![todo png](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/todo_app_1.png)
 
-```text
-Tada! Now you have running the SSR app. You can replace the in-memory todos store to any persistent database. The result will be the same.
-```
+> Tada! Now you have running the SSR app. You can replace the **in-memory** todos store to any persistent database. The result will be the same.
 
-Time to add some interactive behavior in Our react app(client-side). But before doing that, let's move our react code to some separate file `app.tsx`.
+Now time to add some **interactive** behavior in Our react app(`client-side`). But before doing that, let’s move our react code to some separate file `app.tsx`.
 
 **Create a file `app.tsx`:**
 
@@ -374,7 +380,7 @@ export default App;
 ```
 
 :::note
-Notice the change in **`App`** function. Since we do not have direct access to **`todos`** now. We need to pass as props while rendering it. Corresponding changes have been done for **`ListTodos`**.
+Notice the change in the _App_ component. Since we do not have direct access to **todos** now, We need to pass **_data as props_** while rendering it. Corresponding changes have been done for **ListTodos**.
 :::
 
 ```typescript title="server.tsx" {3,10}
@@ -430,13 +436,13 @@ function ListTodos({ items = [] }: any) {
 }
 ```
 
-Once you do the above changes and try to delete by clicking on `cross-button`. You will see no change in UI. By code, it should turn the element `color to red`. So what could be the reason for that?
+Once you do the above changes and try to delete by clicking on **cross-button**. You will see no change in UI. By code, it should turn the element **color to red**. So what could be the reason for that?
 
-#### Answer: Hydrate
+**Answer:** Hydrate
 
-Since we are using `ReactDomServer.renderToString` the library which converts react app to string. So we lose all JS capabilities. To re-enable react js on the client-side. For that React provides you Hydrate module(API). This hydrate API re-enable the react feature on the client-side again. This makes our app `Isomorphic app`. More: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
+Since we are using `ReactDomServer.renderToString` the library which converts **React app** to string. So we lose all JS capabilities. To re-enable react js on the client-side. For that React provides you Hydrate module(API). This hydrate API re-enable the react feature on the client-side again. This makes our app **Isomorphic app**. More: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 
-Adding hydrate is a tough task. But Awsome Deno shines well here too. Deno provides Bundle API to convert a script to js. We will use `Deno.bundle` to create hydrate js for the client-side.
+Adding hydrate is a tough task to do. But Awesome Deno shines well here too. Deno provides Bundle API to convert a script to js. We will use `Deno.bundle` to create hydrate js for the client-side.
 
 **Create a new file `client.tsx` and add below codes:**
 
@@ -511,16 +517,16 @@ Since we are using unstable API `deno.bundle`, You have to update `package.json`
 ```
 
 :::note
-You can use [bundler](https://deno.land/manual/tools/bundler) as CLI to convert `client.tsx` before even starting the server. However, I just wanna show a cool way of doing it. So I use `Deno.bundle`.
+You can use [bundler](https://deno.land/manual/tools/bundler) as CLI to convert `client.tsx` before even starting the server. However, I just wanna show a cool way of doing it. So I use `Deno.bundle` on runtime.
 :::
 
 ## Final Touch
 
 ### Initialize initial state
 
-Once you do all the above-mentioned changes, Re-Run app. You will notice the list is the visible and hidden same time. This is because we react hydrate start working and it is trying to re-initialize the app. So all the data we render from the server is gone. to persist data we need to pass those data as application initial data. There are a lot of patterns to pass initial data. We will use the simple window global data.
+Once you do all the above-mentioned changes, Re-Run app. You will notice the list is the visible and hidden same time. This is because we react hydrate start working and it is trying to _re-initialize_ the app. So all the data we render from the server is gone to persist data we need to pass data as application initial data. There are a lot of patterns to pass initial data. We will use the simple window global data.
 
-`Let's Add data on the window` make below changes on given files.
+Let’s start **data on the window** after making below changes on the given files.
 
 ```js title="server.tsx" {4,9-11}
 function handlePage(ctx: any) {
@@ -732,12 +738,14 @@ function handlePage(ctx: any) {
 }
 ```
 
-Now you have running, Working SSR/Isomorphic App. Fully written in Deno Without any nodejs/npm module and IceBerg of webpack.
+Now you have a running, working SSR/Isomorphic App that is fully written in Deno. We didn’t use any nodejs/npm modules or WebPack.
 
-Thanks for reading this tutorial. Please follow me on medium to support me. For more of my work, check-out my website [https://decipher.dev/](https://decipher.dev/).
+Thanks for reading this tutorial. Please follow me to support me. For more of my work, check-out my website [https://decipher.dev/](https://decipher.dev/).
 
-You can find all the code in [examples](https://github.com/deepakshrma/deno-by-example/tree/master/examples) folder of the Github repo.
+You can find all the code in [examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr) folder on my [Github repo](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr).
 
 ## Final Domo
 
 ![todo gif](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/todo_demo.gif)
+
+Hope you like this tutorial, Please follow me and clap for me on medium: [isomorphic-application](https://medium.com/@deepak_v/build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243)
