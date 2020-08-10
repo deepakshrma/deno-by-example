@@ -15,7 +15,7 @@ module.exports = {
       "advanced-jq",
       "advanced-readline",
       "advanced-logger",
-      "06-run-on-docker",
+      "advanced-run-on-docker",
     ],
   },
 };

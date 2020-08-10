@@ -1,5 +1,5 @@
 ---
-id: 06-run-on-docker
+id: advanced-run-on-docker
 title: Run Deno Application on docker | Continuous Integration and Deployment
 sidebar_label: Run Deno Application on docker
 ---
