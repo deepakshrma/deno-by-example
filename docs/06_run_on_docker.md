@@ -4,23 +4,29 @@ title: Run Deno Application on docker | Continuous Integration and Deployment
 sidebar_label: Run Deno Application on docker
 ---
 
+## Overview
+
 Before starting code, Lets understand the concept of CICD in brief. This will give us motive to read this blog further.
 
-> ThoughtWorks’ definition for CI
+> By- ThoughtWorks’ definition for CI
 
 ```text
-Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
+Continuous Integration (CI) is a development practice that requires developers to integrate code
+into a shared repository several times a day. Each check-in is then
+verified by an automated build, allowing teams to detect problems early.
 ```
 
-Read more: [https://www.thoughtworks.com/es/continuous-integration](https://www.thoughtworks.com/es/continuous-integration)
+**Read more:** [https://www.thoughtworks.com/es/continuous-integration](https://www.thoughtworks.com/es/continuous-integration)
 
-> Jez Humble’s site:
+> By- Jez Humble’s site
 
 ```text
-Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
+Continuous Delivery is the ability to get changes of all types—including new features,
+configuration changes, bug fixes and experiments—into production, or into
+the hands of users, safely and quickly in a sustainable way.
 ```
 
-Read more: [https://continuousdelivery.com/](https://continuousdelivery.com/)
+**Read more:** [https://continuousdelivery.com/](https://continuousdelivery.com/)
 
 As we can see, There are many reason why we should follow the **CICD** in our project development cycle. The one of reason why i follow CICD in daily work. Its **ease** my work and I get a **consistant environment** for my development work. So that i can focus on more good things rather than _debuging_ Binary **breaking issue**.
 
@@ -28,13 +34,13 @@ If you want to read more on CICD, You can read this [article](https://stackify.c
 
 ![p](https://www.printwand.com/blog/media/2012/01/ultimate-guide-to-your-product-launch.jpg)
 
-In this tutorial, I will mainly focus on how you can setup Simple Deno Web Application just using some docker commands. In next tuitor, I will explain how to setup a FullStack Deno Application.
+_In this tutorial, I will mainly focus on how you can setup Simple Deno Web Application just using some docker commands. In next tuitor, I will explain how to setup a FullStack Deno Application._
 
 ## 1. Create a simple Deno WebApp
 
 To show working example, We need to create a sample Application. Since the focus of this tutorial is not to create WebApp. I will recoomend you to checkout my tutorial [here](advanced_react_ssr.md) or [medium](https://medium.com/@deepak_v/build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243?source=friends_link&sk=335ff7c133a790bb977d0077a322f3cd).
 
-The given app is a SSR app, has only some basic functionality. You can checkout source in [ssr](ssr) folder. Once you run app, Open [http://localhost:8000/](http://localhost:8000/) on browser. You will see Web as given below.
+The given app is a SSR app, has only some basic functionality. You can checkout source in [/examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr) folder. Once you run app, Open [http://localhost:8000/](http://localhost:8000/) on browser. You will see Web as given below.
 
 ![todo gif](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/todo_demo.gif)
 
@@ -103,7 +109,7 @@ Once you run you will see output along with _chucknorris_ joke. I got mine joke 
 **Download Deno Binary:**
 Now time to _install/download_ **pre-compile** version of Deno binary
 
-```docker title="Dockerfile"
+```docker title="Dockerfile" {5}
 FROM alpine
 
 RUN apk update && apk add curl
@@ -122,13 +128,13 @@ docker build -t deno-app .
 docker run -it deno-app
 ```
 
-:::warning Issue
+:::caution Issue
 There are some compiled libraries missing on **Alpine image**. So when you try to run Deno you may can see error like **standard_init_linux.go:211: exec user process caused**. To fix above error, We will you modified version of Alpine Image.
 :::
 
 Let's update our docker file.
 
-```docker title="Dockerfile"
+```docker title="Dockerfile" {1}
 FROM frolvlad/alpine-glibc:alpine-3.11_glibc-2.31
 
 RUN apk update && apk add curl
@@ -162,10 +168,10 @@ We have completed our 90% job. Let's run our _todo-app_. For that, we need to co
 **Using COPY:**
 
 :::info Forbidden path outside the build context
-Since docker does not allow file to be coppied from out of the foder. We have to copy files from examples/ssr folder to examples/docker-app.
+Since docker does not allow file to be coppied from out of the foder. We have to copy files from [/examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr/) folder to [examples/docker-app](https://github.com/deepakshrma/deno-by-example/tree/master/examples/docker-app).
 :::
 
-```bash
+```bash {3}
 pwd
 #something/examples/docker-app
 cp -r ../ssr ./ssr
@@ -173,7 +179,7 @@ cp -r ../ssr ./ssr
 
 Update Dockerfile to copy files.
 
-```docker title="Dockerfile" {6}
+```docker title="Dockerfile" {6,7}
 FROM frolvlad/alpine-glibc:alpine-3.11_glibc-2.31
 RUN apk update && apk add curl
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh && mv /root/.deno/bin/deno /bin/deno
@@ -185,7 +191,7 @@ CMD ["run", "--allow-net", "--allow-read", "--unstable", "server.tsx", "-c", "ts
 
 **Build and Run:**
 
-```bash {2}
+```bash {2,9}
 docker build -t deno-app .
 docker run -d deno-app
 
@@ -222,7 +228,7 @@ COPY ssr/ /app/
 ## rest of the command
 ```
 
-Build and run with port binding:
+**Build and run with port binding:**
 
 ```bash
 docker build -t deno-app .
@@ -250,9 +256,11 @@ docker build -t deno-app .
 docker run -d -p8000:8000 -v ${PWD}/ssr:/app  deno-app
 ```
 
-Hope you like this tutorial. Please follow me and clap for me on medium: [https://medium.com/@deepak_v](https://medium.com/@deepak_v/)
+**Hope you like this tutorial. Please follow me and clap for me on medium:** [https://medium.com/@deepak_v](https://medium.com/@deepak_v/)
 
-:::note Some Usefull commands
+## Some Usefull Docker Commands
+
+:::tip Docker
 Docker Images: `docker images ls`
 
 Running Process: `docker ps`
@@ -266,7 +274,7 @@ Remove images: `docker rmi -f id1 id2 id3`
 Logs: `docker logs f75f6e55675b`
 :::
 
-Source:
+**Source:**
 
 You can get all source code on GitHub.
 [examples/docker-app](https://github.com/deepakshrma/deno-by-example/tree/master/examples/docker-app)

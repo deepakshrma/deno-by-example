@@ -742,7 +742,7 @@ Now you have a running, working SSR/Isomorphic App that is fully written in Deno
 
 Thanks for reading this tutorial. Please follow me to support me. For more of my work, check-out my website [https://decipher.dev/](https://decipher.dev/).
 
-You can find all the code in [examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr) folder on my [Github repo](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr).
+You can find all the code in [examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr) folder on my [Github repo](https://github.com/deepakshrma/deno-by-example/).
 
 ## Final Domo
 
