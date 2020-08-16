@@ -2,6 +2,14 @@
 id: lottery-game
 title: Take input from user | Lottery Game
 sidebar_label: Lottery Game
+description: Build a CLI Lottery game app
+keywords:
+  - CLI
+  - advanced
+  - lottery
+  - webpack
+  - game
+image: http://www.comparelotto.com/assets/Uploads/Articles/lottery-results2.jpg
 ---
 
 This tutorial we will build a CLI Lottery game app. For this we will use Deno's `readLines` and Logger that i have created. If you want to learn more about Logger implementation. Please visit: [advanced-logger](https://decipher.dev/deno-by-example/advanced-logger).

@@ -1,13 +1,16 @@
 ---
 id: advanced-react-ssr
 title: Build an Isomorphic Application using Deno and React without WebPack
-description: Create a SSR/Isomorphic app using Deno without webpack
 sidebar_label: Isomorphic App
-author: Deepak Vishwakarma
-author_url: https://medium.com/@deepak_v
-author_image_url: https://avatars2.githubusercontent.com/u/7682731?s=400&u=c00b541729efd28e967271c37b4bd779d4ef94c7&v=4
-tags: [deno, ssr, isomorphic, server-side-render, bundle]
-image: https://source.unsplash.com/c_Hi3DzlC0g/1600x900
+description: Create a SSR/Isomorphic app using Deno without webpack
+keywords:
+  - deno
+  - isomorphic
+  - ssr
+  - bundle
+  - advanced
+  - server-side-render
+image: https://source.unsplash.com/mQHEgroKw2k/800x450
 ---
 
 Currently setting up a _Server Side Render (SSR)_ application is a pain in _nodejs_. There are many scaffolds available for _nodejs_. But it comes with its own _tech-depth_ and _learning curves_. This also includes hidden configurations of _Webpack_.
@@ -27,10 +30,6 @@ _According to the_ [_wiki_](https://en.wikipedia.org/wiki/Isomorphic_JavaScript)
 If I say, you can build an entire **SSR** without setting up installing any **external nodejs** dependency. **Would you believe it?** I guess `NO`.
 
 However, In this tutorial, I will explain how to set up a _simple SSR_ app without installing a _single nodejs library_ or _bundler_. That also including a hydrate react app(**isomorphic app**).
-
-Let's begin.
-
-<img width="400" src="https://pbs.twimg.com/profile_images/1078262307661111297/R_XwpK5f.jpg"/>
 
 ## Set-up
 

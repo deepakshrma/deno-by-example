@@ -2,6 +2,14 @@
 id: advanced-readline
 title: Read Line by Line as Data Stream
 sidebar_label: Read Line by Line
+description: How to read the entire file line by line in deno stream
+keywords:
+  - advanced
+  - stream
+  - data
+  - file
+  - network
+image: https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/data_flow.png
 ---
 
 `Deno` provides multiple APIs to read files. You can read the entire file using `Deno.readAll` and `Deno.readTextFile`. However, reading line by line is still not available in std library. Here in this tutorial, I will explain, How you can read the entire file line by line(Stream).

@@ -2,6 +2,14 @@
 id: advanced-logger
 title: Building A Super Cool Colorful Logger with Deno fmt module
 sidebar_label: Implementing Logger
+description: Building A Super Cool Colorful Logger with Deno fmt module
+keywords:
+  - advanced
+  - CLI
+  - data
+  - file
+  - tools
+image: https://source.unsplash.com/y02jEX_B0O0/800x450
 ---
 
 Logging trace is one of the basic needs of any `programming language`. It does not matter how good your code is unless it is not `traceable` and `debugable`. For debugging, Logging is one of the best tools. It is `fast` and `easy` to follow. If you are working on `local system` This could be your best mate while `debugging`.

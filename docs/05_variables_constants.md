@@ -1,8 +1,15 @@
 ---
 id: 05-variables-constants
 title: Variables and Constants
-sidebar_label: Variables and Constants
+description: Constants and Variables in Deno
+keywords:
+  - beginner
+  - variables
+  - constants
+image: https://source.unsplash.com/FMAVXJXIdP8/800x450
 ---
+
+![variables](https://source.unsplash.com/FMAVXJXIdP8/800x450)
 
 Constant can be created using `const` and variable can be created using `let`.
 

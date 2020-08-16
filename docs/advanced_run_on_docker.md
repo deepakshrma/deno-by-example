@@ -2,6 +2,15 @@
 id: advanced-run-on-docker
 title: Run Deno Application on docker | Continuous Integration and Deployment
 sidebar_label: Run Deno Application on docker
+description: Run Deno Application on docker | Continuous Integration and Deployment
+keywords:
+  - advanced
+  - docker
+  - data
+  - cicd
+  - tools
+  - devops
+image: https://source.unsplash.com/qX2ENCIxquA/800x450
 ---
 
 ## Overview
@@ -32,7 +41,7 @@ As we can see, There are many reason why we should follow the **CICD** in our pr
 
 If you want to read more on CICD, You can read this [article](https://stackify.com/what-is-cicd-whats-important-and-how-to-get-it-right/).
 
-![p](https://www.printwand.com/blog/media/2012/01/ultimate-guide-to-your-product-launch.jpg)
+![p](https://source.unsplash.com/qX2ENCIxquA/800x450)
 
 _In this tutorial, I will mainly focus on how you can setup Simple Deno Web Application just using some docker commands. In next tuitor, I will explain how to setup a FullStack Deno Application._
 

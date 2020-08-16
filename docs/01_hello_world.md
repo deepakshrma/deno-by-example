@@ -1,7 +1,12 @@
 ---
 id: 01-hello-world
 title: Hello World
-sidebar_label: Hello World
+description: Hello World Program, Run your first Deno Server
+keywords:
+  - beginner
+  - helloworld
+  - server
+image: https://source.unsplash.com/iY6QMkP66mI/800x450
 ---
 
 ## Introduction
@@ -11,6 +16,8 @@ Deno is design to keeping web in mind. As Deno team mentioned. Deno is to
 - Provide Secure Defaults
 - Browser compatible
 - Be able to serve HTTP efficiently
+
+![hello](https://source.unsplash.com/iY6QMkP66mI/800x450)
 
 Deno provide standard package `std/http` for working with http/https server. This includes an HTTP client and an HTTP server. In this example i will show how simple it is, to create a webserver.
 

@@ -2,6 +2,14 @@
 id: advanced-jq
 title: Implementing JQ equivalent in Deno
 sidebar_label: Implementing JQ
+description: Implementing JQ equivalent in Deno
+keywords:
+  - advanced
+  - JQ
+  - grep
+  - JSON
+  - parser
+image: https://source.unsplash.com/SYTO3xs06fU/800x450
 ---
 
 jq is like `sed` for JSON data, you can use it to slice and filter and map and transform structured data
@@ -9,6 +17,8 @@ jq is like `sed` for JSON data, you can use it to slice and filter and map and t
 `-- https://stedolan.github.io/jq/`
 
 I am not going to create the entire library here. Instead, I will just give a small demo how you can read STDIN data using Deno and parse it.
+
+![parser](https://source.unsplash.com/SYTO3xs06fU/800x450)
 
 STDIN [Standard input Stream](<https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)>), Standard input is a stream from which a program reads its input data.
 

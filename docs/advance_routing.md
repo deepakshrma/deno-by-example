@@ -2,6 +2,14 @@
 id: advanced-routing
 title: Creating Routing/Controller in Deno Server(From Scratch)
 sidebar_label: Routing From Scratch
+description: How to create Route and Controller in Deno Server(From Scratch)
+keywords:
+  - beginner
+  - started
+  - route
+  - controller
+  - server
+image: https://source.unsplash.com/Bdv1dYP6V9g/800x450
 ---
 
 ## Introduction
@@ -12,6 +20,8 @@ Here in this tutorial, I will explain how you can build Super cool Router from s
 :::note 💡Learn More:
 https://github.com/oakserver/oak
 :::
+
+![routing](https://source.unsplash.com/Bdv1dYP6V9g/800x450)
 
 Before creating a routing, lets create a basic server.
 

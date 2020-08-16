@@ -1,12 +1,20 @@
 ---
 id: 03-numbers
 title: Numbers
-sidebar_label: Numbers
+description: Some Gotcha in Number as it is in JavaScript.
+keywords:
+  - beginner
+  - number
+  - javascript
+  - gotcha
+image: https://source.unsplash.com/qDY9ahp0Mto/800x450
 ---
 
 Since deno is supporting Typescript which is super-set of the JavaScript. It support all the syntax from the JavaScript. However, Deno is a more then that. It also support APIs for file reading and network and etc.
 
 Here below are some examples, that explains how numbers behave in Deno[Javascript].
+
+![Gotcha](https://source.unsplash.com/qDY9ahp0Mto/800x450)
 
 There are some Gotcha in Number as it is in JavaScript.
 

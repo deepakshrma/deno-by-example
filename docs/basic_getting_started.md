@@ -1,8 +1,15 @@
 ---
 id: getting-started
 title: Getting Started
-sidebar_label: Getting Started
+description: How to install and start with Deno Programming Language
+keywords:
+  - beginner
+  - started
+  - deno
+image: https://source.unsplash.com/iWTamkU5kiI/800x450
 ---
+
+![install](https://source.unsplash.com/iWTamkU5kiI/800x450)
 
 Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.
 

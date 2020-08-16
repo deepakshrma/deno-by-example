@@ -1,12 +1,20 @@
 ---
 id: advanced-cli-minifind
-title: Build a CLI tool | Deno CLI `minifind`
+title: Build a CLI tool | Deno CLI minifind
 sidebar_label: Build MiniFind CLI
+description: Deno CLI clone of Mac/Unix find
+keywords:
+  - advanced
+  - cli
+  - tool
+  - grep
+  - regex
+image: https://source.unsplash.com/d9ILr-dbEdg/800x450
 ---
 
-We have seen how to create a [Greeting CLI](/02-greet-from-cli) in another tutorial. Now we will extend our knowledge and create a `full-fledged` CLI which will be partially clone of Mac/Unix `find`.
+![find](https://source.unsplash.com/d9ILr-dbEdg/800x450)
 
-<img src="https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/minifind.png" width="800" height="400" />
+We have seen how to create a [Greeting CLI](/02-greet-from-cli) in another tutorial. Now we will extend our knowledge and create a `full-fledged` CLI which will be partially clone of Mac/Unix `find`.
 
 Creating CLI required below mentioned features:
 
@@ -14,6 +22,8 @@ Creating CLI required below mentioned features:
 2. Traverse files and directory trees
 3. Filter files/directory based on the arguments
 4. Logger, better logging information
+
+<img src="https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/minifind.png" width="800" />
 
 ## 1. Input command arguments parser
 
