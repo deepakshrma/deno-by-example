@@ -16,6 +16,7 @@ module.exports = {
       "advanced-readline",
       "advanced-logger",
       "advanced-run-on-docker",
+      "advanced-graphql",
     ],
   },
 };

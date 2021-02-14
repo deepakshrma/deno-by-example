@@ -747,4 +747,4 @@ You can find all the code in [examples/ssr](https://github.com/deepakshrma/deno-
 
 ![todo gif](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/todo_demo.gif)
 
-Hope you like this tutorial, Please follow me and clap for me on medium: [isomorphic-application](https://medium.com/@deepak_v/build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243)
+Hope you like this tutorial, Please follow me and clap for me on medium: [isomorphic-application](https://deepak-v.medium.com//build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243)

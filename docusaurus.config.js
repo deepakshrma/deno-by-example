@@ -58,7 +58,7 @@ module.exports = {
             },
             {
               label: "Medium.com",
-              href: "https://medium.com/@deepak_v",
+              href: "https://deepak-v.medium.com/",
             },
             {
               label: "Discord",

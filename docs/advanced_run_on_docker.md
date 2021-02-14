@@ -47,7 +47,7 @@ _In this tutorial, I will mainly focus on how you can setup Simple Deno Web Appl
 
 ## 1. Create a simple Deno WebApp
 
-To show working example, We need to create a sample Application. Since the focus of this tutorial is not to create WebApp. I will recoomend you to checkout my tutorial [here](advanced_react_ssr.md) or [medium](https://medium.com/@deepak_v/build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243?source=friends_link&sk=335ff7c133a790bb977d0077a322f3cd).
+To show working example, We need to create a sample Application. Since the focus of this tutorial is not to create WebApp. I will recoomend you to checkout my tutorial [here](advanced_react_ssr.md) or [medium](https://deepak-v.medium.com//build-an-isomorphic-application-using-deno-and-react-without-webpack-deno-by-example-6c748abb3243?source=friends_link&sk=335ff7c133a790bb977d0077a322f3cd).
 
 The given app is a SSR app, has only some basic functionality. You can checkout source in [/examples/ssr](https://github.com/deepakshrma/deno-by-example/tree/master/examples/ssr) folder. Once you run app, Open [http://localhost:8000/](http://localhost:8000/) on browser. You will see Web as given below.
 
@@ -265,7 +265,7 @@ docker build -t deno-app .
 docker run -d -p8000:8000 -v ${PWD}/ssr:/app  deno-app
 ```
 
-**Hope you like this tutorial. Please follow me and clap for me on medium:** [https://medium.com/@deepak_v](https://medium.com/@deepak_v/)
+**Hope you like this tutorial. Please follow me and clap for me on medium:** [https://deepak-v.medium.com/](https://deepak-v.medium.com//)
 
 ## Some Usefull Docker Commands
 

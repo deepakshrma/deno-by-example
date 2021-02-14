@@ -410,7 +410,7 @@ Open browser at [http://localhost:8080/static/home.html](http://localhost:8080/s
 
 ![magic_server](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/final_server.png)
 
-Good Job! Thanks for support in advance. Please do follow me, subscribing and clapping on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)
+Good Job! Thanks for support in advance. Please do follow me, subscribing and clapping on [https://deepak-v.medium.com/](https://deepak-v.medium.com/)
 
 ### All working examples can be found in my Github
 

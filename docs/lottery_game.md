@@ -196,7 +196,7 @@ Run, You will see output like.
 
 I was lucky enough, I will lottery in `5-6 try`. Haha! You can make harder, by increasing LIMIT to higher number Or removing hint to the user.
 
-Thanks! If you like this tutorial. Please follow me, subscribe and clap for me on [https://medium.com/@deepak_v](https://medium.com/@deepak_v)
+Thanks! If you like this tutorial. Please follow me, subscribe and clap for me on [https://deepak-v.medium.com/](https://deepak-v.medium.com/)
 
 ### All working examples can be found in my Github
 
