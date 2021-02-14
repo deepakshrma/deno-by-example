@@ -14,9 +14,9 @@ image: https://postlight.com/wp-content/uploads/2019/10/Graphql2.png?w=1200
 
 ## Introduction
 
-GraphQL is already know for it good things. GraphQL helps to build super scalable APIs. It reduce coupling between code and data provider. Deno is one of fastest growing framework/language to build APIs. However, Deno community still new. So there are very less framework in Deno community. Some of them are in very early stage of development.
+GraphQL is already known for its good things. GraphQL helps to build super scalable APIs. It reduces coupling between code and data provider. Deno is one of the fastest-growing frameworks/languages to build APIs. However, Deno community still new. So there is a very little framework in the Deno community. Some of them are in a very early stage of development.
 
-In this article, I will explain how you can easily integrate GraphQL nodejs module with Deno lang. This is very basic implementation. However, Still there are lot of scope of improvements. This is not the end. This is just beginning.
+In this article, I will explain how you can easily integrate the GraphQL nodejs module with Deno lang. This is a very basic implementation. However, Still, there is a lot of scope for improvements. This is not the end. This is just beginning.
 
 ## Prerequisite
 
@@ -29,7 +29,7 @@ In this article, I will explain how you can easily integrate GraphQL nodejs modu
 
 ### 1. Basic project directory setup
 
-First create folders and file as describe below.
+First, create folders and file as described below.
 
 ![sample 1](https://raw.githubusercontent.com/deepakshrma/deno-by-example/master/static/img/deno_gql_1.png)
 
@@ -43,18 +43,18 @@ mkdir .vscode
 touch .vscode/settings.json
 ```
 
-Here, **src** will be directory containing all code. **model** is to hold all the _database/models_. We will create all resolvers in **resolvers** directory. Similarly, routes and schema to keep routes and schemas respectively. **src/server.ts** will be entry for the server to start with.
+Here, **src** will be the directory containing all code. **model** is to hold all the _database/models_. We will create all resolvers in **resolvers** directory. Similarly, routes and schema to keep routes and schemas respectively. **src/server.ts** will be an entry for the server to start with.
 
 ### 2. Velociraptor as script runner
 
-Deno does not have task runner like **npm**. However in Deno community, There are lot's of module we can use. I like [Velociraptor](https://deno.land/x/velociraptor@1.0.0-beta.16). It is easy to start with and easy to integrate.
+Deno does not have a task runner like **npm**. However, in Deno community, There are lots of modules we can use. I like [Velociraptor](https://deno.land/x/velociraptor@1.0.0-beta.16). It is easy to start with an easy to integrate.
 
 ```bash
-## You can check current version.
+## You can check the current version.
 deno install -qA -n vr https://deno.land/x/velociraptor@1.0.0-beta.16/cli.tscl
 ```
 
-Once you install velociraptor using deno, It will be available as executable as **vr**. You can try to validate using `vr --version`. It will print current version of velociraptor.
+Once you install velociraptor using deno, It will be available as executable as **vr**. You can try to validate using `vr --version`. It will print the current version of the velociraptor.
 
 Let's add basic scripts in **src/server.ts**
 
@@ -72,7 +72,7 @@ scripts:
 ```
 
 :::tip Tips
-**velociraptor** supports json, yaml and many more format. I like yaml version cool so i am using it.
+**velociraptor** supports JSON, yaml and many more formats. I like yaml version cool so I am using it.
 :::
 
 **Explained:**
@@ -119,7 +119,7 @@ vr start
 ```
 
 :::info
-You may get a pop-up to allow network access to Deno when you try to run server.
+You may get a pop-up to allow network access to Deno when you try to run the server.
 :::
 
 **Explained:**
@@ -131,7 +131,7 @@ You may get a pop-up to allow network access to Deno when you try to run server.
 
 ### 4. Basic mock database
 
-Since the purpose of this tutorial is not to teach you how to bind database and all. So we will mock the database as close as real app.
+Since the purpose of this tutorial is not to teach you how to bind database and all. So we will mock the database as close as a real app.
 
 Create a **database.ts** file `touch src/model/database.ts`
 
@@ -191,16 +191,16 @@ export const getUsers = async (predicate?: (user: User) => boolean) => {
 ```
 
 :::note
-You can get whole file in [github repo](https://github.com/deepakshrma/deno-graphql-starter).
+You can get the whole file in [github repo](https://github.com/deepakshrma/deno-graphql-starter).
 :::
 
 **Explained:**
 
-A very basic mock database with getUsers method, which return users based on predicate. If there is no predicate, It will return all users else apply filter using predicate.
+A very basic mock database with **getUsers** method, which returns users based on a predicate. If there is no predicate, It will return all users else apply a filter using a predicate.
 
 ### 5. Create a /graphql endpoint to handle graphql POST request
 
-GraphQL specs support POST to query server. We will use same. To create a scalable routing. We will create our route in routes folder and append in Oak Application using callback function.
+GraphQL specs support POST to query server. We will use the same. To create a scalable routing. We will create our route in the routes folder and append it in Oak Application using the callback function.
 
 Create files `touch src/routes/index.ts src/routes/graphql.ts`
 
@@ -259,9 +259,9 @@ export default function init(app: Application) {
 
 **Explained:**
 
-- **graphql.ts**, We have just created instance of Oak route. It can accept a get request and a post request at endpoint "/graphql".
+- **graphql.ts**, We have just created an instance of Oak route. It can accept a get request and a post request at endpoint "/graphql".
 - All the GraphQL request contains **query** and **variables** as data payload.
-- Currently return `query and variables` in return response.
+- Currently, return `query and variables` in return response.
 - **index.ts** to combine routes and apply some other middleware to Oak Application.
 
 Let's update our **server.ts**
@@ -304,7 +304,7 @@ curl --location --request POST 'http://localhost:4000/graphql' \
 
 ### 6. Create GraphQL schema and resolver
 
-GraphQL Executor requires schema and resolver to execute the query. For that we need to create schema and resolver. Schema can be written in String and compile to code using buildSchema helper method. Resolvers are basic function, will be called by graphql executor and act on query.
+GraphQL Executor requires schema and resolver to execute the query. For that, we need to create schema and resolver. Schema can be written in String and compile to code using **buildSchema** helper method. Resolvers are basic functions, will be called by graphql executor, and act on the query.
 
 To use GraphQL Executor we have to install/use [graphql module](https://cdn.skypack.dev/graphql) from [cdn.skypack.dev](https://cdn.skypack.dev/graphql)
 
@@ -354,7 +354,7 @@ export default buildSchema([base, UserSchema].join("\n"), {});
 - [buildSchema](https://graphql.org/graphql-js/) compile and validate schema to generate code in runtime.
 
 :::note
-Currently, graphql does not support multi-file schema(Query). So we have to write all query in **index.ts**. Hopefully, In future we can use [graphql tools](https://github.com/ardatan/graphql-tools).
+Currently, graphql does not support multi-file schema(Query). So we have to write all queries in **index.ts**. Hopefully, In future, we can use [graphql tools](https://github.com/ardatan/graphql-tools).
 :::
 
 Let's create resolvers for **users** and **hello** query
@@ -396,12 +396,12 @@ export default resolvers;
 
 **Explained:**
 
-- **user.ts** and **hello.ts** contains object with Query in it. Query has function same name as it defined in GraphQL Schema.
+- **user.ts** and **hello.ts** contains an object with Query in it. The query has the function same name as it is defined in GraphQL Schema.
 - **index.ts** accumulate all the resolvers.
 
 ### 7. Route to handle Query and execute
 
-Now we have created schema and resolver function. We can handle GraphQL request and response to query. For that we need to update our **src/routes/graphql.ts**.
+Now we have created schema and resolver function. We can handle GraphQL requests and responses to the query. For that, we need to update our **src/routes/graphql.ts**.
 
 ```typescript title="src/routes/graphql.ts"  {4,5,15-32}
 import { Router } from "https://deno.land/x/oak/mod.ts";
@@ -476,11 +476,15 @@ Congrats, Your GraphQL Server is ready to serve(🚀) the request.
 
 ## Limitations
 
-As i mentioned earlier, Deno is still very new and community is also very new. The above app has lot of limitations. However, We shouldn't stop exploring it. Some of the limitations are highlighted below.
+As I mentioned earlier, Deno is still very new and the community is also very new. The above app has a lot of limitations. However, We shouldn't stop exploring it. Some of the limitations are highlighted below.
 
 - Support for [multiple Query/Aliases](https://graphql.org/learn/queries/#aliases)
 - Merge Schema from multiple files
 - Conflict in resolvers
 - Validations and Proper Error Handling
+
+## Source Code
+
+[deno-graphql-starter](https://github.com/deepakshrma/deno-graphql-starter)
 
 _I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://deepak-v.medium.com/](https://deepak-v.medium.com/)._
