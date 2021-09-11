@@ -1,7 +1,7 @@
 import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
 
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDomServer from "https://dev.jspm.io/react-dom@16.13.1/server";
+import { React, ReactDOMServer } from "./dep.ts";
+
 import App from "./app.tsx";
 
 const app = new Application();
@@ -20,10 +20,10 @@ function init() {
 }
 init();
 router
-  .get("/todos", (context) => {
+  .get("/todos", (context: any) => {
     context.response.body = Array.from(todos.values());
   })
-  .get("/todos/:id", (context) => {
+  .get("/todos/:id", (context: any) => {
     if (
       context.params &&
       context.params.id &&
@@ -34,7 +34,7 @@ router
       context.response.status = 404;
     }
   })
-  .post("/todos", async (context) => {
+  .post("/todos", async (context: any) => {
     const body = context.request.body();
     if (body.type === "json") {
       const todo = await body.value;
@@ -43,10 +43,11 @@ router
     context.response.body = { status: "OK" };
   });
 
-const [_, clientJS] = await Deno.bundle("./client.tsx");
+const { files } = await Deno.emit("./client.tsx", { bundle: "module" });
+const clientJS = files["deno:///bundle.js"] || "";
 
 const serverrouter = new Router();
-serverrouter.get("/static/client.js", (context) => {
+serverrouter.get("/static/client.js", (context: any) => {
   context.response.headers.set("Content-Type", "text/html");
   context.response.body = clientJS;
 });
@@ -60,7 +61,7 @@ await app.listen({ port: 8000 });
 
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(
+    const body = ReactDOMServer.renderToString(
       <App todos={[]} /> // change here to pass todos as props
     );
     ctx.response.body = `<!DOCTYPE html>

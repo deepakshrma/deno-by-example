@@ -1,14 +1,12 @@
-import React from "https://dev.jspm.io/react@16.13.1";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      [key: string]: any;
-    }
-  }
+import { React } from "./dep.ts";
+interface AppProps {
+  todos?: Todo[];
+}
+interface Todo {
+  task: string;
 }
 
-function App({ todos = [] }: any) {
+function App({ todos = [] }: AppProps) {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -21,11 +19,13 @@ function App({ todos = [] }: any) {
     </div>
   );
 }
-
-function ListTodos({ items = [] }: any) {
+interface ListTodos{
+  items: Todo[]
+}
+function ListTodos({ items = [] }: ListTodos) {
   const [deletedIdxs, setDeletedIdxs] = (React as any).useState([]);
   return (
-    <>
+    <div>
       <ul className="list-group">
         {items.map((todo: any, index: number) => {
           const deleted = deletedIdxs.indexOf(index) !== -1;
@@ -33,7 +33,7 @@ function ListTodos({ items = [] }: any) {
             <li
               key={index}
               className="list-group-item"
-              style={{ color: deleted && "red" }}
+              style={{ color: deleted ? "red" : "green" }}
             >
               {todo.task}
               <button
@@ -48,7 +48,7 @@ function ListTodos({ items = [] }: any) {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
 

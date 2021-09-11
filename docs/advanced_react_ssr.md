@@ -106,7 +106,7 @@ npm run start
 
 ### Add React Server Render
 
-Now we can run the application. Let us add our first rendering code. For that, we need to ReactJS. Since Deno uses [ES Module import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import), We will use the CDN hosted version of **react** and **react-dom**. For that, there is a good CDN provider [https://jspm.org/](https://jspm.org/).
+Now we can run the application. Let us add our first rendering code. For that, we need to ReactJS. Since Deno uses [ES Module import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import), We will use the CDN hosted version of **react** and **react-dom**. For that, there is a good CDN provider [https://jspm.dev/](https://jspm.dev/).
 
 :::info jspm
 **_jspm_** _provides a module CDN allowing any package from_ npm _to be directly loaded in the the browser and other JS environments as a fully_ optimized _native JavaScript module._
@@ -125,13 +125,25 @@ mv server.ts server.tsx
   },
 ```
 
+**Create a common dependency `deps.ts` file**
+
+```typescript title="deps.ts" {3,4,17-19,22,31}
+// @deno-types="https://denopkg.com/soremwar/deno_types/react/v16.13.1/react.d.ts"
+import React from "https://jspm.dev/react@17.0.2";
+// @deno-types="https://denopkg.com/soremwar/deno_types/react-dom/v16.13.1/server.d.ts"
+import ReactDOMServer from "https://jspm.dev/react-dom@17.0.2/server";
+// @deno-types="https://denopkg.com/soremwar/deno_types/react-dom/v16.13.1/react-dom.d.ts"
+import ReactDOM from "https://jspm.dev/react-dom@17.0.2";
+
+export { React, ReactDOM, ReactDOMServer };
+```
+
 **Add below lines in `server.tsx`**
 
 ```typescript title="server.tsx" {3,4,17-19,22,31}
 import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
 
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDomServer from "https://dev.jspm.io/react-dom@16.13.1/server";
+import { React, ReactDOMServer, ReactDOM } from "./dep.ts";
 
 const app = new Application();
 
@@ -149,7 +161,7 @@ function App() {
 }
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(<App />);
+    const body = ReactDOMServer.renderToString(<App />);
     ctx.response.body = `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -179,13 +191,6 @@ This error is due to missing **typings** to **react**. Since we do not include *
 To **suppress** these errors, Add below lines.
 
 ```typescript title="server.tsx" {3-5}
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      [key: string]: any;
-    }
-  }
-}
 function App() {
   return <h1>Hello SSR</h1>;
 }
@@ -267,10 +272,15 @@ function App() {
     </div>
   );
 }
-
-function ListTodos({ items = [] }: any) {
+interface Todo {
+  task: string;
+}
+interface ListTodos{
+  items: Todo[]
+}
+function ListTodos({ items = [] }: ListTodos) {
   return (
-    <>
+    <div>
       <ul className="list-group">
         {items.map((todo: any, index: number) => {
           return (
@@ -287,12 +297,12 @@ function ListTodos({ items = [] }: any) {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(<App />);
+    const body = ReactDOMServer.renderToString(<App />);
     ctx.response.body = `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -329,8 +339,9 @@ Now time to add some **interactive** behavior in Our react app(`client-side`). B
 **Create a file `app.tsx`:**
 
 ```typescript title="app.tsx"
-import React from "https://dev.jspm.io/react@16.13.1";
-
+import { React } from "./dep.ts";
+/*
+// enable in case of old react module
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -338,8 +349,16 @@ declare global {
     }
   }
 }
+*/
 
-function App({ todos = [] }: any) {
+interface AppProps {
+  todos?: Todo[];
+}
+interface Todo {
+  task: string;
+}
+
+function App({ todos = [] }: AppProps) {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -352,10 +371,12 @@ function App({ todos = [] }: any) {
     </div>
   );
 }
-
-function ListTodos({ items = [] }: any) {
+interface ListTodos {
+  items: Todo[];
+}
+function ListTodos({ items = [] }: ListTodos) {
   return (
-    <>
+    <div>
       <ul className="list-group">
         {items.map((todo: any, index: number) => {
           return (
@@ -372,7 +393,7 @@ function ListTodos({ items = [] }: any) {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
 export default App;
@@ -383,15 +404,15 @@ Notice the change in the _App_ component. Since we do not have direct access to 
 :::
 
 ```typescript title="server.tsx" {3,10}
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDomServer from "https://dev.jspm.io/react-dom@16.13.1/server";
+import { React, ReactDOMServer, ReactDOM } from "./dep.ts";
+
 import App from "./app.tsx";
 
 /// rest of the code
 
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(
+    const body = ReactDOMServer.renderToString(
       <App todos={Array.from(todos.values())} /> // change here to pass todos as props
     );
 
@@ -404,7 +425,7 @@ Run the app and see changes on the browser, If all good there will be no change 
 ### Adding delete functionality on client-side
 
 ```typescript title="app.tsx" {10}
-function ListTodos({ items = [] }: any) {
+function ListTodos({ items = [] }: ListTodos) {
   const [deletedIdxs, setDeletedIdxs] = (React as any).useState([]);
   return (
     <>
@@ -439,19 +460,18 @@ Once you do the above changes and try to delete by clicking on **cross-button**.
 
 **Answer:** Hydrate
 
-Since we are using `ReactDomServer.renderToString` the library which converts **React app** to string. So we lose all JS capabilities. To re-enable react js on the client-side. For that React provides you Hydrate module(API). This hydrate API re-enable the react feature on the client-side again. This makes our app **Isomorphic app**. More: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
+Since we are using `ReactDOMServer.renderToString` the library which converts **React app** to string. So we lose all JS capabilities. To re-enable react js on the client-side. For that React provides you Hydrate module(API). This hydrate API re-enable the react feature on the client-side again. This makes our app **Isomorphic app**. More: [Hydrate](https://reactjs.org/docs/react-dom.html#hydrate)
 
-Adding hydrate is a tough task to do. But Awesome Deno shines well here too. Deno provides Bundle API to convert a script to js. We will use `Deno.bundle` to create hydrate js for the client-side.
+Adding hydrate is a tough task to do. But Awesome Deno shines well here too. Deno provides Bundle API to convert a script to js. We will use `Deno.emit` to create hydrate js for the client-side.
 
 **Create a new file `client.tsx` and add below codes:**
 
 ```typescript title="client.tsx"
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDom from "https://dev.jspm.io/react-dom@16.13.1";
+import { React, ReactDOM } from "./dep.ts";
 
 import App from "./app.tsx";
 
-(ReactDom as any).hydrate(<App todos={[]} />, document.getElementById("root"));
+(ReactDOM as any).hydrate(<App todos={[]} />, document.getElementById("root"));
 ```
 
 Add below codes to compile and convert `client.tsx` to serve as a route in our server.
@@ -459,7 +479,8 @@ Add below codes to compile and convert `client.tsx` to serve as a route in our s
 ```typescript title="server.tsx"
 
 // initial code
-const [_, clientJS] = await Deno.bundle("./client.tsx");
+const { files } = await Deno.emit("./client.tsx", { bundle: "module" });
+const clientJS = files["deno:///bundle.js"] || "";
 
 const serverrouter = new Router();
 serverrouter.get("/static/client.js", (context) => {
@@ -471,7 +492,7 @@ app.use(serverrouter.routes());
 // rest of the code
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(
+    const body = ReactDOMServer.renderToString(
       <App todos={Array.from(todos.values())} /> // change here to pass todos as props
     );
     ctx.response.body = `<!DOCTYPE html>
@@ -486,7 +507,7 @@ function handlePage(ctx: any) {
   }
 ```
 
-Since we are using unstable API `deno.bundle`, You have to update `package.json` and add more flags. Same time, We are using DOM with typescript. So we have to add custom `tsconfig.json`.
+Since we are using unstable API `deno.emit`, You have to update `package.json` and add more flags. Same time, We are using DOM with typescript. So we have to add custom `tsconfig.json`.
 
 ```json title="package.json"
 {
@@ -516,7 +537,7 @@ Since we are using unstable API `deno.bundle`, You have to update `package.json`
 ```
 
 :::note
-You can use [bundler](https://deno.land/manual/tools/bundler) as CLI to convert `client.tsx` before even starting the server. However, I just wanna show a cool way of doing it. So I use `Deno.bundle` on runtime.
+You can use [runtime compile](https://deno.land/manual@v1.13.2/typescript/runtime) as CLI to convert `client.tsx` before even starting the server. However, I just wanna show a cool way of doing it. So I use `Deno.emit` on runtime.
 :::
 
 ## Final Touch
@@ -530,7 +551,7 @@ Let’s start **data on the window** after making below changes on the given fil
 ```js title="server.tsx" {4,9-11}
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(
+    const body = ReactDOMServer.renderToString(
       <App todos={[]} />
     );
     ctx.response.body = `<!DOCTYPE html>
@@ -551,7 +572,7 @@ declare global {
 }
 import App from "./app.tsx";
 const { todos } = window.__INITIAL_STATE__ || { todos: [] };
-(ReactDom as any).hydrate(
+(ReactDOM as any).hydrate(
   <App todos={todos} />,
   document.getElementById("root")
 );
@@ -560,17 +581,15 @@ const { todos } = window.__INITIAL_STATE__ || { todos: [] };
 After the changes, all the files will look as below.
 
 ```typescript title="app.tsx"
-import React from "https://dev.jspm.io/react@16.13.1";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      [key: string]: any;
-    }
-  }
+import { React } from "./dep.ts";
+interface AppProps {
+  todos?: Todo[];
+}
+interface Todo {
+  task: string;
 }
 
-function App({ todos = [] }: any) {
+function App({ todos = [] }: AppProps) {
   return (
     <div>
       <div className="jumbotron jumbotron-fluid">
@@ -583,11 +602,13 @@ function App({ todos = [] }: any) {
     </div>
   );
 }
-
-function ListTodos({ items = [] }: any) {
+interface ListTodos {
+  items: Todo[];
+}
+function ListTodos({ items = [] }: ListTodos) {
   const [deletedIdxs, setDeletedIdxs] = (React as any).useState([]);
   return (
-    <>
+    <div>
       <ul className="list-group">
         {items.map((todo: any, index: number) => {
           const deleted = deletedIdxs.indexOf(index) !== -1;
@@ -595,7 +616,7 @@ function ListTodos({ items = [] }: any) {
             <li
               key={index}
               className="list-group-item"
-              style={{ color: deleted && "red" }}
+              style={{ color: deleted ? "red" : "green" }}
             >
               {todo.task}
               <button
@@ -610,7 +631,7 @@ function ListTodos({ items = [] }: any) {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
 
@@ -618,14 +639,14 @@ export default App;
 ```
 
 ```typescript title="client.tsx"
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDom from "https://dev.jspm.io/react-dom@16.13.1";
+import { React, ReactDOM } from "./dep.ts";
+
 declare global {
   var __INITIAL_STATE__: any;
 }
 import App from "./app.tsx";
 const { todos } = window.__INITIAL_STATE__ || { todos: [] };
-(ReactDom as any).hydrate(
+(ReactDOM as any).hydrate(
   <App todos={todos} />,
   document.getElementById("root")
 );
@@ -634,8 +655,8 @@ const { todos } = window.__INITIAL_STATE__ || { todos: [] };
 ```tsx title="server.tsx"
 import { Application, Router } from "https://deno.land/x/oak@v6.0.1/mod.ts";
 
-import React from "https://dev.jspm.io/react@16.13.1";
-import ReactDomServer from "https://dev.jspm.io/react-dom@16.13.1/server";
+import { React, ReactDOMServer } from "./dep.ts";
+
 import App from "./app.tsx";
 
 const app = new Application();
@@ -654,10 +675,10 @@ function init() {
 }
 init();
 router
-  .get("/todos", (context) => {
+  .get("/todos", (context: any) => {
     context.response.body = Array.from(todos.values());
   })
-  .get("/todos/:id", (context) => {
+  .get("/todos/:id", (context: any) => {
     if (
       context.params &&
       context.params.id &&
@@ -668,7 +689,7 @@ router
       context.response.status = 404;
     }
   })
-  .post("/todos", async (context) => {
+  .post("/todos", async (context: any) => {
     const body = context.request.body();
     if (body.type === "json") {
       const todo = await body.value;
@@ -677,10 +698,11 @@ router
     context.response.body = { status: "OK" };
   });
 
-const [_, clientJS] = await Deno.bundle("./client.tsx");
+const { files } = await Deno.emit("./client.tsx", { bundle: "module" });
+const clientJS = files["deno:///bundle.js"] || "";
 
 const serverrouter = new Router();
-serverrouter.get("/static/client.js", (context) => {
+serverrouter.get("/static/client.js", (context: any) => {
   context.response.headers.set("Content-Type", "text/html");
   context.response.body = clientJS;
 });
@@ -694,7 +716,7 @@ await app.listen({ port: 8000 });
 
 function handlePage(ctx: any) {
   try {
-    const body = ReactDomServer.renderToString(
+    const body = ReactDOMServer.renderToString(
       <App todos={[]} /> // change here to pass todos as props
     );
     ctx.response.body = `<!DOCTYPE html>
@@ -728,7 +750,8 @@ function handlePage(ctx: any) {
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "deno run --allow-net --allow-read --unstable server.tsx -c tsconfig.json",
+    "start": "deno run --allow-net --allow-read --unstable  server.tsx -c tsconfig.json",
+    "start:clean": "deno run --allow-net --allow-read --unstable --reload server.tsx -c tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
