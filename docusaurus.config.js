@@ -9,15 +9,20 @@ module.exports = {
   projectName: "deno-by-example", // Usually your repo name.
   stylesheets: [
     {
-      href:
-        "https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Open+Sans&display=swap",
+      href: "https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Open+Sans&display=swap",
       type: "text/css",
     },
   ],
+  scripts: [
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7756182462259588",
+      async: true,
+      crossorigin: "anonymous",
+    },
+  ],
   themeConfig: {
-    sidebarCollapsible: false,
-    googleAnalytics: {
-      trackingID: "UA-172955705-1",
+    googleAdsense: {
+      dataAdClient: "ca-pub-7756182462259588",
     },
     navbar: {
       hideOnScroll: true,
@@ -102,6 +107,7 @@ module.exports = {
           // homePageId: "doc1",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/deepakshrma/deno-by-example/edit/master",
+          sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
@@ -112,11 +118,17 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
-          cacheTime: 600 * 1000, // 600 sec - cache purge period
           changefreq: "weekly",
           priority: 0.5,
         },
+        googleAnalytics: {
+          trackingID: "UA-172955705-1",
+        },
       },
     ],
+  ],
+  plugins: [
+    require.resolve("@cmfcmf/docusaurus-search-local"),
+    "docusaurus-plugin-google-adsense",
   ],
 };
