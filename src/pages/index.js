@@ -5,16 +5,50 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
+import AdSense from "react-adsense";
+import { useWindowSize } from "@docusaurus/theme-common";
 
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const windowSize = useWindowSize();
+  const renderTocDesktop = windowSize === "desktop" || windowSize === "ssr";
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description={siteConfig.tagline}
     >
       <main>
+        <section>
+          <div className={`${styles.Ad} ${styles.AdSec}`}>
+            <AdSense.Google
+              client="ca-pub-7756182462259588"
+              slot="3255885970"
+              style={{ display: "block" }}
+              format="auto"
+              responsive="true"
+            />
+          </div>
+        </section>
+
+        <section>
+          <div className={clsx("hero hero--primary", styles.heroBanner)}>
+            <div className="container">
+              <div className={styles.buttons}>
+                <Link
+                  className={clsx(
+                    "button button--outline button--secondary button--lg",
+                    styles.getStarted
+                  )}
+                  to={useBaseUrl("/getting-started")}
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className={styles.features}>
           <div className={styles.container}>
             <div>
@@ -56,24 +90,18 @@ function Home() {
             </div>
           </div>
         </section>
-      </main>
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          {/* <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
-              )}
-              to={useBaseUrl("/getting-started")}
-            >
-              Get Started
-            </Link>
+        <section>
+          <div className={`${styles.Ad} ${styles.AdSec}`}>
+            <AdSense.Google
+              client="ca-pub-7756182462259588"
+              slot="3255885970"
+              style={{ display: "block" }}
+              format="auto"
+              responsive="true"
+            />
           </div>
-        </div>
-      </header>
+        </section>
+      </main>
     </Layout>
   );
 }

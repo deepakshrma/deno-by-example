@@ -5,10 +5,13 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+.heroBanner a {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 966px) {
@@ -66,5 +69,21 @@
   }
   .container img {
     height: 300px;
+  }
+}
+.Ad {
+  padding: 20px 10px;
+  min-width: 300px;
+  border: 1px solid #e7e7e7;
+}
+.AdSec {
+  margin-top: 20px;
+}
+@media screen and (max-width: 966px) {
+  .Ad {
+    margin-bottom: 20px;
+  }
+  .AdSec {
+    margin-top: 0;
   }
 }
