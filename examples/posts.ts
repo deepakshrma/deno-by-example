@@ -709,6 +709,6 @@ const posts = [
   },
 ];
 
-export const getPostById = (id: number) => posts[id];
+export const getPostById = (id: number) => posts.find((post) => post.id == id);
 
 export default posts;
