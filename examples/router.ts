@@ -10,8 +10,8 @@ interface Route {
 
 const routes: Route[] = [
   { name: "static", path: "/static/:page*", handler: staticFile },
-  { name: "posts", path: "/posts/:id", handler: findUserById },
-  { name: "users", path: "/users/:id", handler: findPostById },
+  { name: "posts", path: "/posts/:id", handler: findPostById },
+  { name: "users", path: "/users/:id", handler: findUserById },
 ];
 
 function router(req: ServerRequest) {
