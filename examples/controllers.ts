@@ -9,7 +9,7 @@ export const findUserById = (req: ServerRequest, match: RegExpExecArray) => {
   if (user) {
     req.respond({ body: JSON.stringify(user) });
   } else {
-    req.respond({ body: "POST NOT FOUND" });
+    req.respond({ body: "USER NOT FOUND" });
   }
 };
 
