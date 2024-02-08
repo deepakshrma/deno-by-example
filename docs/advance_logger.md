@@ -534,7 +534,6 @@ Nice! Well done! We have done it!!
 [examples/advance_logger.ts](https://github.com/deepakshrma/deno-by-example/blob/master/examples/advance_logger.ts)
 :::
 
-> For more examples like this, visit:
-> <https://decipher.dev/deno-by-example/>
+> For more examples like this, visit: https://decipher.dev/deno-by-example
 
 _I hope you like this tutorial. let me know your feedback in the comment. Please support(🙏🙏) by subscribing and clapping on [https://deepak-v.medium.com/](https://deepak-v.medium.com/)._

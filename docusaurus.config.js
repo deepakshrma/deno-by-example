@@ -1,4 +1,13 @@
-module.exports = {
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import { themes as prismThemes } from "prism-react-renderer";
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: "Deno By Example",
   tagline: "Tutorial: Learn Web Programming in Deno by Examples",
   url: "https://decipher.dev",
@@ -20,6 +29,7 @@ module.exports = {
       crossorigin: "anonymous",
     },
   ],
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     googleAdsense: {
       dataAdClient: "ca-pub-7756182462259588",
@@ -28,7 +38,7 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: "Deno By Example",
-        src: "https://deno.land/logo.svg",
+        src: "/img/logo.svg",
         href: "https://decipher.dev/",
         target: "_self",
       },
@@ -97,22 +107,33 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Deepak Vishwakarma`,
     },
+
+    // Replace with your project's social card
+    // image: "img/docusaurus-social-card.jpg",
+
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
+        gtag: {
+          trackingID: "UA-172955705-1",
+          anonymizeIP: true,
+        },
         docs: {
           routeBasePath: "/",
-          // homePageId: "doc1",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/deepakshrma/deno-by-example/edit/master",
           sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            "https://github.com/deepakshrma/deno-by-example/edit/master/blog",
+          editUrl: "https://github.com/deepakshrma/deno-by-example/edit/master/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -121,14 +142,19 @@ module.exports = {
           changefreq: "weekly",
           priority: 0.5,
         },
-        googleAnalytics: {
-          trackingID: "UA-172955705-1",
-        },
       },
     ],
   ],
-  plugins: [
-    require.resolve("@cmfcmf/docusaurus-search-local"),
-    "docusaurus-plugin-google-adsense",
-  ],
+  plugins: [require.resolve("docusaurus-lunr-search")],
+  onBrokenMarkdownLinks: "warn",
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
 };
+
+export default config;

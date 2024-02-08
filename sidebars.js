@@ -1,4 +1,4 @@
-module.exports = {
+const sidebars = {
   someSidebar: {
     Basic: [
       "getting-started",
@@ -20,3 +20,6 @@ module.exports = {
     ],
   },
 };
+
+
+export default sidebars;
