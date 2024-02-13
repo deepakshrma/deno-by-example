@@ -22,18 +22,9 @@ const config = {
       type: "text/css",
     },
   ],
-  scripts: [
-    {
-      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7756182462259588",
-      async: true,
-      crossorigin: "anonymous",
-    },
-  ],
+  scripts: [],
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
-    googleAdsense: {
-      dataAdClient: "ca-pub-7756182462259588",
-    },
     navbar: {
       hideOnScroll: true,
       logo: {
@@ -118,11 +109,11 @@ const config = {
   },
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         gtag: {
-          trackingID: "UA-172955705-1",
+          trackingID: "G-VX1V9NRMDC",
           anonymizeIP: true,
         },
         docs: {
